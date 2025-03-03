@@ -1,0 +1,90 @@
+
+.video-section{
+    background-color: #1D92CD1A;
+    margin-top: 120px;
+}
+
+.video-content{
+    position: relative;
+    padding: 120px ;
+}
+
+.compass{
+    position: absolute;
+    right: 160px;
+    bottom: 60px;
+
+    img{
+        animation: compass 5s linear infinite; 
+    }
+}
+
+@keyframes compass {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+.birds{
+    position: absolute;
+    top: 60px;
+    right: 160px;
+    animation: birds 5s linear infinite; 
+}
+
+@keyframes birds {
+    0% {
+        transform: scale(0.5)
+        
+    }
+    
+    100% {
+        transform: scale(1.2)
+    }
+
+}
+
+
+.video-img{
+    position: relative;
+    img{
+        width: 100%;
+    }
+}
+.video-play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    animation: ripple 2s linear infinite;
+
+    &:hover{
+        color: $white;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 20%), 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%), 0 0 0 60px rgb(255 255 255 / 0%);
+    }
+}
+
