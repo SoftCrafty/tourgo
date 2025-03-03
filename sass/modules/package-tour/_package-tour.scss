@@ -1,8 +1,34 @@
 
+.tour-package{
+    margin-top: 115px;
+}
+
 .package-item{
     border: 1px solid $border-clr;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+
+    .rating{
+        left: -150px;
+        top: 20px;
+        right: unset;
+        transition: all 0.3s;
+    }
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+        .rating{
+            left: 20px;
+        }
+
+        .common-btn{
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
 }
 
 .package-image{
@@ -10,7 +36,81 @@
 
     img{
         width: 100%;
+        transition: all 0.3s;
     }
 }
 
-.package-details{}
+.package-details{
+    padding: 0 20px 40px;
+}
+
+.package-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 a{
+        font-family: $font-teko;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 70px;
+        color: $title-color;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    span{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $text-color;
+    }
+
+}
+.package-location{
+    display: flex;
+    gap: 10px;
+    border: 1px solid $border-clr;
+    border-radius: 6px;
+    width: max-content;
+    padding: 6px 14px;
+
+    i{
+        color: $primary-color;
+    }
+}
+
+.price-book-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $text-color;
+
+    del{
+        margin-right: 5px;
+    }
+
+    .price-value{
+        color: $primary-color;
+    }
+}
+
+.view-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 20px;
+
+    p{
+        width: max-content;
+    }
+}

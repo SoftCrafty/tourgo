@@ -6222,7 +6222,7 @@ body {
   color: rgb(28, 28, 28);
   border: 1px solid rgba(28, 28, 28, 0.14);
   border-radius: 6px;
-  padding: 12px 25px;
+  padding: 10px 25px;
 }
 .common-btn i {
   margin-left: 3px;
@@ -8503,14 +8503,108 @@ body {
   font-size: 18px;
 }
 
-.slide-carousel-wrapper {
-  background-color: #1D92CD;
-  padding: 30px;
+.tour-package {
+  margin-top: 115px;
 }
-.slide-carousel-wrapper .swiper-wrapper {
-  transition-timing-function: linear;
+
+.package-item {
+  border: 1px solid rgba(28, 28, 28, 0.14);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.package-item .rating {
+  left: -150px;
+  top: 20px;
+  right: unset;
+  transition: all 0.3s;
+}
+.package-item:hover img {
+  transform: scale(1.1);
+}
+.package-item:hover .rating {
+  left: 20px;
+}
+.package-item:hover .common-btn {
+  background-color: #1D92CD;
+  color: #ffffff;
+}
+
+.package-image {
+  overflow: hidden;
+}
+.package-image img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.package-details {
+  padding: 0 20px 40px;
+}
+
+.package-name {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.package-name h3 a {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 70px;
+  color: #1A2D6D;
+}
+.package-name h3 a:hover {
+  color: #1D92CD;
+}
+.package-name span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #616161;
+}
+
+.package-location {
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(28, 28, 28, 0.14);
+  border-radius: 6px;
+  width: max-content;
+  padding: 6px 14px;
+}
+.package-location i {
+  color: #1D92CD;
+}
+
+.price-book-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #616161;
+}
+.price del {
+  margin-right: 5px;
+}
+.price .price-value {
+  color: #1D92CD;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  gap: 20px;
+}
+.view-all p {
+  width: max-content;
 }
 
 .breadcrump {
