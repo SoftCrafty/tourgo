@@ -1,0 +1,114 @@
+
+
+
+.banner{
+  background:  
+  url("../../../images/home/banner/banner.png"), 
+  linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 190px 0;
+    background-blend-mode: overlay;
+  
+    &.style-1{
+      .subtitle p{
+        font-family: $font-niconne;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: $white;
+      }
+
+      .banner-title{
+        font-family: $font-teko;
+        font-weight: 600;
+        font-size: 160px;
+        line-height: 80px;
+        color: $white;
+        margin-top: 50px;
+        margin-bottom: 80px;
+      }
+    }
+  } 
+  
+  .banner-btn-group{
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    width: auto;
+
+    button{
+      border: none;
+      color: $text-color;
+
+      i{
+        margin-right: 5px;
+      }
+
+      &.active{
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+  }
+  
+  .banner-search-container{
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    width: max-content;
+
+    .location,
+    .adventure,
+    .date{
+      width: 250px;
+      border: none;
+      
+    }
+
+    .nice-select{
+      border: none;
+      margin-bottom: 0;
+      border-right: 1px solid $border-clr;
+      height: 45px;
+      line-height: 45px; 
+      color: #565256;   
+      font-weight: 500;
+    }
+
+    .date{
+      margin-left: 15px;
+
+      input{
+        &::placeholder{
+          color: #565256;
+          font-weight: 500;
+        }
+        
+      }
+
+      
+    }
+
+    .search-btn{
+      .common-btn{
+        font-weight: 600;
+        color: $white;
+        background-color: $primary-color;
+        padding: 20px 29px;
+        box-shadow: 0px 8px 20px 0px #1D92CD80;
+
+      }
+    }
+    
+
+
+  }

@@ -1,0 +1,71 @@
+
+.explore-dreamland{
+    margin-top: 110px;
+}
+
+.explore-dreamland-item {
+    position: relative;
+    background: linear-gradient(180deg, rgba(26, 45, 109, 0) 0%, #1A2D6D 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    img{
+        width: 100%;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(26, 45, 109, 0) 0%, #1A2D6D 100%);
+    }
+}
+
+.rating{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color-2;
+    padding: 9px;
+    background-color: $white;
+    border-radius: 6px;
+
+    i{
+        color: #FFA121;
+        margin-right: 2px;
+    }
+}
+.location-name{
+    position: absolute;
+    left: 35px;
+    bottom: 40px;
+    
+    h3{
+        font-family: $font-teko;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 57px;
+        color: $white;
+    }
+
+    a{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+        transition: all 0.3s;
+
+        i{
+            margin-left: 5px;
+            position: relative;
+            transition: all 0.5s;
+        }
+    }
+}
+

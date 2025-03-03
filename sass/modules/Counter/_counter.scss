@@ -1,0 +1,187 @@
+
+// counter section
+
+.counter-sec {
+    background-color: $primary-clr;
+    color: white;
+    padding: 60px 0px;
+    
+}
+
+
+.counter-wrapper{
+    .col-md-3{
+        border-right: 1px solid white;
+
+        @include xs{
+            border-right: none;
+            border-bottom: 1px solid white;
+        }
+
+        &:last-child{
+            border-right: none;
+            border-bottom: none;
+        }
+        &:nth-child(2){
+            @include sm{
+                border-right: none;
+               
+            }
+        }
+    }
+}
+.stat {
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: $outfit-font;
+    line-height: 90px;
+    color: white;
+    margin-bottom: 0;
+
+    @include lg{
+        font-size: 54px;
+        line-height: 1.2;
+    }
+    @include md{
+        font-size: 46px;
+    }
+    @include sm{
+        font-size: 40px;
+    }
+    @include xs{
+        font-size: 34px;
+    }
+}
+
+.stat p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $outfit-font;
+    line-height: 30px;
+    color: white;
+
+    @include md{
+        font-size: 18px;
+    }
+    @include xs{
+        font-size: 16px;
+    }
+}
+
+//================= ==================
+// home 2 counter section
+
+.counter-2{
+    background-color: $black-900;
+    padding: 120px 0;
+    margin-top: 150px;
+
+    @include md{
+        padding: 30px 0;
+        margin-top: 80px;
+    }
+
+    .counter-box{
+
+        @include xs{
+            text-align: left;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-right: 15px;
+        }
+        h3{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 90px;
+            line-height: 110px;
+            letter-spacing: 0;
+            color: $white;
+
+            @include lg{
+                font-size: 70px;
+                line-height: 1.2;
+            }
+            @include md{
+                font-size: 54px;
+            }
+            @include sm{
+                font-size: 40px;
+            }
+            @include xs{
+                font-size: 32px;
+            }
+        }
+        &-title{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px;
+            color: $white;
+
+            @include lg{
+                font-size: 26px;
+            }
+            @include md{
+                font-size: 20px;
+                line-height: 1.4;
+            }
+            @include sm{
+                font-size: 18px;
+            }
+        }
+        .desc-text-1{
+            color: $white;
+            width: 410px;
+
+            @include md{
+                width: auto;
+            }
+           
+        }
+    }
+}
+
+.b-r{
+    border-right: 1px solid $gray-200-clr;
+
+    @include xs{
+        border-right: none;
+        border-bottom: 1px solid $gray-200-clr;
+    }
+}
+.b-b{
+    border-bottom: 1px solid $gray-200-clr;
+}
+.b-l{
+    border-left: 1px solid $gray-200-clr;
+}
+
+.pr-60{
+    padding-right: 60px;
+
+    @include md{
+        padding-right: 40px;
+    }
+    @include sm{
+        padding-right: 20px;
+    }
+}
+.pl-60{
+    padding-left: 60px;
+    @include md{
+        padding-left: 40px;
+    }
+    @include sm{
+        padding-left: 20px;
+    }
+}
+.pb-50{
+    padding-bottom: 20px;
+}
+.pt-50{
+    padding-top: 15px;
+}

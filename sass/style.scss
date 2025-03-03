@@ -1,0 +1,110 @@
+/**
+ * Stylesheet:  style.css
+ * Theme:       Lumx - Digital Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	SoftCrafty
+ * 
+ */
+/* Table of contents
+=========================
+1.Preloader
+2.Scrollup
+3.Nav Menu
+4.Slider Section
+5.Info Card
+6.Icon Card
+7.About Image Card
+8.About Info Card
+9.Counter Card
+10.Process Step Card
+11.Testimonial Card
+12.Accordion Card
+13.Client Logo Card
+14.Post Card
+15.Skill Progress Card
+16.Price Card
+17.Call To Action Card
+18.Title Card
+19.Breadcrumb
+20.Pagination's
+21.Project Details Page
+22.Sidebar
+23.Comment List
+24.Comment Form
+25.Team Member
+26.Portfolio
+27.About Page
+28.Contact Page
+29.Service Page
+30.Team Page
+Footer
+
+
+===========================*/
+/* Theme Default CSS */
+@import "variables";
+@import "mixin";
+@import "partials/theme-default";
+@import "partials/default-spacing";
+@import "unittest";
+@import "keyframes";
+
+// font family
+@import "partials/font-family";
+
+// 1.Preloader
+@import "modules/preeloader";
+
+// 2.Scrollup
+@import "partials/scrollup";
+
+// 3.Nav Menu
+
+@import "modules/meanmenu";
+@import "partials/menu-sidebar";
+
+
+// 18.Title Card
+@import "partials/title-section";
+
+// 19.Breadcrumb
+@import "modules/breadcrumb/breadcrumb";
+
+// 22.Sidebar
+@import "partials/sidebar";
+@import "partials/sidebar-two";
+
+
+// common style
+@import "partials/common-style";
+
+// all pages
+@import "modules/header/header"; //
+@import "modules/banner/banner"; //
+@import "modules/section-title/section-title";
+@import "modules/section-heading/section-heading"; //
+@import "modules/trusted-clients/trusted-clients";
+@import "modules/about-us/about-us"; //
+@import "modules/testimonial/testimonial";
+@import "modules/gallery/gallery";
+@import "modules/choose-us/choose-us"; //
+@import "modules/Counter/counter";
+@import "modules/service/service"; //
+@import "modules/blog/blog";
+@import "modules/footer/footer";
+@import "modules/Carousel/caurosel";
+
+
+
+// inner pages
+@import "modules/inner-page/breadcrum";
+@import "modules/inner-page/service-details";
+@import "modules/inner-page/project-details";
+@import "modules/inner-page/faq";
+@import "modules/inner-page/contact";
+@import "modules/inner-page/blog";
+@import "modules/inner-page/blog-details";
+
+
+// Lumx 
+

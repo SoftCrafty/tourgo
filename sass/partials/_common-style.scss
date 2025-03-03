@@ -1,0 +1,83 @@
+
+.common-btn{
+    font-family: $font-inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: $white;
+    color: $black-800;
+    border: 1px solid $border-clr;
+    border-radius: 6px;
+    padding: 12px 25px;
+
+    i{
+        margin-left: 3px;
+    }
+
+    &:hover{
+        background-color: $primary-color;
+        color: $white;
+    }
+    &.active{
+        background-color: $primary-color;
+        color: $white;
+    }
+
+}
+
+.swiper-container{
+    overflow: hidden;
+}
+
+.pagination-container{
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    button{
+        height: 40px;
+        width: 40px;
+        background-color: transparent;
+        color: $text-black;
+        border-radius: 50%;
+        border: 1.5px solid $border-clr;
+
+        &:hover{
+            background-color: $title-color;
+            color: $white;
+        }
+    }
+}
+
+.swiper-indicator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: max-content !important;
+   
+
+    .swiper-pagination-bullet{
+       width: 40px;
+       height: 4px;
+        border-radius: 3px;
+
+        
+    }
+    .swiper-pagination-bullet-active{
+        background: $primary-color;
+    }
+}
+
+.desc-text p{
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: $text-color;
+    margin-bottom: 0;
+}
+
+
+

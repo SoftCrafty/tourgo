@@ -1,0 +1,23 @@
+
+.section-header{
+    margin-bottom: 60px;
+}
+.sub-heading{
+    p{
+        font-family: $font-niconne;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: $text-black;
+        margin-bottom: 18px;
+    }
+}
+
+.section-title{
+    font-family: $font-teko;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 80px;
+    color: $title-color;
+    margin-bottom: 0;
+}

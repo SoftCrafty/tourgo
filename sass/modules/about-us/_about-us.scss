@@ -1,0 +1,72 @@
+
+.about-us{
+    background: url('../../../images/about/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    margin-top: 120px;
+}
+
+.about-us-imgs{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.double-img{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-us-content{
+
+    margin-left: 75px;
+
+    .section-header{
+        margin-bottom: 20px;
+    }
+    .section-title{
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    
+}
+
+.about-item-container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 35px;
+}
+
+.about-item{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    h3 a{
+        font-family: $font-teko;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 80px;
+        color: $title-color;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+.item-icon{
+    height: 64px;
+    width: 64px;
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn-more-btn{
+    margin-top: 60px;
+}

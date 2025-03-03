@@ -1,0 +1,324 @@
+//footer area
+
+.footer-area{
+    background-color: black;
+    padding-top: 150px;
+    position: relative;
+
+    margin-top: 145px;
+
+    @include md{
+        margin-top: 75px;
+        padding-top: 80px;
+    }
+   
+    .col-4{
+        @include xxs{
+            width: 100%;
+        }
+    }
+
+    .mt-75{
+        margin-top: 75px;
+        
+        @include sm{
+            margin-top: 40px;
+        }
+    }
+}
+.footer-widget{
+    border: 1px solid #cccccc5c;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #191919;
+    position: relative;
+
+    @include md{
+        padding-top: 30px;
+    }
+    @include sm{
+        margin-bottom: 15px;
+    }
+
+    h5{
+        font-family: $outfit-font;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+        margin-bottom: 5px;
+
+        @include md{
+            font-size: 18px;
+        }
+    }
+    a{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+    }
+    span{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        height: 65px;
+        width: 65px;
+        border-radius: 100%;
+        background-color: $primary-clr;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        @include md{
+            height: 44px;
+            width: 44px;
+        }
+
+        i{
+            font-size: 25px;
+
+            @include md{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.footer-widget-logo{
+    @include md{
+        text-align: center;
+    }
+    p{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        margin-top: 20px;
+
+        @include sm{
+            margin-bottom: 30px;
+        }
+        
+    }
+}
+
+.footer-widget-links{
+    border-left: 1px solid #cccccc5c;
+    padding-left: 50px;
+
+    @include md{
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    li{
+        line-height: 3;
+        @include sm{
+            line-height: 2;
+        }
+        a{
+            font-family: $urbanist-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: white;
+
+            &:hover{
+                color: $primary-clr;
+            }
+        }
+    }
+}
+
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid $border-clr;
+
+    @include sm{
+        flex-direction: column;
+    }
+
+    p{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        margin-bottom: 0;
+
+        @include md{
+            font-size: 14px;
+        }
+        @include sm{
+            margin-bottom: 0;
+        }
+    }
+
+    ul{
+        display: flex;
+        gap: 40px;
+        margin-bottom: 0;
+
+        @include md{
+            gap: 15px;
+        }
+
+        li{
+            a{
+                font-family: $urbanist-font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: white;
+
+                @include md{
+                    font-size: 14px;
+                }
+    
+                &:hover{
+                    color: $primary-clr;
+                }
+            }
+        }
+    }
+}
+
+.container-wrapper{
+    position: relative;
+    z-index: 2;
+}
+
+.vector{
+    position: absolute;
+    z-index: 0;
+
+    &.vector-1{
+        top: -30px;
+        left: 0px;
+    }
+    &.vector-2{
+        right: 0px;
+        bottom: 0px;
+    }
+    
+}
+
+
+// home 2 footer ===========================
+
+.footer-area.style-2{
+
+    margin-top: -200px;
+    padding-top: 240px;
+
+    @include md{
+        margin-top: -120px;
+        padding-top: 130px;
+    }
+    @include sm{
+        margin-top: -80px;
+        padding-top: 90px;
+    }
+    @include xxs{
+        margin-top: -60px;
+        padding-top: 60px;
+    }
+
+    .footer-widget-contact{
+
+        
+        .address{
+            margin-bottom: 20px;
+            
+            @include md{
+               text-align: center;
+                justify-content: center;
+            }
+        }
+
+        span i{
+            font-size: 20px;
+            color: $primary-clr;
+
+            @include md{
+                font-size: 16px;
+            }
+        }
+        
+        p{
+            font-family: $urbanist-font;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            color: $white;
+
+            @include md{
+                font-size: 16px;
+            }
+
+            span{
+                font-family: $outfit-font;
+                font-weight: 500;
+                line-height: 30px;
+                color: $white;
+
+            }
+        }
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-clr;
+        padding: 40px 0;
+
+        @include xxs{
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    .email-form{
+        border: 1px solid $border-clr;
+        border-radius: 10px;
+        padding: 2px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input{
+            padding: 0 10px;
+            border: none;
+            background-color: transparent;
+            color: $white;
+            font-size: 16px;
+            
+        }
+
+        button{
+            height: 40px;
+            width: 40px;;
+            border: none;
+            background-color: $primary-clr;
+            color: $white;
+            border-radius: 10px;
+
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+}
