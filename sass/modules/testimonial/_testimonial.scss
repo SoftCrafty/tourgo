@@ -1,252 +1,65 @@
 
+
 .testimonial{
-    margin-top: 140px;
-
-    @include md{
-        margin-top: 80px;
-    }
-}
-.testimonial-wrapper{
-    background-color: $bg-clr;
-    padding: 60px;
-
-    @include md{
-        padding: 40px;
-    }
-}
-
-.swiper-container{
-    overflow: hidden;
-}
-.testimonial-slider{
-    overflow: hidden;
+    background-color: $section-bg;
+    margin-top: 120px;
+    padding: 110px 15px 115px;
 }
 
 .testimonial-item{
-    text-align: center;
+    background-color: $white;
+    padding: 44px;
+    box-shadow: 0px 3px 3px 0px #1C1C1C1A;
+    border-radius: 10px;
 
-    .quote{
-        i{
-            color: black;
-            font-size: 30px;
-
-            @include lg{
-                font-size: 26px;
-            }
-            @include md{
-                font-size: 22px;
-            }
-            @include sm{
-                font-size: 20px;
-            }
-        }
+    .desc-text p{
+        font-size: 17px;
     }
-    .ratings-star{
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        margin-top: 10px;
-
-        .rating{
-            font-family: $outfit-font;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 30px;
-            color: black;
-
-            @include md{
-                font-size: 18px;
-            }
-            @include sm{
-                font-size: 16px;
-            }
-        }
-    }
-    .testimonial-text p{
-        font-family: $outfit-font;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-        color: $text-desc-clr;
-        margin-top: 10px;
-
-        @include md{
-            font-size: 18px;
-            line-height: 1.4;
-        }
-        @include sm{
-            font-size: 16px;
-        }
-        @include xs{
-            font-size: 14px;
-        }
-        span{
-            @include sm{
-                display: none;
-            }
-        }
-    }
-
-    .author{
-        .name{
-            font-family: $outfit-font;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 30px;
-            color: black;
-
-            @include md{
-                font-size: 18px;
-                line-height: 1.2;
-            }
-            @include sm{
-                font-size: 16px;
-            }
-            @include xxs{
-                font-size: 14px;
-            }
-        }
-        .title{
-            font-family: $urbanist-font;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: black;
-
-            @include sm{
-                font-size: 14px;
-            }
-        }
-    }
-
 }
 
-.testimonial-authors-slider {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 10px;
-    width: 145px;
-    margin: 0 auto; 
-    position: relative;
-    overflow: hidden;
+.rating-stars{
+    margin-bottom: 24px;
+    i{
+        color: #F59E0B;
+    }
 }
 
-.testimonial-author-img {
-    height: 43px;
-    width: 43px;
-    border-radius: 100%;
-    border: 2px solid transparent; 
-    overflow: hidden;
+.author_colon{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 5px;
+    margin-top: 32px;
 }
 
-  .testimonial-authors-slider .slick-center {
-    border: 2px solid $primary-clr !important;
-    width: 43px !important;
-    height: 43px;
+.author{
     display: flex;
-    justify-content: center;
+    gap: 14px;
     align-items: center;
 
-  }
-  .testimonial-authors-slider .slick-active{
-    width: 43px !important;
-  }
-
-// home -2 testimonial ====================
-
-.h2-testimonial-wrapper{
-
-    margin-top: -230px;
-    position: relative;
-
-    @include nesthub(){
-        margin-top: -130px;
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
     }
-    @include xxs{
-        margin-top: -60px;
+}
+
+.author-name{
+    h5{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: $title-color;
     }
-
-    .main-img{
-        width: 100%;
-
-        @include md{
-           min-height: 600px;
-        }
-        @include sm{
-           min-height: 400px;
-        }
-        @include xxs{
-            min-height: 300px;
-        }
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text-color;
+        margin-bottom: 0;
     }
+}
 
-    .testimonial-card{
-        max-width: 550px;
-        background-color: #EDFAF2;
-        padding: 30px 40px;
-        border-radius: 10px;
-        position: absolute;
-        left: 200px;
-        bottom: 160px;
-
-        @include lg{
-            padding: 25px 30px;
-            left: 140px;
-            bottom: 80px;
-        }
-
-        @include nesthub{
-            bottom: 50px;
-            left: 120px;
-        }
-
-        @include md{
-            max-width: 480px;
-            left: 50px;
-            bottom: 50px;
-        }
-        @include sm{
-            position: relative;
-            left: 0;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: -50px;
-        }
-        @include xxs{
-            margin-top: -20px;
-        }
-
-    }
-    .testimonial-item{
-        text-align: left;
-
-        .ratings-star{
-            justify-content: left;
-        }
-        .testimonial-text p{
-            text-align: left;
-        }
-
-        .author{
-            display: flex;
-            gap: 15px;
-            align-items: center;
-
-            img{
-                width: 49px;
-                height: 49px;
-                border-radius: 50%;
-
-            }
-            .title{
-                margin-bottom: 0;
-            }
-        }
-    }
+.qutation i{
+    color: $section-bg;
+    font-size: 50px;
 }

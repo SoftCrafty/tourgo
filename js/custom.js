@@ -102,7 +102,45 @@
         },
       });
 
-
+      // home 1 testimonial slider
+      const testimonialSlider = new Swiper('.h1-testimonial-slider', {
+        loop: true, 
+        autoplay: true,
+        freeMode: true,
+        spaceBetween: 24,
+        slidesPerView: 3, 
+        pagination: {
+          el: ".swiper-indicator",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".right-t-slide",
+          prevEl: ".left-t-slide",
+        },
+        breakpoints: {
+          0: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+          },
+          480: {
+              centeredSlides: true,
+              spaceBetween: 15,
+              slidesPerView: 1.5,
+          },
+          768: {
+              spaceBetween: 15,
+              slidesPerView: 2,
+          },
+          992: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+          },
+          1400: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+          }
+        },
+      });
 
 
 
