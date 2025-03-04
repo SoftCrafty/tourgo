@@ -7505,137 +7505,81 @@ body {
 }
 
 .blog-section {
-  margin-top: 150px;
-}
-@media only screen and (max-width: 991px) {
-  .blog-section {
-    margin-top: 80px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .blog-section.style-2 {
-    margin-top: 25px;
-  }
-}
-.blog-section.style-2 .blog-item {
-  padding: 0;
-  overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.05) 0px 1px 2px 0px;
-}
-.blog-section.style-2 .blog-item:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
-}
-.blog-section.style-2 .blog-item-img {
-  overflow: hidden;
-  border-radius: 0;
-}
-.blog-section.style-2 .blog-item-img img {
-  border-radius: 0;
-}
-.blog-section.style-2 .blog-item-img button {
-  left: 56%;
-  top: 75%;
-}
-.blog-section.style-2 .blog-item .blog-item-content {
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-.blog-section.style-2 .blog-item .blog-item-content .read-more-btn {
-  margin-top: 15px;
+  margin-top: 110px;
 }
 
 .blog-item {
-  border: 1px solid #CCCCCC;
-  padding: 35px;
+  border: 1px solid rgba(28, 28, 28, 0.14);
   border-radius: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
-  transition: all 0.4s linear 0s;
-}
-.blog-item-img {
-  position: relative;
-}
-.blog-item-img img {
-  width: 100%;
-  border-radius: 10px;
-  transition: all 0.4s linear 0s;
-}
-.blog-item-img button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: white;
-  padding: 5px 20px;
-  border-radius: 10px;
-  background-color: #47CD7D;
-  cursor: default;
-}
-@media only screen and (max-width: 1199px) {
-  .blog-item-img button {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .blog-item-img button {
-    font-size: 16px;
-    padding: 0 10px;
-  }
+  overflow: hidden;
+  transition: all 0.3s;
 }
 .blog-item:hover {
-  box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 20px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .blog-item:hover img {
   transform: scale(1.1);
 }
-.blog-item .blog-item-content {
-  margin-top: 20px;
+.blog-item:hover .common-btn {
+  background-color: #1D92CD;
+  color: #ffffff;
 }
-.blog-item .blog-item-content h2 {
-  font-family: "Outfit", sans-serif;
+
+.see-articles {
+  margin-top: 110px;
+}
+
+.blog-content {
+  padding: 30px 30px 70px;
+}
+
+.blog-date-time {
+  display: flex;
+  align-items: center;
+}
+.blog-date-time p {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: black;
-  max-width: 240px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #616161;
+  margin-bottom: 0;
+}
+.blog-date-time p .dot {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #1D92CD;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.blog-title {
   margin-top: 5px;
 }
-@media only screen and (max-width: 1199px) {
-  .blog-item .blog-item-content h2 {
-    font-size: 18px;
-  }
-  .blog-item .blog-item-content h2 br {
-    display: none;
-  }
+.blog-title h3 {
+  line-height: 30px;
 }
-.blog-item .blog-item-content h2:hover a {
-  color: #47CD7D;
+.blog-title h3 a {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #1A2D6D;
+  transition: all 0.3s;
 }
-.blog-item .blog-item-content .read-more-btn {
-  border: none;
-  padding: 0;
-  margin-top: 25px;
+.blog-title h3 a:hover {
+  color: #1D92CD;
 }
 
-.blog-date i {
-  color: #47CD7D;
-  font-size: 16px;
-}
-.blog-date span {
-  font-family: "Urbanist", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: black;
-  margin-left: 5px;
-}
-
-.swiper-container {
+.blog-image {
   overflow: hidden;
+}
+.blog-image a {
+  display: block;
+}
+.blog-image img {
+  width: 100%;
+  transition: all 0.3s;
 }
 
 .footer-area {
