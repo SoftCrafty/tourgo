@@ -325,6 +325,15 @@
       selector: '.my-video-links',
     });
 
+    // for img gallary
+    new VenoBox({
+      selector: '.my-image-links',
+      numeration: true,
+      infinigall: true,
+      share: true,
+      spinner: 'rotating-plane'
+   });
+
     /*
     //         Jquery Wow Js
     //         ============================*/
