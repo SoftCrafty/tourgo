@@ -1,0 +1,117 @@
+
+
+.cta{
+    background-color: #1D92CD ;
+    padding: 115px 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+}
+
+.cta-title{
+    .section-title{
+        color: $white;
+        margin-left: 160px;
+    }
+}
+
+.cta-btn{
+    background-color: $white;
+    color: $title-color;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 34px ;
+    border-radius: 6px;
+    border: 1px solid transparent;
+
+    i{
+        margin-right: 7px;  
+        font-size: 16px; 
+    }
+
+    &.active{
+        background-color: $title-color;
+        color: $white;
+
+        &:hover{
+            background-color: $white;
+            color: $title-color;
+            border-color: $title-color;
+        }
+    }
+
+    &:hover{
+        background-color: $title-color;
+        color: $white;
+    }
+}
+
+.cta-form {
+    padding-left: 60px;
+
+    form{
+        background-color: $white;
+        padding: 5px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input{
+            background-color: transparent;
+            outline: none;
+            width: 100%;
+            padding: 2px 12px;
+
+            &::placeholder{
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.dowload-store{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.shape-1{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.shape-2{
+    position: absolute;
+    top: 55px;
+    left: 52%;
+    animation: birds 8s linear infinite ;
+}
+.shape-3{
+    position: absolute;
+    bottom: -80px;
+    right: 200px;
+    animation: plane 13s linear infinite ;
+}
+
+@keyframes plane {
+    0% {
+        bottom: -80px;
+        right: 200px;
+    }
+    50% {
+        bottom: 30%;
+        right: 120px;
+        transform: rotate(-45deg);
+    }
+    75% {
+        bottom: 60%;
+        right: 150px;
+        transform: rotate(-52deg);
+    }
+    100% {
+        bottom: 100%;
+        right: 180px;
+        transform: rotate(-60deg);
+    }
+}
