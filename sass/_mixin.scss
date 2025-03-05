@@ -161,6 +161,12 @@
     @content;
   }
 }
+// double Extra large devices
+@mixin xxl {
+  @media only screen and (max-width: 1599px) {
+    @content;
+  }
+}
 
 // Nest Hub Device
 @mixin nesthub() {

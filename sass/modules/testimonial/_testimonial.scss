@@ -4,6 +4,14 @@
     background-color: $section-bg;
     margin-top: 120px;
     padding: 110px 15px 115px;
+
+    @include md{
+        margin-top: 60px;
+        padding: 55px 15px 56px;
+    }
+    @include sm{
+        padding-bottom: 60px;
+    }
 }
 
 .testimonial-item{
@@ -14,11 +22,23 @@
 
     .desc-text p{
         font-size: 17px;
+
+        @include lg{
+            font-size: 16px;
+        }
+    }
+
+    @include lg{
+        padding: 25px;
+        
     }
 }
 
 .rating-stars{
     margin-bottom: 24px;
+    @include sm{
+        margin-bottom: 17px;
+    }
     i{
         color: #F59E0B;
     }
@@ -29,6 +49,10 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 32px;
+
+    @include sm{
+        margin-top: 25px;
+    }
 }
 
 .author{
@@ -62,4 +86,8 @@
 .qutation i{
     color: $section-bg;
     font-size: 50px;
+
+    @include lg{
+        font-size: 40px;
+    }
 }

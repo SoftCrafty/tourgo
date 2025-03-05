@@ -1,6 +1,10 @@
 
 .explore-dreamland{
     margin-top: 110px;
+
+    @include md{
+        margin-top: 55px;
+    }
 }
 
 .explore-dreamland-item {
@@ -52,6 +56,18 @@
         font-size: 40px;
         line-height: 57px;
         color: $white;
+
+        @include md{
+            font-size: 34px;
+            line-height: 1;
+        }
+
+        @include sm{
+            font-size: 32px;
+        }
+        @include xs{
+            font-size: 30px;
+        }
     }
 
     a{

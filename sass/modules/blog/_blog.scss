@@ -1,6 +1,10 @@
 
 .blog-section{
     margin-top: 110px;
+
+    @include md{
+        margin-top: 55px;
+    }
 }
 
 .blog-item{
@@ -25,9 +29,22 @@
 
 .see-articles{
     margin-top: 110px;
+    @include sm{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        align-self: end;
+    }
 }
 .blog-content{
     padding: 30px 30px 70px;
+
+    @include xl{
+        padding: 30px 24px 52px;
+    }
+
+    @include xs{
+        padding: 30px 24px 45px;
+    }
 }
 
 .blog-date-time{

@@ -1,6 +1,10 @@
 
 .section-header{
     margin-bottom: 60px;
+
+    @include md{
+        margin-bottom: 40px;
+    }
 }
 .sub-heading{
     p{
@@ -10,6 +14,28 @@
         line-height: 48px;
         color: $text-black;
         margin-bottom: 18px;
+
+        @include lg{
+            font-size: 38px;
+            line-height: 1.3;
+        }
+        @include md{
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        @include sm{
+            font-size: 32px;
+            line-height: 1;
+        }
+        @include xs{
+            font-size: 28px;
+            
+        }
+        @include xxs{
+            font-size: 26px;
+            
+        }
     }
 }
 
@@ -20,4 +46,23 @@
     line-height: 80px;
     color: $title-color;
     margin-bottom: 0;
+
+    @include lg{
+        font-size: 60px;
+        line-height: 1.2;
+    }
+    @include md{
+        font-size: 54px;
+        line-height: 1.1;
+    }
+
+    @include sm{
+        font-size: 42px;
+    }
+    @include xs{
+        font-size: 34px;
+    }
+    @include xxs{
+        font-size: 32px;
+    }
 }

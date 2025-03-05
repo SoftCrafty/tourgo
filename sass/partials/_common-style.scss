@@ -36,6 +36,10 @@
     justify-content: center;
     margin-bottom: 5px;
 
+    @include sm{
+        display: none !important;
+    }
+
     button{
         height: 40px;
         width: 40px;
@@ -54,6 +58,7 @@
             color: $white;
         }
 
+        
     }
 }
 
@@ -64,11 +69,13 @@
     gap: 10px;
     width: max-content !important;
    
-
+    @include md{
+        display: none ;
+    }
     .swiper-pagination-bullet{
        width: 40px;
        height: 4px;
-        border-radius: 3px;
+    border-radius: 3px;
 
         
     }

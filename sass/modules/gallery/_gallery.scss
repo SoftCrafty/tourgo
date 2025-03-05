@@ -2,12 +2,28 @@
 
 .gallary{
     margin-top: 110px;
+
+    @include md{
+        margin-top: 55px;
+    }
 }
 
 .gallary-section-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include sm{
+        flex-direction: column;
+    }
+
+    .see-trips{
+        @include sm{
+            align-self: flex-end;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+    }
 }
 
 .gallary-container{
@@ -15,6 +31,17 @@
     gap: 20px;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+
+    @include xl{
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+    @include md{
+        grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+    }
+
+    @include sm{
+        gap: 15px;
+    }
 
     .big-img{
         grid-column: span 3;

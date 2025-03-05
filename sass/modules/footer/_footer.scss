@@ -3,12 +3,23 @@
 .footer-area{
     background-color: $footer-bg;
     padding: 120px 0 0;
+
+    @include md{
+        padding: 60px 0 0;
+    }
 }
 
 .footer-widget{
+    @include xs{
+        //text-align: center;
+    }
     .desc-text{
         margin-top: 30px;
         padding-right: 20px;
+
+        @include lg{
+            padding-right: 0;
+        }
 
         p{
             color: $footer-text;
@@ -22,6 +33,14 @@
     align-items: center;
     gap: 12px;
     margin-top: 38px;
+
+    @include lg{
+        margin-top: 30px;
+    }
+
+    @include xs{
+        //justify-content: center;
+    }
 
     a{
         height: 40px;
@@ -49,9 +68,17 @@
     line-height: 36px;
     color: $white;
     margin-bottom: 20px;
+
+    @include lg{
+        font-size: 28px;
+    }
 }
 .widget_nav_menu{
     margin-top: 16px;
+
+    @include xs{
+        
+    }
 
     ul > li{
         list-style: disc;
@@ -64,6 +91,10 @@
             &:hover{
                 color: $white;
             }
+
+            @include xl{
+                line-height: 2;
+            }
         }
     }
 }
@@ -72,7 +103,11 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 7px;
+
+    @include lg{
+        margin-bottom: 0px;
+    }
 
     &:last-child{
         margin-bottom: 0;
@@ -120,6 +155,15 @@
     border-top: 1px solid #FFFFFF1A;
     margin-top: 80px;
     padding: 30px 0;
+
+    @include md{
+        margin-top: 60px;
+    }
+
+    @include xs{
+        flex-direction: column;
+        gap: 10px;
+    }
     p{
         font-weight: 500;
         font-size: 16px;

@@ -1,6 +1,10 @@
 
 .tour-package{
     margin-top: 115px;
+
+    @include md{
+        margin-top: 55px;
+    }
 }
 
 .package-item{
@@ -42,6 +46,13 @@
 
 .package-details{
     padding: 0 20px 40px;
+
+    @include xl{
+        padding: 0 15px 40px ;
+    }
+    @include lg{
+        padding: 0 20px 40px ;
+    }
 }
 
 .package-name{
@@ -58,6 +69,10 @@
 
         &:hover{
             color: $primary-color;
+        }
+
+        @include xl{
+            font-size: 26px;
         }
     }
     span{
@@ -86,6 +101,20 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    flex-wrap: wrap;
+
+    @include xl{
+        margin-top: 25px;
+    }
+
+    .book-btn{
+        @include xl{
+            margin-top: 20px;
+        }
+        @include lg{
+            margin-top: 0px;
+        }
+    }
 }
 
 .price{
@@ -110,7 +139,18 @@
     margin-top: 70px;
     gap: 20px;
 
+    @include md{
+        margin-top: 40px;
+    }
+    @include sm{
+        flex-direction: column;
+    }
+
     p{
-        width: max-content;
+        width: auto;
+       
+        @include xxs{
+            text-align: center;
+        }
     }
 }

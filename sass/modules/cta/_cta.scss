@@ -6,12 +6,41 @@
     position: relative;
     overflow: hidden;
     margin-top: 120px;
+
+    @include md{
+        padding: 55px 0;
+        margin-top: 60px;
+    }
 }
 
 .cta-title{
     .section-title{
         color: $white;
         margin-left: 160px;
+
+        @include xl{
+            font-size: 70px;
+        }
+
+        @include lg{
+            margin-left: 60px;
+            font-size: 52px;
+        }
+
+        @include md{
+            margin-left: 0;
+        }
+        @include sm{
+            font-size: 44px;
+            text-align: center;
+        }
+
+        @include xs{
+            font-size: 36px;
+        }
+        @include xxs{
+            font-size: 34px;
+        }
     }
 }
 
@@ -23,6 +52,10 @@
     padding: 12px 34px ;
     border-radius: 6px;
     border: 1px solid transparent;
+
+    @include xxs{
+        padding: 10px 28px ;
+    }
 
     i{
         margin-right: 7px;  
@@ -48,6 +81,14 @@
 
 .cta-form {
     padding-left: 60px;
+    z-index: 5;
+    position: relative;
+
+    @include md{
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
 
     form{
         background-color: $white;
@@ -74,24 +115,51 @@
     display: flex;
     margin-top: 30px;
     gap: 10px;
+
+    @include md{
+        justify-content: center;
+    }
 }
 
 .shape-1{
     position: absolute;
     bottom: 0;
     left: 200px;
+
+    @include xxl{
+        left: 10px;
+
+    }
+
+    @include lg{
+        display: none;
+    }
+
+    img{
+       @include xxl{
+        max-width: 80%;
+       }
+    }
 }
 .shape-2{
     position: absolute;
     top: 55px;
     left: 52%;
     animation: birds 8s linear infinite ;
+
+    @include md{
+        display: none;
+    }
 }
 .shape-3{
     position: absolute;
     bottom: -80px;
     right: 200px;
     animation: plane 13s linear infinite ;
+
+    @include xs{
+        display: none;
+    }
 }
 
 @keyframes plane {

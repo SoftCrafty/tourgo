@@ -1,6 +1,10 @@
 
 .choose-us{
     margin-top: 110px;
+
+    @include md{
+        margin-top: 55px;
+    }
 }
 
 .choose-us-item{
@@ -10,11 +14,30 @@
     position: relative;
     transition: all 0.3s;
 
+    @include xl{
+        padding: 30px 25px;
+    }
 
     &:hover{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         .choose-us-img{
             left: 32%;
+
+            @include lg{
+                left: 40%;
+            }
+            @include md{
+                left: 36%;
+            }
+            @include sm{
+                left: 32%;
+            }
+            @include xs{
+                left: 40%;
+            }
+            @include xxs{
+                left: 38%;
+            }
         }
     }
 }
@@ -41,6 +64,9 @@
 
 .choose-us-content{
     margin-top: 35px;
+    @include lg{
+        margin-top: 15px;
+    }
     h3 a{
         font-family: $font-teko;
         font-weight: 500;
@@ -51,11 +77,23 @@
         i{
             font-size: 24px;
             margin-left: 3px;
+
+            @include xl{
+                font-size: 20px;
+            }
+            @include lg{
+                font-size: 18px;
+            }
         }
 
         &:hover{
             color: $primary-color;
         }
+
+        @include xl{
+            font-size: 26px;;
+        }
+        
     }
     p{
         font-weight: 500;
