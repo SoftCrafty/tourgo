@@ -47,6 +47,10 @@
     color: $title-color;
     margin-bottom: 0;
 
+    &.style-2{
+        color: $text-black;
+    }
+
     @include lg{
         font-size: 60px;
         line-height: 1.2;

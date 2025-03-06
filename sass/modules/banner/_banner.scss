@@ -2,20 +2,23 @@
 
 
 .banner{
-  background:  
-  url("../../images/home/banner/banner.png"), 
-  linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 190px 0;
-    background-blend-mode: overlay;
-
-    @include md{
-      padding: 100px 0;
-    }
-  
+ 
     &.style-1{
+
+      background:  
+      url("../../images/home/banner/banner.png"), 
+      linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 190px 0;
+        background-blend-mode: overlay;
+    
+        @include md{
+          padding: 100px 0;
+        }
+      }
+
       .subtitle p{
         font-family: $font-niconne;
         font-weight: 400;
@@ -78,8 +81,86 @@
           font-size: 65px;
         }
       }
-    }
-  } 
+
+      &.style-2{
+        background:  
+          url("../../../images/home/banner/h2-banner.png"), linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          padding: 110px 0 170px;
+          background-blend-mode: overlay;
+      
+          @include lg{
+            padding-bottom: 120px;
+          }
+          @include md{
+            padding: 100px 0;
+          }
+
+          @include xs{
+            padding: 80px 0;
+          }
+
+          .banner-btn-group{
+            border-radius: 10px;
+            gap: 2px;
+
+            .common-btn:last-child{
+              @include xs{
+                display: none;
+              }
+            }
+          }
+
+          .banner-search-container{
+            margin-top: 5px;
+
+            @include md{
+              padding: 5px 77px;
+            }
+            @include sm{
+              padding: 5px 8px;
+            }
+            @include xs{
+              padding: 5px 26px 15px;
+            }
+          }
+
+          .subtitle p{
+            font-size: 30px;
+
+            @include xxs{
+              font-size: 24px;
+            }
+          }
+          .banner-title{
+            line-height: 160px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+            @include xl{
+              line-height: 1;
+            }
+
+            @include md{
+              font-size: 90px;
+            }
+
+            @include sm{
+              font-size: 64px;
+            }
+            @include xs{
+              font-size: 54px;
+            }
+            @include xxs{
+              font-size: 48px;
+            }
+
+          }
+      
+      }
+} 
   
   .banner-btn-group{
     
@@ -190,7 +271,8 @@
       margin: -6px auto;
       padding: 5px 35px 20px;
     }
-    
+  
+  
 
 
   }

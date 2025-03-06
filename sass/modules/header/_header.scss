@@ -49,6 +49,9 @@
 .sticky .standard-logo{
   display: none;
 }
+.sticky .header-top{
+  display: none;
+}
 
 .header-menu-area{
     position: relative;
@@ -229,6 +232,7 @@
 
                                 &:hover{
                                   padding-left: 30px;
+                                  color: $black-900;
                                  
                                 }
                                @include sm{
@@ -461,7 +465,7 @@
 
 
     &:hover{
-      background-color: $primary-clr;
+      background-color: $primary-color;
       color: $white;
     }
 
@@ -570,3 +574,79 @@
 
 }
   
+// home 2 header -top
+
+.header-top{
+  background-color: $text-black;
+  padding: 13px 0;
+}
+
+.header-top-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-contact-info{
+  ul{
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li{
+      padding-right: 15px;
+      border-right: 1px solid $text-color;
+
+      &:last-child{
+        padding-right: 0;
+        padding-left: 15px;
+        border-right: none;
+      }
+
+      i{
+        margin-right: 5px;
+        color: $primary-color;
+      }
+      a{
+        font-weight: 500;
+        font-size: 15px;
+        color: $gray-1;
+
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.header-top-menu{
+  &.menu{
+    .main-menu{
+
+      @include md{
+        display: none;
+      }
+      ul{
+        li{
+          a{
+            color: $white !important;
+
+            &::before{
+              content: "\f107" !important;
+              right: 0 !important;
+            }
+          }
+
+          &.dropdown{
+            ul>li{
+              a{
+                color: $black-900 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
