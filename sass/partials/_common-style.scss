@@ -95,3 +95,31 @@
 
 
 
+
+.title-name {
+    
+    line-height: 1;
+
+    a{
+        font-family: $font-teko;
+        font-weight: 500;
+        font-size: 40px;
+        color: $text-black;
+
+        &:hover{
+            color: $primary-color;
+        }
+
+        @include xl{
+            font-size: 34px;
+        }
+        @include lg{
+            font-size: 30px;
+        }
+        @include sm{
+            font-size: 28px;
+        }
+    }
+}
+
+

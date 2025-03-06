@@ -154,3 +154,160 @@
         }
     }
 }
+
+
+// h2 limited time offer section
+
+.limited-time{
+    margin-top: 85px;
+
+    @include md{
+        margin-top: 22px;
+    }
+
+    .explore-more{
+        @include sm{
+            align-self: flex-end;
+        }
+    }
+}
+
+.limited-time-item{
+    border: 1px solid #1C1C1C24;
+    border-radius: 10px ;
+    background-color: $white;
+    padding: 5px;
+    display: flex;
+    height: 100%;
+    gap: 30px;
+    align-items: center;
+    transition: all 0.3s linear;
+
+    @include xxs{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &:hover{
+        
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        img{
+            transform: scale(1.05);
+        }
+
+        .common-btn{
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+
+    .package-location{
+        @include xl{
+            display: none;
+        }
+
+        @include md{
+            display: flex;
+        }
+
+        @include sm{
+            display: none;
+        }
+    }
+}
+
+.limited-time-item-img{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+    @include xxs{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s linear;
+    }
+}
+
+.limited-time-item-content{
+    padding: 5px 0;
+
+    @include xl{
+        padding: 5px 0 20px ;
+    }
+
+    @include xxs{
+        padding-left: 20px;
+    }
+}
+
+.offer-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    @include xl{
+        flex-direction: column;
+        align-items: start;
+    }
+    @include lg{
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    @include md{
+        flex-direction: row;
+        align-items: center;
+    }
+    @include sm{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    h3 a{
+        font-size: 30px;
+
+        @include lg{
+            font-size: 28px;
+        }
+        @include xs{
+            font-size: 26px;
+        }
+    }
+}
+
+.text-book-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+
+    @include xl{
+        margin-top: 10px;
+    }
+
+    @include lg{
+        gap: 25px;
+    }
+
+    p{
+        margin-bottom: 0;
+        width: auto;
+
+        
+        br{
+            @include xxs{
+                display: none;
+            }
+        }
+    }
+}
