@@ -308,41 +308,6 @@
   
     }
 
-  &.style-2{
-    background-color: transparent;
-    
-    .menu{
-      .main-menu {
-
-        @include md{
-          background-color: $white;
-        }
-
-        ul{
-          li{
-
-            @include lg{
-              margin-right: 15px;
-            }
-            a{
-              color: black;
-            }
-          }
-        }
-      }
-
-      .menu-right{
-          .menu-btn{
-            display: none;
-            @include md{
-              display: inline-block;
-            }
-          }
-         
-      }
-
-    }
-  }
 
   .toggle-btn{
     @include md{
@@ -473,29 +438,7 @@
 
 
 
-.sidebar{
 
-      position: fixed;
-      top: 0px;
-      width: 350px;
-      right: 0px;
-      background-color: $white;
-      height: 100%;
-      backdrop-filter: blur(32px);
-      --webkit-backdrop-filter: blur(32px);
-      transform: translateX(100%);
-      transition: all 0.3s ease ;
-      z-index: 99999;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  
-      &.show{
-        transform: translateX(0);
-      }
-
-      @include md{
-        display: none;
-      }
-}
 .sidebar-content{
   padding: 20px 15px 0 30px;
 
@@ -626,6 +569,10 @@
 
       @include md{
         display: none;
+
+        &.show{
+          display: none;
+        }
       }
       ul{
         li{

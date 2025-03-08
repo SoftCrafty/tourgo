@@ -142,6 +142,40 @@
           }
         },
       });
+      
+      // home 2 blog slider
+      const h2BlogSlider = new Swiper('.h2-blog-slider', {
+        loop: true, 
+        autoplay: true,
+        spaceBetween: 24,
+        slidesPerView: 2, 
+        pagination: {
+          el: ".swiper-indicator",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".next-slide",
+          prevEl: ".prev-slide",
+        },
+        breakpoints: {
+          0: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+            },
+          577: {
+            slidesPerView: 1.5,
+            centeredSlides: true,
+          },
+          768: {
+              spaceBetween: 15,
+              slidesPerView: 2,
+          },
+          992: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+        },
+      });
 
 
 
