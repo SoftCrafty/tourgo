@@ -7499,6 +7499,7 @@ body {
     padding: 15px 0;
   }
 }
+
 .place h3 a {
   font-family: "Teko", sans-serif;
   font-weight: 500;
@@ -7576,6 +7577,125 @@ body {
 .see-more .common-btn:hover {
   background-color: transparent;
   color: #1D92CD;
+}
+
+.popular-destination {
+  margin-top: 135px;
+}
+
+.popular-destination-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  bottom: 0;
+  transition: all 0.3s linear;
+}
+.popular-destination-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  bottom: 5px;
+}
+.popular-destination-item:hover .shape1 {
+  top: 130%;
+  opacity: 1;
+}
+.popular-destination-item:hover .shape2 {
+  bottom: 130%;
+  opacity: 1;
+}
+.popular-destination-item img {
+  width: 100%;
+}
+.popular-destination-item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bookmark-icon {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #1C1C1C;
+  font-size: 20px;
+  align-self: flex-end;
+}
+.bookmark-icon:hover {
+  color: #ffffff;
+  background-color: #1D92CD;
+}
+
+.popular-destination-content .popular-destination-name {
+  margin-top: 12px;
+  margin-bottom: 17px;
+}
+.popular-destination-content .title-name a {
+  color: #ffffff;
+}
+.popular-destination-content .package-location {
+  background: rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+}
+.popular-destination-content .package-location p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.popular-destination-content .price-book-btn .price .price-value {
+  color: #ffffff;
+}
+.popular-destination-content .price-book-btn .common-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+.popular-destination-content .price-book-btn .common-btn:hover {
+  background-color: #1D92CD;
+  color: #ffffff;
+}
+
+.destination-rating i {
+  color: #FDCC02;
+}
+.destination-rating span {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.shape1 {
+  position: absolute;
+  height: 25px;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.2392156863);
+  backdrop-filter: blur(2px);
+  top: 45%;
+  left: 0;
+  transform: skew(10deg, -33deg);
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.shape2 {
+  position: absolute;
+  height: 25px;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.2392156863);
+  backdrop-filter: blur(2px);
+  bottom: 45%;
+  right: 0;
+  transform: skew(10deg, -33deg);
+  transition: all 0.3s linear;
+  opacity: 0;
 }
 
 .about-us {
@@ -7730,7 +7850,7 @@ body {
 }
 
 .about-us-2 {
-  margin-top: 120px;
+  margin-top: 115px;
   position: relative;
 }
 
@@ -8337,11 +8457,11 @@ body {
 }
 
 .top-destination {
-  margin-top: 110px;
+  margin-top: 130px;
 }
 @media only screen and (max-width: 991px) {
   .top-destination {
-    margin-top: 55px;
+    margin-top: 65px;
   }
 }
 
@@ -8875,7 +8995,7 @@ body {
 }
 
 .limited-time {
-  margin-top: 85px;
+  margin-top: 125px;
 }
 @media only screen and (max-width: 991px) {
   .limited-time {

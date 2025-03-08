@@ -39,10 +39,7 @@
         padding: 15px 0;
     }
 
-    @include md{
-        //margin-left: 10px;
-       
-    }
+    
 }
 .place{
     h3 a{
@@ -117,3 +114,144 @@
         }
     }
 }
+
+// home 2 top destination
+
+.popular-destination{
+    margin-top: 135px;
+}
+
+.popular-destination-item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    bottom: 0;
+    transition: all 0.3s linear;
+    
+    &:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        bottom: 5px;
+
+        .shape1{
+            top: 130%;
+            opacity: 1;
+         }
+         .shape2{
+             bottom: 130%;
+             opacity: 1;
+        }
+    }
+
+
+    img{
+        width: 100%;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%);
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.bookmark-icon{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: $white;
+    color: $text-black;
+    font-size: 20px;
+    align-self: flex-end;
+    
+    &:hover{
+        color: $white;
+        background-color: $primary-color;
+    }
+}
+.popular-destination-content{
+
+    .popular-destination-name{
+        margin-top: 12px;
+        margin-bottom: 17px;
+    }
+    .title-name a{
+        color: $white;
+
+    }
+
+    .package-location{
+        background: #FFFFFF24;
+        backdrop-filter: blur(10px);
+        color: $white;
+        p{
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+
+    .price-book-btn{
+
+        .price{
+            .price-value{
+                color: $white;
+            }
+        }
+        .common-btn{
+            background-color: transparent;
+            color: $white;
+            border: 1.5px solid #FFFFFF33;
+            
+            &:hover{
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+
+}
+.destination-rating{
+ 
+    i{
+        color: #FDCC02;
+    }
+    span{
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+        color: $white;
+        margin-left: 5px;
+    }
+}
+
+.shape1{
+    position: absolute;
+    height: 25px;
+    width: 350px;
+    background: #ffffff3d;
+    backdrop-filter: blur(2px);
+    top: 45%;
+    left: 0;
+    transform: skew(10deg, -33deg);
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+.shape2{
+    position: absolute;
+    height: 25px;
+    width: 350px;
+    background: #ffffff3d;
+    backdrop-filter: blur(2px);
+    bottom: 45%;
+    right: 0;
+    transform: skew(10deg, -33deg);
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
