@@ -91,3 +91,164 @@
         font-size: 40px;
     }
 }
+
+// home 2 testimonial ========
+
+.testimonial-2{
+    position: relative;
+    margin-top: 135px;
+
+    @include md{
+        margin-top: 65px;
+    }
+
+    .section-header{
+        margin-bottom: 30px;
+
+        @include xl{
+            text-align: center;
+        }
+    }
+}
+
+.swiper-slider-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 30%;
+    height: 100%;
+    padding-right: 12px;
+
+    @include xxl{
+        left: 35%;
+    }
+
+    @include xl{
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        margin-top: 60px;
+        padding-right: 0;
+    }
+    @include lg{
+        margin-top: 40px;
+    }
+    @include xs{
+        margin-top: 0;
+    }
+}
+
+.testimonial-2__item{
+
+    position: relative;
+    border: 1px solid $border-clr;
+    border-radius: 10px;
+    background-color: $white;
+    display: flex;
+
+    @include sm{
+        flex-direction: column-reverse;
+    }
+
+}
+
+.author-2{
+   
+   transform: rotate(-90deg);
+    position: absolute;
+    left: -45px;
+    top: 15px;
+    height: 100%;
+
+    img{
+        border-radius: 10px;
+    }
+
+    @include sm{
+        transform: rotate(0deg);
+        position: relative;
+        left: unset;
+        top: unset;
+        height: auto;
+        padding: 18px 25px;
+
+    }
+    
+}
+.testimonial-content{
+   
+    border-left: 1px solid $border-clr;
+    
+    margin-left: 100px;
+    
+    position: relative;
+    padding: 65px 40px;
+
+    @include xxl{
+        padding: 40px 30px;
+    }
+    @include xl{
+        padding: 60px 40px;
+    }
+    @include lg{
+        padding: 40px 30px;
+    }
+
+    @include sm{
+        border-left: none;
+        margin-left: 0;
+        border-bottom: 1px solid $border-clr;
+        padding: 20px 25px;
+    }
+
+    .rating-stars{
+        margin-bottom: 15px;
+
+        span{
+            i{
+                color: $text-black;
+            }
+
+            &:last-child{
+               i{
+                color: $gray-1;
+               }
+            }
+        }
+    }
+    .colon-shape{
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+}
+
+.slider-controller{
+    display: flex;
+    gap: 10px;
+
+    @include xl{
+        justify-content: end;
+    }
+
+    @include xs{
+        display: none;
+    }
+
+    button{
+        height: 54px;
+        width: 54px;
+        border: 1px solid $border-clr;
+        border-radius: 50%;
+        background-color: $white;
+        color: $text-black;
+
+        &.active,
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+            box-shadow: 0px 8px 20px 0px #1D92CD80;
+        }
+    }
+}

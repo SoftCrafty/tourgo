@@ -103,6 +103,10 @@
 
 .h2-blog-section{
     margin-top: 130px;
+
+    @include md{
+        margin-top: 60px;
+    }
 }
 
 .blog-item-2{

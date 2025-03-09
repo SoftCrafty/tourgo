@@ -115,10 +115,14 @@
     }
 }
 
-// home 2 top destination
+// home 2 popular destination
 
 .popular-destination{
-    margin-top: 135px;
+    margin-top: 130px;
+
+    @include md{
+        margin-top: 65px;
+    }
 }
 
 .popular-destination-item{

@@ -72,11 +72,10 @@
 
     @include lg{
         font-size: 60px;
-        line-height: 1.2;
+        line-height: 1;
     }
     @include md{
         font-size: 54px;
-        line-height: 1.1;
     }
 
     @include sm{

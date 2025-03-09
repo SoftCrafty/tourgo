@@ -142,6 +142,87 @@
           }
         },
       });
+
+      // home 2 testimonial slider
+      const h2testimonialSlider = new Swiper('.testimonial-2__slider', {
+        loop: true, 
+        autoplay: true,
+        freeMode: true,
+        spaceBetween: 24,
+        slidesPerView: 2, 
+       
+        navigation: {
+          nextEl: ".right__slide",
+          prevEl: ".left__slide",
+        },
+        breakpoints: {
+          0: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+          },
+          480: {
+            spaceBetween: 15,
+            slidesPerView: 1.5,
+            centeredSlides: true,
+          },
+          768: {
+              spaceBetween: 15,
+              slidesPerView: 1.5,
+              centeredSlides: true,
+          },
+          992: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+          1400: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+          }
+        },
+      });
+      
+      // home 2 team-member-slider
+      const teamSlider = new Swiper('.team-member-slider', {
+        loop: true, 
+        autoplay: true,
+       // freeMode: true,
+        spaceBetween: 15,
+        slidesPerView: 4, 
+        pagination: {
+          el: ".h2-team-controller",
+          clickable: true,
+          bulletClass: "team-member-bullet",
+          bulletActiveClass: "active",
+          renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + '<i class="fa-solid fa-circle"></i>' + '</span>';
+          },
+        },
+       
+        breakpoints: {
+          0: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+          },
+          480: {
+              centeredSlides: true,
+              spaceBetween: 15,
+              slidesPerView: 1.5,
+          },
+          768: {
+              spaceBetween: 15,
+              slidesPerView: 2,
+          },
+          992: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+              centeredSlides: true,
+          },
+          1400: {
+              slidesPerView: 4,
+              spaceBetween: 15,
+          }
+        },
+      });
       
       // home 2 blog slider
       const h2BlogSlider = new Swiper('.h2-blog-slider', {
