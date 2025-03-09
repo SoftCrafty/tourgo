@@ -1,0 +1,52 @@
+
+.instagram{
+    margin-top: 135px;
+    padding: 0 15px 10px;
+}
+
+.instagram-img{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    bottom: 0;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    
+}
+
+.insta-overlay{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #1D92CDB2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    a{
+        font-size: 64px;
+        color: $white;
+        opacity: 0;
+        transition: all 0.3s ;
+    }
+
+}
+
+.instagram-img:hover{
+    bottom: 5px;
+
+     .insta-overlay{
+         opacity: 0.8;
+         a{
+             opacity: 1;
+         }
+     }
+ }

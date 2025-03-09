@@ -6213,6 +6213,12 @@ body {
   background-color: #1D92CD;
 }
 
+/* Large screens */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px !important;
+  }
+}
 .common-btn {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -8390,6 +8396,12 @@ body {
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 40px rgba(255, 255, 255, 0.2), 0 0 0 60px rgba(255, 255, 255, 0);
   }
 }
+.video-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .explore-dreamland {
   margin-top: 110px;
 }
@@ -9281,6 +9293,52 @@ body {
   .text-book-btn p br {
     display: none;
   }
+}
+
+.instagram {
+  margin-top: 135px;
+  padding: 0 15px 10px;
+}
+
+.instagram-img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  bottom: 0;
+}
+.instagram-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.insta-overlay {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(29, 146, 205, 0.6980392157);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.insta-overlay a {
+  font-size: 64px;
+  color: #ffffff;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.instagram-img:hover {
+  bottom: 5px;
+}
+.instagram-img:hover .insta-overlay {
+  opacity: 0.8;
+}
+.instagram-img:hover .insta-overlay a {
+  opacity: 1;
 }
 
 .breadcrump {
