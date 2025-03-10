@@ -103,16 +103,7 @@
           }
         },
       });
-          // Pause on hover
-      document.querySelector(".explore-dreamland-swiper-slider").addEventListener("mouseenter", () => {
-        swiper.autoplay.stop();
-      });
-
-      // Resume on mouse leave
-      document.querySelector(".explore-dreamland-swiper-slider").addEventListener("mouseleave", () => {
-        swiper.autoplay.start();
-      });
-
+    
       // home 1 testimonial slider
       const testimonialSlider = new Swiper('.h1-testimonial-slider', {
         loop: true, 
@@ -278,7 +269,7 @@
 
 
 
-      
+
 
 
 

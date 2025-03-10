@@ -124,15 +124,6 @@
                       margin-right: 0;
                     }
 
-                    &:nth-child(6){
-                      margin-left: 50px;
-
-                      @include md{
-                        margin-left: 0;
-                      }
-                    }
-
-
                     @include md{
                         display: block;
                         margin-right: 0;
@@ -266,8 +257,13 @@
                         line-height: 19px;
                         font-family: $font-inter;
 
+                        @include lg{
+                          font-size: 15px;
+                        }
+
                         @include md{
                           color: $black-900;
+                          font-size: 16px;
                         }
 
                         &:before {
@@ -357,7 +353,6 @@
 
   
 .menu-right{
-  margin-left: 5px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -365,6 +360,12 @@
   .btn-groups{
     display: flex;
     gap: 14px;
+
+    .common-btn{
+      @include lg{
+        padding: 10px 15px;
+      }
+    }
 
     @include sm{
       display: none;
@@ -392,10 +393,47 @@
       display: inline-block;
     }
   }
+
+  &.menu{
+    .main-menu{
+
+      @include md{
+        display: none;
+
+        &.show{
+          display: none;
+        }
+      }
+      ul{
+        li{
+          a{
+            color: $text-color;
+
+            &::before{
+              content: "\f0d7" ;
+              right: 0 ;
+            }
+          }
+
+          &.dropdown{
+            ul>li{
+              a{
+                color: $black-900 ;
+              }
+            }
+          }
+
+          &.currency{
+            @include lg{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
   
-
-
 
 .sidebar-header{
   display: flex;
@@ -412,7 +450,7 @@
     }
   }
   img{
-    max-width: 80px;
+    max-width: 120px;
   }
 
  }

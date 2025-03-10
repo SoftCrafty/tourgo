@@ -1,6 +1,6 @@
 
 .about-us{
-    background: url('../../images/about/Background.png');
+    background: url('../images/about/Background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,6 +118,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include sm{
+        height: 54px;
+        width: 54px;
+    }
 }
 .learn-more-btn{
     margin-top: 60px;
