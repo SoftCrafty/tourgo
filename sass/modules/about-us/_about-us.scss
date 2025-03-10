@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 120px 0;
-    margin-top: 120px;
+    margin-top: 112px;
 
     @include md{
         padding-top: 60px;
@@ -18,11 +18,18 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @include lg{
+        gap: 12px;
+    }
 }
 .double-img{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @include lg{
+        gap: 12px;
+    }
 }
 
 .about-us-content{
@@ -47,28 +54,7 @@
     .section-header{
         margin-bottom: 15px;
     }
-    // .section-title{
-
-    //     @include xl{
-    //         font-size: 50px;
-    //         line-height: 1.1;
-    //     }
-
-    //     @include lg{
-    //         font-size: 44px;
-    //     }
-
-    //     @include sm{
-    //         font-size: 42px;
-    //     }
-    //     @include xs{
-    //         font-size: 34px;
-    //     }
-    //     @include xxs{
-    //         font-size: 32px;
-    //     }
-    // }
-
+   
     
 }
 
@@ -77,6 +63,10 @@
     align-items: center;
     gap: 60px;
     margin-top: 35px;
+
+    @include xxl{
+        margin-top: 20px;
+    }
 
     @include lg{
         gap: 25px;
@@ -131,7 +121,9 @@
 }
 .learn-more-btn{
     margin-top: 60px;
-
+    @include xxl{
+        margin-top: 30px;
+    }
     @include lg{
         margin-top: 25px;
     }

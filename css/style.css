@@ -6869,9 +6869,19 @@ body {
   padding: 190px 0;
   background-blend-mode: overlay;
 }
+@media only screen and (max-width: 1199px) {
+  .banner.style-1 {
+    padding: 150px 0;
+  }
+}
 @media only screen and (max-width: 991px) {
   .banner.style-1 {
     padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .banner.style-1 {
+    padding: 80px 0;
   }
 }
 .banner .subtitle p {
@@ -6912,20 +6922,30 @@ body {
 .banner .banner-title {
   font-family: "Teko", sans-serif;
   font-weight: 600;
-  font-size: 160px;
+  font-size: 180px;
   line-height: 80px;
   color: #ffffff;
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin-top: 70px;
+  margin-bottom: 95px;
+}
+@media only screen and (max-width: 1599px) {
+  .banner .banner-title {
+    font-size: 160px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
 }
 @media only screen and (max-width: 1399px) {
   .banner .banner-title {
     font-size: 135px;
+    margin-top: 40px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .banner .banner-title {
     font-size: 110px;
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -6979,7 +6999,17 @@ body {
   border-radius: 10px;
   gap: 2px;
 }
+@media only screen and (max-width: 767px) {
+  .banner.style-2 .banner-btn-group button {
+    padding: 10px 22px;
+  }
+}
 @media only screen and (max-width: 576px) {
+  .banner.style-2 .banner-btn-group button {
+    padding: 10px 27px;
+  }
+}
+@media only screen and (max-width: 767px) {
   .banner.style-2 .banner-btn-group .common-btn:last-child {
     display: none;
   }
@@ -7012,8 +7042,8 @@ body {
 }
 .banner.style-2 .banner-title {
   line-height: 160px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 @media only screen and (max-width: 1399px) {
   .banner.style-2 .banner-title {
@@ -7041,25 +7071,45 @@ body {
   }
 }
 
+.banner-btn-group-wrapper {
+  width: max-content;
+}
+@media only screen and (max-width: 576px) {
+  .banner-btn-group-wrapper {
+    margin: auto;
+  }
+}
+
 .banner-btn-group {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2px;
   background-color: #ffffff;
   border-radius: 10px 10px 0 0;
-  padding: 8px 20px;
+  padding: 8px 21px;
   width: auto;
+}
+@media only screen and (max-width: 991px) {
+  .banner-btn-group {
+    gap: 6px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .banner-btn-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
+    padding: 8px 7px;
   }
 }
 .banner-btn-group button {
   border: none;
   color: #616161;
+  padding: 10px 18px;
+}
+@media only screen and (max-width: 991px) {
+  .banner-btn-group button {
+    padding: 10px 30px;
+  }
 }
 .banner-btn-group button i {
   margin-right: 5px;
@@ -7088,7 +7138,7 @@ body {
   .banner-search-container .location,
   .banner-search-container .adventure,
   .banner-search-container .date {
-    max-width: 240px;
+    max-width: 221px;
   }
 }
 .banner-search-container .nice-select {
@@ -7142,7 +7192,7 @@ body {
 
 .cta {
   background-color: #1D92CD;
-  padding: 115px 0;
+  padding: 115px 0 100px;
   position: relative;
   overflow: hidden;
   margin-top: 120px;
@@ -7156,7 +7206,12 @@ body {
 
 .cta-title .section-title {
   color: #ffffff;
-  margin-left: 160px;
+  margin-left: 300px;
+}
+@media only screen and (max-width: 1599px) {
+  .cta-title .section-title {
+    margin-left: 200px;
+  }
 }
 @media only screen and (max-width: 1399px) {
   .cta-title .section-title {
@@ -7267,7 +7322,7 @@ body {
 .shape-1 {
   position: absolute;
   bottom: 0;
-  left: 200px;
+  left: 50px;
 }
 @media only screen and (max-width: 1599px) {
   .shape-1 {
@@ -8051,7 +8106,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0;
-  margin-top: 120px;
+  margin-top: 112px;
 }
 @media only screen and (max-width: 991px) {
   .about-us {
@@ -8066,11 +8121,21 @@ body {
   align-items: center;
   gap: 30px;
 }
+@media only screen and (max-width: 1199px) {
+  .about-us-imgs {
+    gap: 12px;
+  }
+}
 
 .double-img {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media only screen and (max-width: 1199px) {
+  .double-img {
+    gap: 12px;
+  }
 }
 
 .about-us-content {
@@ -8106,6 +8171,11 @@ body {
   align-items: center;
   gap: 60px;
   margin-top: 35px;
+}
+@media only screen and (max-width: 1599px) {
+  .about-item-container {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .about-item-container {
@@ -8164,6 +8234,11 @@ body {
 
 .learn-more-btn {
   margin-top: 60px;
+}
+@media only screen and (max-width: 1599px) {
+  .learn-more-btn {
+    margin-top: 30px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .learn-more-btn {
@@ -8781,15 +8856,16 @@ body {
 }
 .gallary-container .overlay {
   position: absolute;
+  top: 0;
   right: 0;
   bottom: 120%;
   left: 0;
   background: rgba(29, 146, 205, 0.5019607843);
   transition: all 0.3s;
 }
-.gallary-container .overlay a {
+.gallary-container .search-icon {
   position: absolute;
-  top: 50%;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 50px;
@@ -8798,7 +8874,7 @@ body {
   color: #ffffff;
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
@@ -8806,6 +8882,10 @@ body {
 .gallary-container .sm-img:hover .overlay {
   bottom: 0;
   top: 0;
+}
+.gallary-container .big-img:hover .search-icon,
+.gallary-container .sm-img:hover .search-icon {
+  top: 50%;
 }
 
 .choose-us {
@@ -9657,7 +9737,7 @@ body {
 }
 
 .tour-package {
-  margin-top: 115px;
+  margin-top: 112px;
 }
 @media only screen and (max-width: 991px) {
   .tour-package {

@@ -71,29 +71,29 @@
 
     .overlay{
         position: absolute;
-       // top: 0;
+        top: 0;
         right: 0;
         bottom: 120%;
         left: 0;
         background: #1D92CD80;
         transition: all 0.3s;
 
-        a{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 50px;
-            width: 50px;
-            border-radius: 6px;
-            color: $white;
-            backdrop-filter: blur(6px);
-            border: 1px solid #FFFFFF4D;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
+    }
+    .search-icon{
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        width: 50px;
+        border-radius: 6px;
+        color: $white;
+        backdrop-filter: blur(6px);
+        border: 1px solid #FFFFFF4D;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .big-img:hover,
@@ -102,6 +102,9 @@
              bottom: 0;
              top: 0;
             
+        }
+        .search-icon{
+            top: 50%;
         }
     }
 }
