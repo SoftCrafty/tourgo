@@ -189,6 +189,9 @@
 
 .cta-2{
     margin-top: 140px;
+    @include md{
+        margin-top: 70px;
+    }
 }
 
 .big-item{
@@ -203,6 +206,25 @@
     flex-direction: column;
     justify-content: center;
     min-height: 400px;
+
+    @include xxl{
+        min-height: 320px;
+        padding: 0 40px;
+    }
+    @include xl{
+        min-height: 300px;
+    }
+    @include lg{
+        min-height: 280px;
+        padding: 0 25px;
+    }
+    @include sm{
+        min-height: 250px;
+        padding: 0 20px;
+    }
+    @include xs{
+        min-height: 220px;
+    }
 }
 
 .item-content{
@@ -212,18 +234,53 @@
             color: $white;
             font-size: 30px;
             margin-bottom: 5px;
+
+            @include sm{
+                font-size: 24px;
+            }
         }
     }
     .section-title{
         font-size: 54px;
         line-height: 1;
         color: $white;
+
+        @include xl{
+            font-size: 48px;
+        }
+        @include lg{
+            font-size: 40px;
+        }
+        @include sm{
+            font-size: 36px;
+        }
+        @include xs{
+            font-size: 32px;
+        }
     }
 
     .cta-form{
         padding-left: 0;
         width: 55%;
         margin-top: 32px;
+
+        @include xxl{
+            width: 60%;
+        }
+        @include xl{
+            width: 80%;
+            margin-top: 20px;
+        }
+        @include lg{
+            margin-top: 15px;
+           
+        }
+        @include sm{
+            width: 90%;
+        }
+        @include xs{
+            width: 100%;
+        }
 
         .cta-btn{
             background-color: $black-900;
@@ -247,7 +304,24 @@
     flex-direction: column;
     justify-content: center;
     
-
+    @include xxl{
+        min-height: 320px;
+        padding: 0 40px;
+    }
+    @include xl{
+        min-height: 300px;
+    }
+    @include lg{
+        min-height: 280px;
+        padding: 0 25px;
+    }
+    @include sm{
+        min-height: 250px;
+        padding: 0 20px;
+    }
+    @include xs{
+        min-height: 220px;
+    }
 }
 
 .small-item-content{
@@ -255,6 +329,17 @@
         font-size: 44px;
         color: $white;
         line-height: 1;
+
+        @include xl{
+            font-size: 40px;
+        }
+        @include lg{
+            font-size: 36px;
+        }
+        @include xs{
+            font-size: 32px;
+        }
+
     }
 
     .dowload-store-2{
@@ -262,6 +347,10 @@
         flex-direction: column;
         gap: 10px;
         margin-top: 24px;
+
+        @include xs{
+            margin-top: 20px;
+        }
     }
 }
 

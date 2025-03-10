@@ -184,6 +184,17 @@
     .popular-destination-name{
         margin-top: 12px;
         margin-bottom: 17px;
+
+        @include xxl{
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+        @include xl{
+            margin-bottom: 8px;
+        }
+        @include lg{
+            margin-bottom: 12px;
+        }
     }
     .title-name a{
         color: $white;
@@ -198,10 +209,22 @@
             color: $white;
             margin-bottom: 0;
         }
+
+        @include xl{
+            display: none;
+        }
+        @include lg{
+            display: flex;
+        }
     }
 
     .price-book-btn{
-
+        @include xxl{
+            margin-top: 30px;
+        }
+        @include xl{
+            margin-top: 20px;
+        }
         .price{
             .price-value{
                 color: $white;
@@ -237,7 +260,7 @@
 .shape1{
     position: absolute;
     height: 25px;
-    width: 350px;
+    width: 600px;
     background: #ffffff3d;
     backdrop-filter: blur(2px);
     top: 45%;
@@ -249,7 +272,7 @@
 .shape2{
     position: absolute;
     height: 25px;
-    width: 350px;
+    width: 600px;
     background: #ffffff3d;
     backdrop-filter: blur(2px);
     bottom: 45%;

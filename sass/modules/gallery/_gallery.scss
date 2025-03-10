@@ -30,8 +30,11 @@
     display: grid;
     gap: 20px;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
+    @include xxl{
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
     @include xl{
         grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     }

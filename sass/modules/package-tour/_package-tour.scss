@@ -159,10 +159,10 @@
 // h2 limited time offer section
 
 .limited-time{
-    margin-top: 125px;
+    margin-top: 130px;
 
     @include md{
-        margin-top: 22px;
+        margin-top: 60px;
     }
 
     .explore-more{
@@ -183,6 +183,8 @@
     align-items: center;
     transition: all 0.3s linear;
 
+    
+
     @include xxs{
         flex-direction: column;
         gap: 15px;
@@ -200,6 +202,7 @@
             background-color: $primary-color;
             color: $white;
         }
+
     }
 
     .package-location{
@@ -234,17 +237,31 @@
 }
 
 .limited-time-item-content{
-    padding: 5px 0;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    flex: 1;
 
+    @include xxl{
+      padding-right: 0;
+    }
     @include xl{
         padding: 5px 0 20px ;
     }
-
+    @include lg{
+        flex: auto;
+    }
     @include xxs{
         padding-left: 20px;
     }
 }
 
+.custom-gap{
+    --bs-gutter-x: 80px;
+
+    @include xxl{
+        --bs-gutter-x: 24px;
+    }
+}
 .offer-name{
     display: flex;
     justify-content: space-between;

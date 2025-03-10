@@ -29,8 +29,11 @@
 
     margin-left: 75px;
 
+    @include xxl{
+        margin-left: 60px;
+    }
     @include xl{
-        margin-left: 50px;
+        margin-left: 40px;
     }
     @include lg{
         margin-left: 30px;
@@ -42,31 +45,29 @@
     }
 
     .section-header{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
-    .section-title{
-        font-size: 60px;
-        line-height: 65px;
+    // .section-title{
 
-        @include xl{
-            font-size: 50px;
-            line-height: 1.1;
-        }
+    //     @include xl{
+    //         font-size: 50px;
+    //         line-height: 1.1;
+    //     }
 
-        @include lg{
-            font-size: 44px;
-        }
+    //     @include lg{
+    //         font-size: 44px;
+    //     }
 
-        @include sm{
-            font-size: 42px;
-        }
-        @include xs{
-            font-size: 34px;
-        }
-        @include xxs{
-            font-size: 32px;
-        }
-    }
+    //     @include sm{
+    //         font-size: 42px;
+    //     }
+    //     @include xs{
+    //         font-size: 34px;
+    //     }
+    //     @include xxs{
+    //         font-size: 32px;
+    //     }
+    // }
 
     
 }
@@ -139,12 +140,29 @@
 // home 2 about section ============
 
 .about-us-2{
-    margin-top: 115px;
+    margin-top: 105px;
     position: relative;
+
+    @include md{
+        margin-top: 40px;
+    }
 }
 .about-us-imgs-container{
     display: flex;
     gap: 34px;
+
+    @include xl{
+        gap: 25px;
+    }
+    @include lg{
+        gap: 20px;
+    }
+    @include md{
+        justify-content: center;
+    }
+    @include xxs{
+        gap: 12px;
+    }
 
 
     .first-column,
@@ -152,6 +170,16 @@
         display: flex;
         flex-direction: column;
         gap: 34px;
+
+        @include xl{
+            gap: 25px;
+        }
+        @include lg{
+            gap: 20px;
+        }
+        @include xxs{
+            gap: 12px;
+        }
 
         img{
             width: 100%;
@@ -168,17 +196,27 @@
     flex-direction: column;
     gap: 8px;
     margin-top: 30px;
+
+    @include xxl{
+        margin-top: 20px;
+    }
+    @include xxs{
+        margin-top: 15px;
+    }
 }
 
 .about-item-2{
     display: inline-flex;
     gap: 28px;
     height: auto;
+    @include xs{
+        gap: 16px;
+    }
 }
 
 .item-icon-2{
     height: 64px;
-    width: 70px;
+    width: 64px;
     background-color: $white;
     border: 1px solid $border-clr;
     border-radius: 50%;
@@ -186,11 +224,40 @@
     justify-content: center;
     align-items: center;
     margin-top: 13px;
+
+    @include xl{
+        height: 56px;
+    }
+    @include lg{
+        width: 84px;
+    }
+    @include md{
+        width: 60px;
+    }
+    @include sm{
+        width: 82px;
+    }
+    @include xs{
+        width: 94px;
+    }
+    @include xxs{
+        width: 124px;
+    }
 }
 
 .about-item-content{
     .desc-text{
         width: 65%;
+
+        @include xl{
+            width: 70%;
+        }
+        @include lg{
+            width: 80%;
+        }
+        @include xs{
+            width: 90%;
+        }
 
         p{
             font-size: 15px;
@@ -217,6 +284,22 @@
     i{
         animation: location-dot 2s linear infinite; 
     }
+
+    @include xl{
+        right: 120px;
+    }
+    @include md{
+        bottom: 40%;
+    }
+    @include sm{
+        right: 70px;
+    }
+    @include xs{
+        bottom: 50%;
+    }
+    @include xxs{
+        bottom: 60%;
+    }
 }
 
 @keyframes location-dot {
@@ -239,12 +322,26 @@
     top: 80px;
     right: 100px;
     rotate: -75deg;
+
+    @include lg{
+        top: unset;
+        right: unset;
+        bottom: 50px;
+        left: 300px;
+    }
+    @include md{
+        display: none;
+    }
 }
 .plane-1{
     position: absolute;
     left: 0px;
     top: 5px;
     animation: plane-1 40s linear infinite;
+
+    @include sm{
+        animation-duration: 25s;
+    }
 }
 
 @keyframes plane-1 {
@@ -260,6 +357,9 @@
     left: 20%px;
     bottom: 0;
     animation: plane-2 70s linear infinite;
+    @include md{
+        display: none;
+    }
 }
 
 @keyframes plane-2 {

@@ -65,9 +65,11 @@
         loop: true, 
         autoplay: {
           delay: 1000,
+          disableOnInteraction: false,
         },
         spaceBetween: 24,
         slidesPerView: 4, 
+        
         speed: 1500,
         pagination: {
           el: ".swiper-indicator",
@@ -100,6 +102,15 @@
               spaceBetween: 24,
           }
         },
+      });
+          // Pause on hover
+      document.querySelector(".explore-dreamland-swiper-slider").addEventListener("mouseenter", () => {
+        swiper.autoplay.stop();
+      });
+
+      // Resume on mouse leave
+      document.querySelector(".explore-dreamland-swiper-slider").addEventListener("mouseleave", () => {
+        swiper.autoplay.start();
       });
 
       // home 1 testimonial slider

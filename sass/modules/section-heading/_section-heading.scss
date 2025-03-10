@@ -69,10 +69,15 @@
     &.style-2{
         color: $text-black;
     }
-
+    @include xxl{
+        font-size: 70px;
+        line-height: 1;
+    }
+    @include xl{
+        font-size: 64px;
+    }
     @include lg{
         font-size: 60px;
-        line-height: 1;
     }
     @include md{
         font-size: 54px;
@@ -82,9 +87,15 @@
         font-size: 42px;
     }
     @include xs{
-        font-size: 34px;
+        font-size: 38px;
     }
     @include xxs{
-        font-size: 32px;
+        font-size: 36px;
     }
+    // @include xs{
+    //     font-size: 34px;
+    // }
+    // @include xxs{
+    //     font-size: 32px;
+    // }
 }
