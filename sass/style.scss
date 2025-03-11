@@ -78,7 +78,7 @@ Footer
 // common style
 @import "partials/common-style";
 
-// all pages
+// Homp pages
 @import "modules/header/header"; //
 @import "modules/banner/banner"; //
 @import "modules/cta/cta"; // 
@@ -100,6 +100,7 @@ Footer
 
 // inner pages
 @import "modules/inner-page/breadcrum";
+@import "modules/inner-page/about"; //
 @import "modules/inner-page/service-details";
 @import "modules/inner-page/project-details";
 @import "modules/inner-page/faq";
@@ -108,5 +109,4 @@ Footer
 @import "modules/inner-page/blog-details";
 
 
-// Lumx 
 

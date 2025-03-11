@@ -1,0 +1,150 @@
+
+.about-img{
+    background: url("../images/inner-page/abt1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.inner-about-content{
+    .section-header{
+        margin-bottom: 15px;
+    }
+}
+
+.counter-container{
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-item {
+    display: flex;
+    gap: 8px;
+    .counter-number{
+        font-family: $font-teko;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 80px;
+        color: $title-color;
+    }
+    .counter-title{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: $text-color;
+        align-self: flex-end;
+        margin-bottom: 10px;
+    }
+}
+
+// about service section =======
+
+.about-service{
+    background-color: $section-bg;
+    padding: 120px 0;
+    margin-top: 130px;
+}
+.abt-service-item{
+    background-color: $white;
+    border-radius: 10px;
+    padding: 40px 30px;
+    transition: all 0.3s linear;
+    position: relative;
+    overflow: hidden;
+
+    .abt-service-icon{
+
+        i{
+            font-size: 54px;
+            color: $primary-color;
+            transition: all 0.5s;
+        }
+    }
+
+    .title-name{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    
+    &:hover{
+        background-color: $primary-color;
+
+       
+        .abt-service-icon{
+            i{
+                color: $white;
+                transform: rotateY(360deg);
+            }
+        }
+
+        .title-name{
+            a{
+                color: $white;
+            }
+        }
+        .desc-text{
+            p{
+                color: $white;
+            }
+        }
+    }
+    
+}
+
+// about mission section ==
+
+.abt-mission{
+    margin-top: 120px;
+}
+
+.mission-vission{
+    align-items: center;
+    padding: 0 100px;
+}
+.abt-mission-content{
+    position: relative;
+
+    .section-header{
+        margin-bottom: 20px;
+    }
+}
+
+.list-container{
+    
+
+    ul{
+        list-style-type: disc;
+
+        li{
+           font-weight: 500;
+           font-size: 16px;
+           line-height: 43px;
+           color: $text-color; 
+        }
+    }
+}
+
+.water-mark{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    h2{
+        font-family: $font-teko;
+        font-weight: 500;
+        font-size: 200px;
+        line-height: 80px;
+        color: #1A2D6D0F;
+
+    }
+}
+
+.abt-vission{
+    margin-top: 120px;
+}
+

@@ -6300,9 +6300,12 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 26px;
   color: #616161;
   margin-bottom: 0;
+}
+.desc-text.font-15 p {
+  font-size: 15px;
 }
 
 .title-name {
@@ -6352,6 +6355,9 @@ body {
   .title-name.style-2 a {
     font-size: 24px;
   }
+}
+.title-name.style-3 a {
+  color: #1A2D6D;
 }
 
 @keyframes sticy-menu {
@@ -7093,7 +7099,7 @@ body {
 }
 @media only screen and (max-width: 479px) {
   .banner.style-2 .banner-title {
-    font-size: 48px;
+    font-size: 46px;
   }
 }
 
@@ -7755,6 +7761,9 @@ body {
 .section-header {
   margin-bottom: 60px;
 }
+.section-header.style-2 {
+  margin-bottom: 50px;
+}
 @media only screen and (max-width: 991px) {
   .section-header {
     margin-bottom: 40px;
@@ -7765,26 +7774,23 @@ body {
   font-family: "Niconne", cursive;
   font-weight: 400;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1;
   color: #1C1C1C;
   margin-bottom: 18px;
 }
 @media only screen and (max-width: 1199px) {
   .sub-heading p {
     font-size: 38px;
-    line-height: 1.3;
   }
 }
 @media only screen and (max-width: 991px) {
   .sub-heading p {
     font-size: 36px;
-    line-height: 1.2;
   }
 }
 @media only screen and (max-width: 767px) {
   .sub-heading p {
     font-size: 32px;
-    line-height: 1;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -7794,6 +7800,29 @@ body {
 }
 @media only screen and (max-width: 479px) {
   .sub-heading p {
+    font-size: 26px;
+  }
+}
+.sub-heading.style-2 p {
+  font-size: 34px;
+}
+@media only screen and (max-width: 991px) {
+  .sub-heading.style-2 p {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sub-heading.style-2 p {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sub-heading.style-2 p {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .sub-heading.style-2 p {
     font-size: 26px;
   }
 }
@@ -10411,6 +10440,125 @@ body {
   .breadcrump .breadcrump-img {
     display: none;
   }
+}
+
+.about-img {
+  background: url("../images/inner-page/abt1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.inner-about-content .section-header {
+  margin-bottom: 15px;
+}
+
+.counter-container {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter-item {
+  display: flex;
+  gap: 8px;
+}
+.counter-item .counter-number {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 80px;
+  color: #1A2D6D;
+}
+.counter-item .counter-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #616161;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.about-service {
+  background-color: rgba(29, 146, 205, 0.1019607843);
+  padding: 120px 0;
+  margin-top: 130px;
+}
+
+.abt-service-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  transition: all 0.3s linear;
+  position: relative;
+  overflow: hidden;
+}
+.abt-service-item .abt-service-icon i {
+  font-size: 54px;
+  color: #1D92CD;
+  transition: all 0.5s;
+}
+.abt-service-item .title-name {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.abt-service-item:hover {
+  background-color: #1D92CD;
+}
+.abt-service-item:hover .abt-service-icon i {
+  color: #ffffff;
+  transform: rotateY(360deg);
+}
+.abt-service-item:hover .title-name a {
+  color: #ffffff;
+}
+.abt-service-item:hover .desc-text p {
+  color: #ffffff;
+}
+
+.abt-mission {
+  margin-top: 120px;
+}
+
+.mission-vission {
+  align-items: center;
+  padding: 0 100px;
+}
+
+.abt-mission-content {
+  position: relative;
+}
+.abt-mission-content .section-header {
+  margin-bottom: 20px;
+}
+
+.list-container ul {
+  list-style-type: disc;
+}
+.list-container ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 43px;
+  color: #616161;
+}
+
+.water-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.water-mark h2 {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 80px;
+  color: rgba(26, 45, 109, 0.0588235294);
+}
+
+.abt-vission {
+  margin-top: 120px;
 }
 
 .item-details-container {

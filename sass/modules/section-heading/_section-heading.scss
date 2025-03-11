@@ -21,6 +21,10 @@
 .section-header{
     margin-bottom: 60px;
 
+    &.style-2{
+        margin-bottom: 50px;
+    }
+
     @include md{
         margin-bottom: 40px;
     }
@@ -30,22 +34,19 @@
         font-family: $font-niconne;
         font-weight: 400;
         font-size: 40px;
-        line-height: 48px;
+        line-height: 1;
         color: $text-black;
         margin-bottom: 18px;
 
         @include lg{
             font-size: 38px;
-            line-height: 1.3;
         }
         @include md{
             font-size: 36px;
-            line-height: 1.2;
         }
 
         @include sm{
             font-size: 32px;
-            line-height: 1;
         }
         @include xs{
             font-size: 28px;
@@ -54,6 +55,27 @@
         @include xxs{
             font-size: 26px;
             
+        }
+    }
+
+    &.style-2{
+        p{
+            font-size: 34px;  
+
+            @include md{
+                font-size: 36px;
+            }
+    
+            @include sm{
+                font-size: 32px;
+            }
+            @include xs{
+                font-size: 28px;
+                
+            }
+            @include xxs{
+                font-size: 26px;
+            }
         }
     }
 }
@@ -92,10 +114,5 @@
     @include xxs{
         font-size: 36px;
     }
-    // @include xs{
-    //     font-size: 34px;
-    // }
-    // @include xxs{
-    //     font-size: 32px;
-    // }
+    
 }
