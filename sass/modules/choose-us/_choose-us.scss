@@ -70,7 +70,7 @@
     h3 a{
         font-family: $font-teko;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 40px;
         line-height: 58px;
         color: $title-color;
 
@@ -90,8 +90,17 @@
             color: $primary-color;
         }
 
+        @include xxl{
+            font-size: 30px;
+        }
         @include xl{
             font-size: 26px;;
+        }
+        @include lg{
+            font-size: 30px;
+        }
+        @include xs{
+            font-size: 26px;
         }
         
     }

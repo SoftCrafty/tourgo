@@ -6952,10 +6952,11 @@ body {
   color: #ffffff;
   margin-top: 70px;
   margin-bottom: 95px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 1599px) {
   .banner .banner-title {
-    font-size: 160px;
+    font-size: 150px;
     margin-top: 50px;
     margin-bottom: 80px;
   }
@@ -9004,7 +9005,7 @@ body {
 .choose-us-content h3 a {
   font-family: "Teko", sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 58px;
   color: #1A2D6D;
 }
@@ -9025,7 +9026,22 @@ body {
 .choose-us-content h3 a:hover {
   color: #1D92CD;
 }
+@media only screen and (max-width: 1599px) {
+  .choose-us-content h3 a {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 1399px) {
+  .choose-us-content h3 a {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .choose-us-content h3 a {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
   .choose-us-content h3 a {
     font-size: 26px;
   }
@@ -9429,6 +9445,9 @@ body {
     padding: 30px 24px 45px;
   }
 }
+.blog-content .read-more {
+  margin-top: 25px;
+}
 
 .blog-date-time {
   display: flex;
@@ -9455,14 +9474,24 @@ body {
   margin-top: 5px;
 }
 .blog-title h3 {
-  line-height: 30px;
+  line-height: 1;
 }
 .blog-title h3 a {
   font-family: "Teko", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 40px;
   color: #1A2D6D;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 1599px) {
+  .blog-title h3 a {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .blog-title h3 a {
+    font-size: 28px;
+  }
 }
 .blog-title h3 a:hover {
   color: #1D92CD;

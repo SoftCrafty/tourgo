@@ -45,6 +45,10 @@
     @include xs{
         padding: 30px 24px 45px;
     }
+
+    .read-more{
+        margin-top: 25px;
+    }
 }
 
 .blog-date-time{
@@ -72,14 +76,20 @@
 .blog-title{
     margin-top: 5px;
     h3 {
-        line-height: 30px;
+        line-height: 1;
         a{
             font-family: $font-teko;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 40px;
             color: $title-color;
             transition: all 0.3s;
-
+            
+            @include xxl{
+                font-size: 30px;
+            }
+            @include xs{
+                font-size: 28px;
+            }
             &:hover{
                 color: $primary-color;
             }
