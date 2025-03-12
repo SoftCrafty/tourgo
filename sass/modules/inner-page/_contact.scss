@@ -1,87 +1,194 @@
 
 .contact-section{
+    margin-top: -15px;
 
-}
-
-.footer-widget{
-    &.style-2{
-        background-color: $white;
-        border: 1px solid $gray-200-clr;
-        margin-top: 30px;
-
-        h5{
-            color: $black-900;
-        }
-        a{
-            color: $text-desc-clr;
-        }
-    }
-}
-
-.contact-form{
-    background-color: $white;
-    padding: 60px;
-    box-shadow: rgba(149, 157, 165, 0.18) 0px 6px 20px;
-    margin-top: 20px;
-
-    @include sm{
-        padding: 30px;
-        margin-top: 30px;
-    }
-    @include xxs{
-        margin-top: 10px;
-    }
-}
-
-.contact-form-left{
     @include md{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        margin-top: -22px;
     }
 
-    img{
-        @include sm{
-            max-width: 50%;
-        }
-    }
-    .heading-title{
-        br{
-            @include xxs{
-                display: none;
-            }
-        }
-        @include xxs{
-            font-size: 20px;
-        }
+    @include xs{
+        margin-top: -40px;
     }
 }
 
-.contact-form-title{
-    font-family: $outfit-font;
+.contact-title{
+    font-family: $font-teko;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 45px;
-    color: #031B4E;
-    margin-bottom: 20px;
+    font-size: 44px;
+    line-height: 1.5;
+    color: $text-black;
 
-    @include lg{                                 
-        font-size: 26px;
-        line-height: 1.4;
-    }
-
-    @include sm{
-        font-size: 22px;
+    @include md{
+        font-size: 36px;
     }
     @include xs{
-        font-size: 20px;
+        font-size: 32px;
+    }
+    @include xxs{
+        font-size: 28px;
+    }
+
+    &.social{
+        font-size: 30px;
+
+        @include md{
+            font-size: 28px;
+        }
+        
     }
 }
 
-.faq-section.contact{
-    margin-top: 150px;
+.widget-contact{
 
-    @include md{
-        margin-top: 80px;
+    &.style-2{
+        span{
+            background-color: $white;
+            color: $text-color-3;
+            border: 1px solid $border-clr;
+        }
+
+        .phone-num{
+            h6{
+                color: $text-black;
+            }
+            a,p{
+                color: $text-color-3;
+            }
+
+            a:hover{
+                color: $primary-color;
+            }
+        }
     }
+} 
+
+.contact-social-area{
+    margin-top: 50px;
+
+    @include sm{
+        margin-top: 25px;
+    }
+}
+
+.contact-social-container{
+
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+
+    a{
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            bottom: 5px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    }
+
+    .facebook{
+        background-color: #1877F2;
+    }
+    .twitter{
+        background-color: #1DA1F2;
+    }
+    .linkedin{
+        background-color: #0A66C2;
+    }
+    .pinterest{
+        background-color: #CB2027;
+    }
+}
+
+.contact-form-area{
+
+    @include sm{
+        margin-top: 15px;
+    }
+    @include xxs{
+        margin-top: 0;
+    }
+
+    form{
+
+        margin-top: 10px;
+
+        input{
+            height: 50px;
+            border: 1px solid $border-clr;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            color: $text-black;
+            width: 100%;
+            padding: 0 15px;
+            transition: 0.3s ease-in-out;
+
+            @include md{
+                margin-bottom: 20px;
+            }
+
+            &::placeholder{
+                color: $text-color-3;
+            }
+
+            &:focus{
+                border-color: $primary-color;
+            }
+        }
+
+        textarea{
+            border: 1px solid $border-clr;
+            border-radius: 6px;
+            color: $text-black;
+            width: 100%;
+            padding: 15px;
+            transition: 0.3s ease-in-out;
+
+            &:focus{
+                border-color: $primary-color;
+            }
+        }
+
+        .nice-select{
+            height: 50px;
+            margin-bottom: 30px;
+            border-radius: 6px !important;
+            display: flex;
+            align-items: center;
+
+            @include md{
+                margin-bottom: 20px;
+            }
+            
+            &:hover{
+                border-color: $border-clr;
+            }
+
+            &:focus,
+            &.oper{
+                border-color: $primary-color;
+            }
+
+            span{
+                color: $text-black;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.submit-btn{
+   margin-top: 30px; 
+
+   @include md{
+    margin-top: 20px;
+   }
 }
