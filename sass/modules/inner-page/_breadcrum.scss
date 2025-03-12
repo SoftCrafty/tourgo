@@ -1,88 +1,126 @@
 
-// breadcrump section ============
 
 .breadcrump{
-    background-color: $gray-100-clr;
-    padding: 60px 0;
-    margin-bottom:150px;
+    background: url("../../../images/breadcrum/breadcrump.png"),  linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
+    
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+    margin-bottom: 120px;
+
+    @include xxl{
+        min-height: 300px;
+    }
+    @include xl{
+        min-height: 270px;
+    }
+    @include lg{
+        min-height: 240px;
+    }
     @include md{
-        padding: 40px;
-        margin-bottom: 80px;
+        min-height: 205px;
+        margin-bottom: 70px;
+    }
+    @include sm{
+        min-height: 180px;
+    }
+    @include xxs{
+        min-height: 160px;
+    }
+}
+
+.breadcrump-menu-path{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    background: #FFFFFF1A;
+    backdrop-filter: blur(14px);
+    border-radius: 6px;
+    gap: 27px;
+
+    @include sm{
+        padding: 7px 10px;
     }
 
-    .breadcrump-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    a{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $white;
 
-    .breadcrupm-content{
-        margin-left: 200px;
-
-        @include lg{
-            margin-left: 160px;
-        }
         @include md{
-            margin-left: 120px;
+            font-size: 13px;
         }
         @include sm{
-            margin-left: 100px;
-        }
-        @include xs{
-            margin-left: 50px;
+            font-size: 12px;
         }
 
-        .sec-title-wrapper{
-            overflow: visible;
+         i{
+            margin-right: 5px;
+        }
 
-            .sec-title{
-                overflow: visible;
-            }
+        &:hover{
+            text-decoration: underline;
         }
     }
 
-    .breadcrupm-title{
-        
-        h3{
-            font-family: $outfit-font;
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 65px;
-            color: $black-900;
-            margin-top: 10px;
+    .path-name{
+        position: relative;
 
-            @include lg{
-                font-size: 36px;
-                line-height: 1.2;
-            }
-            @include md{
-                font-size: 30px;
-            }
-            @include sm{
-                font-size: 22px;
-                margin-top: 5px;
-            }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            background-color: $white;
+            border-radius: 50%;
 
-            @include xs{
-              font-size: 18px;
-            }
-            @include xxs{
-              font-size: 16px;
-            }
-    
-            span{
-                font-weight: 300;
-                color: $text-desc-clr;
-            }
         }
     }
+}
 
-    .breadcrump-img{
-        max-width: 20%;
+.current-page{
+    font-family: $font-teko;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 80px;
+    color: $white;
+    margin-top: 40px;
 
-        @include xxs{
-            display: none;
-        }
+    @include xxl{
+        font-size: 100px;
+        margin-top: 30px;
+    }
+    @include xl{
+        font-size: 90px;
+        margin-top: 20px;
+    }
+    @include lg{
+        font-size: 74px;
+        margin-top: 10px;
+    }
+    @include md{
+        font-size: 64px;
+        margin-top: 5px;
+        line-height: 1;
+    }
+    @include sm{
+        font-size: 60px;
+    }
+    @include xs{
+        font-size: 50px;
+    }
+    @include xxs{
+        font-size: 48px;
     }
 }

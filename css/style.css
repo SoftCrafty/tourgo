@@ -10350,95 +10350,147 @@ body {
 }
 
 .breadcrump {
-  background-color: #F2F2F2;
-  padding: 60px 0;
-  margin-bottom: 150px;
+  background: url("../../../images/breadcrum/breadcrump.png"), linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+@media only screen and (max-width: 1599px) {
+  .breadcrump {
+    min-height: 300px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .breadcrump {
+    min-height: 270px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .breadcrump {
+    min-height: 240px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .breadcrump {
-    padding: 40px;
-    margin-bottom: 80px;
+    min-height: 205px;
+    margin-bottom: 70px;
   }
 }
-.breadcrump .breadcrump-wrapper {
-  display: flex;
+@media only screen and (max-width: 767px) {
+  .breadcrump {
+    min-height: 180px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .breadcrump {
+    min-height: 160px;
+  }
+}
+
+.breadcrump-menu-path {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  backdrop-filter: blur(14px);
+  border-radius: 6px;
+  gap: 27px;
 }
-.breadcrump .breadcrupm-content {
-  margin-left: 200px;
-}
-@media only screen and (max-width: 1199px) {
-  .breadcrump .breadcrupm-content {
-    margin-left: 160px;
+@media only screen and (max-width: 767px) {
+  .breadcrump-menu-path {
+    padding: 7px 10px;
   }
 }
+.breadcrump-menu-path a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 @media only screen and (max-width: 991px) {
-  .breadcrump .breadcrupm-content {
-    margin-left: 120px;
+  .breadcrump-menu-path a {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .breadcrump .breadcrupm-content {
-    margin-left: 100px;
+  .breadcrump-menu-path a {
+    font-size: 12px;
   }
 }
-@media only screen and (max-width: 576px) {
-  .breadcrump .breadcrupm-content {
-    margin-left: 50px;
+.breadcrump-menu-path a i {
+  margin-right: 5px;
+}
+.breadcrump-menu-path a:hover {
+  text-decoration: underline;
+}
+.breadcrump-menu-path .path-name {
+  position: relative;
+}
+.breadcrump-menu-path .path-name::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.current-page {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 80px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1599px) {
+  .current-page {
+    font-size: 100px;
+    margin-top: 30px;
   }
 }
-.breadcrump .breadcrupm-content .sec-title-wrapper {
-  overflow: visible;
-}
-.breadcrump .breadcrupm-content .sec-title-wrapper .sec-title {
-  overflow: visible;
-}
-.breadcrump .breadcrupm-title h3 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 65px;
-  color: #000000;
-  margin-top: 10px;
+@media only screen and (max-width: 1399px) {
+  .current-page {
+    font-size: 90px;
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 1199px) {
-  .breadcrump .breadcrupm-title h3 {
-    font-size: 36px;
-    line-height: 1.2;
+  .current-page {
+    font-size: 74px;
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .breadcrump .breadcrupm-title h3 {
-    font-size: 30px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .breadcrump .breadcrupm-title h3 {
-    font-size: 22px;
+  .current-page {
+    font-size: 64px;
     margin-top: 5px;
+    line-height: 1;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .current-page {
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .breadcrump .breadcrupm-title h3 {
-    font-size: 18px;
+  .current-page {
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 479px) {
-  .breadcrump .breadcrupm-title h3 {
-    font-size: 16px;
-  }
-}
-.breadcrump .breadcrupm-title h3 span {
-  font-weight: 300;
-  color: #595959;
-}
-.breadcrump .breadcrump-img {
-  max-width: 20%;
-}
-@media only screen and (max-width: 479px) {
-  .breadcrump .breadcrump-img {
-    display: none;
+  .current-page {
+    font-size: 48px;
   }
 }
 
