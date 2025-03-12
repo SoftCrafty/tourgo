@@ -260,6 +260,168 @@
         },
       });
 
+// noUi slider plugin for price and day filter
+
+let keypressSliders = document.querySelectorAll(".slider-priceFilter");
+let daySliders = document.querySelectorAll(".slider-dayFilter");
+
+      //price filter
+    keypressSliders.forEach(function (keypressSlider, index) {
+        let input0 = keypressSlider.parentElement.querySelector(".input-with-keypress-0");
+        let input1 = keypressSlider.parentElement.querySelector(".input-with-keypress-1");
+        let inputs = [input0, input1];
+
+        if (keypressSlider) {
+            noUiSlider.create(keypressSlider, {
+                start: [450, 950],
+                connect: true,
+                step: 1,
+                range: {
+                    min: [50],
+                    max: [1500]
+                },
+                format: {
+                  to: function (value) {
+                      return Math.round(value); 
+                  },
+                  from: function (value) {
+                      return Number(value);
+                  }
+                }
+            });
+
+            keypressSlider.noUiSlider.on("update", function (values, handle) {
+                inputs[handle].innerText = values[handle];
+
+                function setSliderHandle(i, value) {
+                    var r = [null, null];
+                    r[i] = value;
+                    keypressSlider.noUiSlider.set(r);
+                }
+
+                inputs.forEach(function (input, handle) {
+                    input.addEventListener("change", function () {
+                        setSliderHandle(handle, this.value);
+                    });
+
+                    input.addEventListener("keydown", function (e) {
+                        var values = keypressSlider.noUiSlider.get();
+                        var value = Number(values[handle]);
+                        var steps = keypressSlider.noUiSlider.steps();
+                        var step = steps[handle];
+                        var position;
+
+                        switch (e.which) {
+                            case 13:
+                                setSliderHandle(handle, this.value);
+                                break;
+
+                            case 38:
+                                position = step[1];
+                                if (position === false) {
+                                    position = 1;
+                                }
+                                if (position !== null) {
+                                    setSliderHandle(handle, value + position);
+                                }
+                                break;
+
+                            case 40:
+                                position = step[0];
+                                if (position === false) {
+                                    position = 1;
+                                }
+                                if (position !== null) {
+                                    setSliderHandle(handle, value - position);
+                                }
+                                break;
+                        }
+                    });
+                });
+            });
+        }
+    });
+
+    // day filter
+    daySliders.forEach(function (keypressSlider, index) {
+        let input0 = keypressSlider.parentElement.querySelector(".input-with-keypress-0");
+        let input1 = keypressSlider.parentElement.querySelector(".input-with-keypress-1");
+        let inputs = [input0, input1];
+
+        if (keypressSlider) {
+            noUiSlider.create(keypressSlider, {
+                start: [0, 5],
+                connect: true,
+                step: 1,
+                range: {
+                    min: [0],
+                    max: [8]
+                },
+                format: {
+                  to: function (value) {
+                      return Math.round(value); 
+                  },
+                  from: function (value) {
+                      return Number(value);
+                  }
+                }
+            });
+
+            keypressSlider.noUiSlider.on("update", function (values, handle) {
+                inputs[handle].innerText = values[handle];
+
+                function setSliderHandle(i, value) {
+                    var r = [null, null];
+                    r[i] = value;
+                    keypressSlider.noUiSlider.set(r);
+                }
+
+                inputs.forEach(function (input, handle) {
+                    input.addEventListener("change", function () {
+                        setSliderHandle(handle, this.value);
+                    });
+
+                    input.addEventListener("keydown", function (e) {
+                        var values = keypressSlider.noUiSlider.get();
+                        var value = Number(values[handle]);
+                        var steps = keypressSlider.noUiSlider.steps();
+                        var step = steps[handle];
+                        var position;
+
+                        switch (e.which) {
+                            case 13:
+                                setSliderHandle(handle, this.value);
+                                break;
+
+                            case 38:
+                                position = step[1];
+                                if (position === false) {
+                                    position = 1;
+                                }
+                                if (position !== null) {
+                                    setSliderHandle(handle, value + position);
+                                }
+                                break;
+
+                            case 40:
+                                position = step[0];
+                                if (position === false) {
+                                    position = 1;
+                                }
+                                if (position !== null) {
+                                    setSliderHandle(handle, value - position);
+                                }
+                                break;
+                        }
+                    });
+                });
+            });
+        }
+    });
+
+
+
+
 
 
 

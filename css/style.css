@@ -3951,11 +3951,11 @@ input[type=radio] {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
-  width: 22px !important;
-  height: 22px !important;
-  border-color: #e3e4e5;
-  border-radius: 6px !important;
-  background-color: #e3e4e5 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: 1px solid rgba(28, 28, 28, 0.2);
+  border-radius: 2px !important;
+  background-color: white !important;
   transform: scale(1);
   transition: 0.3s;
   position: relative !important;
@@ -11957,4 +11957,128 @@ body {
   .contact-form-container.style-2 {
     width: 100%;
   }
+}
+
+.sidebar-card {
+  border: 1px solid rgba(28, 28, 28, 0.14);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 30px;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 5px 15px;
+}
+
+.sidebar-card-title {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  color: #1C1C1C;
+  background-color: rgba(29, 146, 205, 0.1019607843);
+  padding: 18px 30px;
+}
+
+.sidebar-card-content {
+  padding: 30px;
+}
+.sidebar-card-content label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  color: #616161;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.sidebar-card-content label input {
+  border-color: rgba(28, 28, 28, 0.14);
+}
+
+.package-header {
+  padding: 10px;
+  border: 1px solid rgba(28, 28, 28, 0.14);
+  border-radius: 6px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.package-header p {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-right a {
+  height: 40px;
+  width: 68px;
+  border-radius: 6px;
+  background: rgba(29, 146, 205, 0.1019607843);
+  color: #616161;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.header-right a.active {
+  background-color: #1D92CD;
+  color: #ffffff;
+}
+.header-right .nice-select {
+  height: 40px;
+  background: rgba(29, 146, 205, 0.1019607843);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.header-right .nice-select span {
+  color: #616161;
+}
+
+.filtered-price__min-max {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.filtered-price__min-max span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+  color: #616161;
+}
+
+.filtered-price__number {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.filtered-price__number span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1C1C1C;
+}
+
+.noUi-horizontal {
+  height: 6px;
+  background: rgba(28, 28, 28, 0.1019607843);
+}
+
+.noUi-connect {
+  background: #1D92CD;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  right: -6px;
+  top: -7px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 14px 0px rgba(28, 28, 28, 0.2);
 }

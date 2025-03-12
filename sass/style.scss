@@ -99,14 +99,16 @@ Footer
 
 
 // inner pages
-@import "modules/inner-page/breadcrum";
+@import "modules/inner-page/breadcrum"; //
 @import "modules/inner-page/about"; //
 @import "modules/inner-page/service-details";
 @import "modules/inner-page/project-details";
 @import "modules/inner-page/faq";
-@import "modules/inner-page/contact";
+@import "modules/inner-page/contact"; //
 @import "modules/inner-page/blog";
 @import "modules/inner-page/blog-details";
+@import "modules/inner-page/package-view";
+
 
 
 
