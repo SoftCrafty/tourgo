@@ -11978,6 +11978,65 @@ body {
   }
 }
 
+.package-list-view {
+  margin-bottom: 120px;
+}
+@media only screen and (max-width: 991px) {
+  .package-list-view {
+    margin-bottom: 60px;
+  }
+}
+.package-list-view .package-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .package-list-view .package-item {
+    flex-direction: column;
+  }
+}
+.package-list-view .package-item .package-image {
+  height: 100%;
+}
+@media only screen and (max-width: 1399px) {
+  .package-list-view .package-item .package-image {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .package-list-view .package-item .package-image {
+    width: 100%;
+  }
+}
+.package-list-view .package-item .package-image a {
+  display: block;
+  height: 100%;
+}
+.package-list-view .package-item .package-image a img {
+  width: 100%;
+  height: 100%;
+}
+.package-list-view .package-item .package-details {
+  flex: 1;
+  padding: 0 50px 35px;
+}
+@media only screen and (max-width: 1599px) {
+  .package-list-view .package-item .package-details {
+    padding: 0 30px 35px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .package-list-view .package-item .package-details {
+    padding: 0 20px 35px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .package-list-view .package-item .package-details .book-btn {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .sidebar-card-container {
     display: none;

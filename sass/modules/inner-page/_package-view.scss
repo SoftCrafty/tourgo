@@ -18,6 +18,60 @@
     }
 }
 
+.package-list-view{
+    margin-bottom: 120px;
+
+    @include md{
+        margin-bottom: 60px;
+    }
+
+    .package-item{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @include sm{
+            flex-direction: column;
+        }
+
+        .package-image{
+            height: 100%;
+
+            @include xl{
+                width: 40%;
+            }
+            @include sm{
+                width: 100%;
+            }
+            a{
+                display: block;
+                height: 100%;
+                img{
+                   width: 100%;
+
+                   height: 100%;
+                }
+            }
+        }
+
+        .package-details{
+            flex: 1;
+            padding: 0 50px 35px;
+
+            @include xxl{
+                padding: 0 30px 35px;
+            } 
+            @include xs{
+                padding: 0 20px 35px;
+            }
+            .book-btn{
+                @include xl{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
 .sidebar-card-container{
     @include md{
         display: none;
