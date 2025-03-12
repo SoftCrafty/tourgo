@@ -11959,6 +11959,31 @@ body {
   }
 }
 
+.package-grid-view {
+  margin-bottom: 120px;
+}
+@media only screen and (max-width: 991px) {
+  .package-grid-view {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .package-grid-view .lg-none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .package-grid-view .lg-none {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .sidebar-card-container {
+    display: none;
+  }
+}
+
 .sidebar-card {
   border: 1px solid rgba(28, 28, 28, 0.14);
   border-radius: 10px;
@@ -11966,6 +11991,11 @@ body {
   background: #ffffff;
   margin-bottom: 30px;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 5px 15px;
+}
+@media only screen and (max-width: 1399px) {
+  .sidebar-card {
+    margin-bottom: 25px;
+  }
 }
 
 .sidebar-card-title {
@@ -11977,9 +12007,25 @@ body {
   background-color: rgba(29, 146, 205, 0.1019607843);
   padding: 18px 30px;
 }
+@media only screen and (max-width: 1199px) {
+  .sidebar-card-title {
+    font-size: 26px;
+    padding: 12px 25px;
+  }
+}
 
 .sidebar-card-content {
   padding: 30px;
+}
+@media only screen and (max-width: 1399px) {
+  .sidebar-card-content {
+    padding: 30px 25px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .sidebar-card-content {
+    padding: 25px 20px;
+  }
 }
 .sidebar-card-content label {
   display: flex;
@@ -11989,6 +12035,16 @@ body {
   color: #616161;
   font-weight: 500;
   margin-bottom: 16px;
+}
+@media only screen and (max-width: 1599px) {
+  .sidebar-card-content label {
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .sidebar-card-content label {
+    margin-bottom: 10px;
+  }
 }
 .sidebar-card-content label input {
   border-color: rgba(28, 28, 28, 0.14);
@@ -12003,6 +12059,12 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .package-header {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .package-header p {
   margin-bottom: 0;
@@ -12081,4 +12143,34 @@ body {
   top: -7px;
   border-radius: 50%;
   box-shadow: 0px 4px 14px 0px rgba(28, 28, 28, 0.2);
+}
+
+.package-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 1599px) {
+  .package-pagination {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .package-pagination {
+    margin-top: 30px;
+  }
+}
+.package-pagination button {
+  height: 44px;
+  width: 44px;
+  border-radius: 6px;
+  border: 1px solid rgba(28, 28, 28, 0.14);
+  font-weight: 500;
+  font-size: 15px;
+  color: #616161;
+}
+.package-pagination button:hover {
+  background-color: #1D92CD;
+  color: #ffffff;
 }

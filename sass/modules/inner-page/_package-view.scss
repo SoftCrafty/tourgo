@@ -1,6 +1,29 @@
 
 // package grid view ============
 
+.package-grid-view{
+    margin-bottom: 120px;
+
+    @include md{
+        margin-bottom: 60px;
+    }
+
+    .lg-none{
+        @include lg{
+            display: none;
+        }
+        @include sm{
+            display: block;
+        }
+    }
+}
+
+.sidebar-card-container{
+    @include md{
+        display: none;
+    }
+}
+
 .sidebar-card{
     border: 1px solid $border-clr;
     border-radius: 10px;
@@ -8,6 +31,11 @@
     background: $white;
     margin-bottom: 30px;
     box-shadow: rgba(149, 157, 165, 0.1) 0px 5px 15px;
+
+    @include xl{
+        margin-bottom: 25px;
+
+    }
 }
 
 .sidebar-card-title{
@@ -18,10 +46,21 @@
     color: $text-black;
     background-color: $section-bg;
     padding: 18px 30px;
+
+    @include lg{
+        font-size: 26px;
+        padding: 12px 25px;
+    }
 }
 
 .sidebar-card-content{
     padding: 30px;
+    @include xl{
+        padding: 30px 25px;
+    }
+    @include lg{
+        padding: 25px 20px;
+    }
 
     label{
         display: flex;
@@ -31,6 +70,13 @@
         color: $text-color;
         font-weight: 500;
         margin-bottom: 16px;
+
+        @include xxl{
+            margin-bottom: 12px;
+        }
+        @include lg{
+            margin-bottom: 10px;
+        }
 
         input{
             border-color: $border-clr;
@@ -48,6 +94,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+
+    @include sm{
+        flex-direction: column;
+        gap: 10px;
+    }
 
     p{
         margin-bottom: 0;
@@ -136,4 +187,33 @@
     border-radius: 50%;
     box-shadow: 0px 4px 14px 0px #1C1C1C33;
 
+}
+
+.package-pagination{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+
+    @include xxl{
+        margin-top: 50px;
+    }
+    @include md{
+        margin-top: 30px;
+    }
+
+    button{
+        height: 44px;
+        width: 44px;
+        border-radius: 6px;
+        border: 1px solid $border-clr;
+        font-weight: 500;
+        font-size: 15px;
+        color: $text-color;
+
+        &:hover{
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
 }
