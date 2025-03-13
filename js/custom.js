@@ -199,6 +199,10 @@
               return '<span class="' + className + '">' + '<i class="fa-solid fa-circle"></i>' + '</span>';
           },
         },
+        navigation: {
+          nextEl: ".right__slide-team",
+          prevEl: ".left__slide-team",
+        },
        
         breakpoints: {
           0: {

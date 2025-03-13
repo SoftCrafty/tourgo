@@ -6,6 +6,25 @@
     @include md{
         margin-top: 70px;
     }
+
+    &.style-2{
+        margin-top: 110px;
+        margin-bottom: 110px;
+
+        @include md{
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
+
+        .slider-controller{
+            @include sm{
+                align-self: flex-end;
+            }
+        }
+        .team-member-slider{
+            padding-bottom: 5px;
+        }
+    }
 }
 
 .team-member{
