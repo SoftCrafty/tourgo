@@ -1,101 +1,123 @@
 
-.faq-section{
-    &.mt-100{
-        margin-top: 100px;
 
-        @include md{
-            margin-top: 50px;
-        }
-    }
-}
 .faq-container{
+    padding: 0 250px;
 
+    @include xxl{
+        padding: 0 180px;
+    }
+    @include xl{
+        padding: 0 150px;
+    }
+    @include lg{
+        padding: 0 100px;
+    }
+    @include md{
+        padding: 0;
+    }
     .accordion-item{
         background-color: $white;
         margin-bottom: 20px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        border: none;
+        border: 1px solid $border-clr;
+        border-radius: 10px;
+        overflow: hidden;
+
+        @include sm{
+            margin-bottom: 15px;
+        }
 
         .accordion-header{
-            font-family: $outfit-font;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 30px;
-            color: $black-900;
-            box-shadow: rgba(149, 157, 165, 0.15) 0px 5px 20px;
 
             .accordion-button{
-                color: $black-900;
-                padding: 13px 60px;
+                
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: $text-black;
+
+                padding: 10px 30px;
+
+                @include sm{
+                    padding: 5px 20px;
+                    font-size: 16px;
+                }
                 
                 &.collapsed{
-                    &::before{
-                        content: "\2b";
-                        font-family: "Font Awesome 6 pro";
+                    color: $text-black;
+
+                    &::after{
+                        background-color: $section-bg;
+                        color: $text-black;
                     }
                 }
 
                 &:not(.collapsed){
-                    background-color: transparent;
-                    box-shadow: none;
+                    background-color: $primary-color;
+                    color: $white;
+
+                    &::after{
+                        color: $text-black;
+                    }
                 }
                
-
-                &:hover{
-                    color: $black-900;
-                }
+                
 
                 &:focus{
-                    background-color: $white;
+                    background-color: $primary-color;
+                    color: $white;
                     box-shadow: none;
                 }
 
+
                 &:after{
-                    display: none;
-                }
-                &:before{
-                    
-                     position: absolute;
-                     left: 20px;
-                    content: "\f068";
-                    font-family: 
-                    "Font Awesome 6 pro";
-                    font-size: 16px;
-                    font-weight: 900;
-                    height: 24px;
-                    width: 24px;
+                    content: "\f107";
+                    font-family: "Font Awesome 6 pro";
+                    height: 32px;
+                    width: 32px;
+                    background-image: none;
+                    background-color: $white;
                     border-radius: 50%;
-                    background-color: $primary-clr;
-                    color: $white;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-right: 20px;
 
-                    @include sm{
-                        font-size: 14px;
-                    }
-
-                    @include xs{
-                        font-size: 12px;
-                        height: 20px;
-                        width: 20px;
+                    @include xxs{
+                        height: 28px;
+                        width: 28px;
                     }
                 }
+               
             }
         }
 
         .accordion-body{
-            width: 70%;
-            padding-left: 15px;
-            margin-top: 20px;
-            border-left: 2px solid $primary-clr;
+            width: 90%;
+            padding-left: 30px;
+            padding-bottom: 53px;
+            margin-top: 6px;
+            color: #616161E5;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
 
-            @include lg{
-                width: 90%;
+
+            @include xxl{
+                width: 95%;
             }
-            @include md{
+            @include xl{
                 width: 100%;
+            }
+
+            @include sm{
+                font-size: 16px;
+                padding-bottom: 30px;
+                padding-left: 20px;
+            }
+
+            @include xs{
+                margin-top: 0;
+                padding-bottom: 20px;
+                line-height: 26px;
             }
         }
     }

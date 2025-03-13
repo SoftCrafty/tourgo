@@ -11254,94 +11254,123 @@ body {
   }
 }
 
-.faq-section.mt-100 {
-  margin-top: 100px;
+.faq-container {
+  padding: 0 250px;
 }
-@media only screen and (max-width: 991px) {
-  .faq-section.mt-100 {
-    margin-top: 50px;
+@media only screen and (max-width: 1599px) {
+  .faq-container {
+    padding: 0 180px;
   }
 }
-
+@media only screen and (max-width: 1399px) {
+  .faq-container {
+    padding: 0 150px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .faq-container {
+    padding: 0 100px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq-container {
+    padding: 0;
+  }
+}
 .faq-container .accordion-item {
   background-color: #ffffff;
   margin-bottom: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border: none;
+  border: 1px solid rgba(28, 28, 28, 0.14);
+  border-radius: 10px;
+  overflow: hidden;
 }
-.faq-container .accordion-item .accordion-header {
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: #000000;
-  box-shadow: rgba(149, 157, 165, 0.15) 0px 5px 20px;
+@media only screen and (max-width: 767px) {
+  .faq-container .accordion-item {
+    margin-bottom: 15px;
+  }
 }
 .faq-container .accordion-item .accordion-header .accordion-button {
-  color: #000000;
-  padding: 13px 60px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1C1C1C;
+  padding: 10px 30px;
 }
-.faq-container .accordion-item .accordion-header .accordion-button.collapsed::before {
-  content: "+";
-  font-family: "Font Awesome 6 pro";
+@media only screen and (max-width: 767px) {
+  .faq-container .accordion-item .accordion-header .accordion-button {
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+}
+.faq-container .accordion-item .accordion-header .accordion-button.collapsed {
+  color: #1C1C1C;
+}
+.faq-container .accordion-item .accordion-header .accordion-button.collapsed::after {
+  background-color: rgba(29, 146, 205, 0.1019607843);
+  color: #1C1C1C;
 }
 .faq-container .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  box-shadow: none;
+  background-color: #1D92CD;
+  color: #ffffff;
 }
-.faq-container .accordion-item .accordion-header .accordion-button:hover {
-  color: #000000;
+.faq-container .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  color: #1C1C1C;
 }
 .faq-container .accordion-item .accordion-header .accordion-button:focus {
-  background-color: #ffffff;
+  background-color: #1D92CD;
+  color: #ffffff;
   box-shadow: none;
 }
 .faq-container .accordion-item .accordion-header .accordion-button:after {
-  display: none;
-}
-.faq-container .accordion-item .accordion-header .accordion-button:before {
-  position: absolute;
-  left: 20px;
-  content: "\f068";
+  content: "\f107";
   font-family: "Font Awesome 6 pro";
-  font-size: 16px;
-  font-weight: 900;
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
+  background-image: none;
+  background-color: #ffffff;
   border-radius: 50%;
-  background-color: #47CD7D;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
 }
-@media only screen and (max-width: 767px) {
-  .faq-container .accordion-item .accordion-header .accordion-button:before {
-    font-size: 14px;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .faq-container .accordion-item .accordion-header .accordion-button:before {
-    font-size: 12px;
-    height: 20px;
-    width: 20px;
+@media only screen and (max-width: 479px) {
+  .faq-container .accordion-item .accordion-header .accordion-button:after {
+    height: 28px;
+    width: 28px;
   }
 }
 .faq-container .accordion-item .accordion-body {
-  width: 70%;
-  padding-left: 15px;
-  margin-top: 20px;
-  border-left: 2px solid #47CD7D;
+  width: 90%;
+  padding-left: 30px;
+  padding-bottom: 53px;
+  margin-top: 6px;
+  color: rgba(97, 97, 97, 0.8980392157);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1599px) {
   .faq-container .accordion-item .accordion-body {
-    width: 90%;
+    width: 95%;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1399px) {
   .faq-container .accordion-item .accordion-body {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq-container .accordion-item .accordion-body {
+    font-size: 16px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .faq-container .accordion-item .accordion-body {
+    margin-top: 0;
+    padding-bottom: 20px;
+    line-height: 26px;
   }
 }
 
