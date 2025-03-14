@@ -423,8 +423,20 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
         }
     });
 
-
-
+    // toggle password for sign in and sign up page
+    $(".toggle-password").click(function () {
+      let passwordField = $("#password"); 
+      let icon = $(this).find("i");
+    
+      if (passwordField.attr("type") === "password") {
+        passwordField.attr("type", "text");
+        icon.removeClass("fa-eye-slash").addClass("fa-eye");
+      } else {
+        passwordField.attr("type", "password");
+        icon.removeClass("fa-eye").addClass("fa-eye-slash");
+      }
+    });
+    
 
 
 

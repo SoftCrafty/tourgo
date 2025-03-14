@@ -1,0 +1,282 @@
+
+
+// sign in page
+
+.sign-in-section{
+    position: relative;
+    background-color: $section-bg;
+       
+  .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #00000045;
+    display: none;
+
+    @include md{
+        display: block;
+    }
+
+  }
+}
+
+.sign-in-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    height: 100%;
+
+    img{
+        height: 100%;
+
+        @include md{
+            width: 100%;
+        }
+    }
+
+    @include md{
+        right: 0;
+        bottom: 0;
+        
+    }
+}
+
+.sign-in-form-container{
+    max-width: 520px;
+    margin-left: 100px;
+    padding: 120px 0;
+
+    @include xl{
+        padding: 80px 0;
+        margin-left: 70px;
+    }
+
+    @include lg{
+        margin-left: 25px;
+    }
+   @include md{
+    z-index: 5;
+    position: relative;
+    margin-left: 0;
+    margin: 0 auto;
+    padding: 60px 0;
+   }
+
+   @include sm{
+    max-width: 100%;
+   }
+
+    form{
+        margin-top: 35px;
+        @include xl{
+            margin-top: 20px;
+        }
+    }
+
+    .desc-text{
+        margin-top: 20px;
+        text-align: center;
+
+        p{
+            @include md{
+                color: $white;
+            }
+        }
+        a{
+            color: $primary-color;
+        }
+    }
+
+    .info-title{
+        @include md{
+            color: $white;
+        }
+    }
+   
+}
+
+.input-item{
+
+    margin-bottom: 25px;
+    @include xl{
+        margin-bottom: 20px;
+    }
+    @include xs{
+        margin-bottom: 15px;
+    }
+
+    label{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text-black;
+
+        @include md{
+            color: $white;
+        }
+        
+    }
+
+    input{
+        background-color: $white;
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0px 1px 2px 0px #1C1C1C1A;
+        padding: 15px 20px;
+        font-size: 16px;
+        color: $text-black;
+        margin-top: 12px;
+        border: 1px solid transparent;
+
+        @include xs{
+            margin-top: 5px;
+            height: 45px;
+        }
+
+        &::placeholder{
+            color: $text-color;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        &:focus{
+            border-color: $primary-color;
+        }
+    }
+
+
+}
+.password{
+    position: relative;
+
+    .toggle-password{
+        position: absolute;
+        top: 56%;
+        right: 20px;
+        font-size: 16px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    input{
+        padding-right: 60px;
+    }
+}
+
+.checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 16px;
+    color: $text-color;
+    font-weight: 500;
+    margin-bottom: 16px;
+
+    @include xxl{
+        margin-bottom: 12px;
+    }
+    @include lg{
+        margin-bottom: 10px;
+    }
+
+    input{
+        border-color: $border-clr;
+    }
+}
+
+.devider-or{
+   
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 38px 0;
+
+    @include xl{
+        margin: 20px 0;
+    }
+
+    span{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1;
+      color: $text-color;
+      text-transform: uppercase;  
+      
+      display: inline-block;
+
+      @include md{
+        color: $white;
+      }
+
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1px;
+      width: 100%;
+      background-color: $border-clr;
+      right: 53%;
+
+      @include md{
+        background-color: $gray-1;
+      }
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1px;
+      width: 100%;
+      background-color: $border-clr;
+      left: 53%;
+      @include md{
+        background-color: $gray-1;
+      }
+    }
+}
+
+.social-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-btn{
+    box-shadow: 0px 1px 2px 0px #1C1C1C1A;
+    background-color: $white;
+    color: $text-black;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    height: 50px;
+    width: 164px;
+
+    @include xxl{
+        width: 150px;
+    }
+
+    @include lg{
+        width: 135px;
+    }
+    @include md{
+        width: 160px;
+    }
+    @include xs{
+        width: 140px;
+    }
+
+    @include xxs{
+        width: 112px;
+        font-size: 15px;
+    }
+
+    &:hover{
+        color: $text-black;
+    }
+}

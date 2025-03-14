@@ -172,5 +172,22 @@
     @include lg{
         font-size: 26px;
     }
+
+    &.style-2{
+        font-size: 54px;
+
+        @include xl{
+            font-size: 48px;
+        }
+        @include md{
+            font-size: 46px;
+        }
+        @include sm{
+           font-size: 44px;
+        }
+        @include xxs{
+            font-size: 36px;
+        }
+    }
 }
 

@@ -6372,6 +6372,29 @@ body {
     font-size: 26px;
   }
 }
+.info-title.style-2 {
+  font-size: 54px;
+}
+@media only screen and (max-width: 1399px) {
+  .info-title.style-2 {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .info-title.style-2 {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info-title.style-2 {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .info-title.style-2 {
+    font-size: 36px;
+  }
+}
 
 @keyframes sticy-menu {
   0% {
@@ -7247,6 +7270,9 @@ body {
     padding: 55px 0;
     margin-top: 60px;
   }
+}
+.cta.sign-in {
+  margin-top: 0;
 }
 
 .cta-title .section-title {
@@ -12601,4 +12627,290 @@ body {
 .skill-item .progress .progress-bar {
   background: #1D92CD;
   border-radius: 10px;
+}
+
+.sign-in-section {
+  position: relative;
+  background-color: rgba(29, 146, 205, 0.1019607843);
+}
+.sign-in-section .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2705882353);
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-section .overlay {
+    display: block;
+  }
+}
+
+.sign-in-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  height: 100%;
+}
+.sign-in-img img {
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-img img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-img {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.sign-in-form-container {
+  max-width: 520px;
+  margin-left: 100px;
+  padding: 120px 0;
+}
+@media only screen and (max-width: 1399px) {
+  .sign-in-form-container {
+    padding: 80px 0;
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .sign-in-form-container {
+    margin-left: 25px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-form-container {
+    z-index: 5;
+    position: relative;
+    margin-left: 0;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sign-in-form-container {
+    max-width: 100%;
+  }
+}
+.sign-in-form-container form {
+  margin-top: 35px;
+}
+@media only screen and (max-width: 1399px) {
+  .sign-in-form-container form {
+    margin-top: 20px;
+  }
+}
+.sign-in-form-container .desc-text {
+  margin-top: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-form-container .desc-text p {
+    color: #ffffff;
+  }
+}
+.sign-in-form-container .desc-text a {
+  color: #1D92CD;
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-form-container .info-title {
+    color: #ffffff;
+  }
+}
+
+.input-item {
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 1399px) {
+  .input-item {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .input-item {
+    margin-bottom: 15px;
+  }
+}
+.input-item label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1C1C1C;
+}
+@media only screen and (max-width: 991px) {
+  .input-item label {
+    color: #ffffff;
+  }
+}
+.input-item input {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px rgba(28, 28, 28, 0.1019607843);
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #1C1C1C;
+  margin-top: 12px;
+  border: 1px solid transparent;
+}
+@media only screen and (max-width: 576px) {
+  .input-item input {
+    margin-top: 5px;
+    height: 45px;
+  }
+}
+.input-item input::placeholder {
+  color: #616161;
+  font-size: 15px;
+  font-weight: 500;
+}
+.input-item input:focus {
+  border-color: #1D92CD;
+}
+
+.password {
+  position: relative;
+}
+.password .toggle-password {
+  position: absolute;
+  top: 56%;
+  right: 20px;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.password input {
+  padding-right: 60px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  color: #616161;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 1599px) {
+  .checkbox-item {
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .checkbox-item {
+    margin-bottom: 10px;
+  }
+}
+.checkbox-item input {
+  border-color: rgba(28, 28, 28, 0.14);
+}
+
+.devider-or {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 38px 0;
+}
+@media only screen and (max-width: 1399px) {
+  .devider-or {
+    margin: 20px 0;
+  }
+}
+.devider-or span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1;
+  color: #616161;
+  text-transform: uppercase;
+  display: inline-block;
+}
+@media only screen and (max-width: 991px) {
+  .devider-or span {
+    color: #ffffff;
+  }
+}
+.devider-or::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.14);
+  right: 53%;
+}
+@media only screen and (max-width: 991px) {
+  .devider-or::after {
+    background-color: #ADB4BC;
+  }
+}
+.devider-or::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.14);
+  left: 53%;
+}
+@media only screen and (max-width: 991px) {
+  .devider-or::before {
+    background-color: #ADB4BC;
+  }
+}
+
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-btn {
+  box-shadow: 0px 1px 2px 0px rgba(28, 28, 28, 0.1019607843);
+  background-color: #ffffff;
+  color: #1C1C1C;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 6px;
+  height: 50px;
+  width: 164px;
+}
+@media only screen and (max-width: 1599px) {
+  .social-btn {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .social-btn {
+    width: 135px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .social-btn {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .social-btn {
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .social-btn {
+    width: 112px;
+    font-size: 15px;
+  }
+}
+.social-btn:hover {
+  color: #1C1C1C;
 }
