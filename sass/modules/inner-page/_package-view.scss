@@ -267,7 +267,8 @@
         font-size: 15px;
         color: $text-color;
 
-        &:hover{
+        &:hover,
+        &.active{
             background-color: $primary-color;
             color: $white;
         }
