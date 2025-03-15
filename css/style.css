@@ -12859,4 +12859,40 @@ body {
 }
 .social-btn:hover {
   color: #1C1C1C;
+}
+
+.error-404 {
+  background-color: rgba(29, 146, 205, 0.1019607843);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-container {
+  text-align: center;
+}
+.error-container .section-title {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 1199px) {
+  .error-container .section-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .error-container .desc-text br {
+    display: none;
+  }
+}
+
+.back-to-home {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1199px) {
+  .back-to-home {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
