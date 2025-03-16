@@ -39,8 +39,7 @@
           $("body").removeClass("sticky"); // Remove sticky when scrollTop is 0
       }
       
-        // Remove 'sticky' class when menu is shown
-       // $("body").removeClass("sticky");
+       
       });
     
       // Hide sidebar menu on close button click
@@ -437,7 +436,11 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
       }
     });
     
-   
+   // rating star in a project details leave a Feedback section
+
+   $(".stars-container span i").click(function(){
+    $(this).toggleClass("active")
+   });
 
 
 
