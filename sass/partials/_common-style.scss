@@ -203,3 +203,10 @@
     }
 }
 
+.inner-space{
+    margin-top: 130px ;
+
+    @include md{
+        margin-top: 66px ;
+    }
+}

@@ -6333,6 +6333,15 @@ body {
   font-size: 44px;
 }
 
+.inner-space {
+  margin-top: 130px;
+}
+@media only screen and (max-width: 991px) {
+  .inner-space {
+    margin-top: 66px;
+  }
+}
+
 @keyframes sticy-menu {
   0% {
     top: -50px;
@@ -7409,6 +7418,14 @@ body {
 @media only screen and (max-width: 991px) {
   .cta-2 {
     margin-top: 70px;
+  }
+}
+.cta-2.inner-space {
+  margin-top: 130px;
+}
+@media only screen and (max-width: 991px) {
+  .cta-2.inner-space {
+    margin-top: 66px;
   }
 }
 
@@ -8687,6 +8704,14 @@ body {
 @media only screen and (max-width: 1399px) {
   .testimonial-2 .section-header {
     text-align: center;
+  }
+}
+.testimonial-2.inner-space {
+  margin-top: 130px;
+}
+@media only screen and (max-width: 991px) {
+  .testimonial-2.inner-space {
+    margin-top: 66px;
   }
 }
 
@@ -10243,6 +10268,14 @@ body {
 .team-members.style-2 .team-member-slider {
   padding-bottom: 5px;
 }
+.team-members.inner-space {
+  margin-top: 130px;
+}
+@media only screen and (max-width: 991px) {
+  .team-members.inner-space {
+    margin-top: 68px;
+  }
+}
 
 .team-member {
   border: 1px solid rgba(28, 28, 28, 0.12);
@@ -10622,6 +10655,10 @@ body {
   padding: 120px 0;
   margin-top: 130px;
 }
+.about-service.style-2 {
+  background-color: transparent;
+  padding: 0;
+}
 @media only screen and (max-width: 991px) {
   .about-service {
     padding: 57px 0 60px;
@@ -10631,6 +10668,7 @@ body {
 
 .abt-service-item {
   background-color: #ffffff;
+  border: 1px solid rgba(28, 28, 28, 0.12);
   border-radius: 10px;
   padding: 40px 30px;
   transition: all 0.3s;
