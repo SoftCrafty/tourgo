@@ -40,7 +40,13 @@
 Footer
 
 
+
 ===========================*/
+
+:root{
+    scroll-behavior: smooth;
+}
+
 /* Theme Default CSS */
 @import "variables";
 @import "mixin";

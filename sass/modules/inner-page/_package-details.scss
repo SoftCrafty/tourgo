@@ -1,7 +1,20 @@
 
-
+.blog-details-wrapper{
+    &.project-details-wrapper{
+       @include xxl{
+        margin-right: 0;
+       }
+    }
+}
 .feel-excellence{
     margin: 75px 0 55px;
+
+    @include lg{
+        margin: 50px 0 30px;
+    }
+    @include sm{
+        margin: 30px 0 10px;
+    }
 
     ul{
         list-style-type: none;
@@ -9,6 +22,12 @@
         grid-template-columns: repeat(3, 1fr);
         margin-top: 20px;
 
+        @include xl{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include sm{
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         li{
             font-weight: 500;
@@ -17,6 +36,14 @@
             color: $text-color;
             margin-bottom: 30px;
             position: relative;
+
+            @include xxl{
+                font-size: 17px;
+            }
+            @include sm{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
 
             &::before{
                 content: "\f00c";
@@ -44,6 +71,13 @@
 
 .travel-features{
     margin-bottom: 85px;
+
+    @include xl{
+        margin-bottom: 60px;
+    }
+    @include sm{
+        margin-bottom: 40px;
+    }
 }
 
 .feature-container{
@@ -52,6 +86,11 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 15px;
+
+    @include sm{
+        gap: 15px;
+        margin-top: 10px;
+    }
 }
 
 .feature-item{
@@ -70,11 +109,22 @@
     gap: 10px;
     transition: 0.3s ease-in-out;
 
+    @include sm{
+        font-size: 16px;
+        width: 245px;
+    }
+    @include xs{
+        width: 220px;
+        padding: 0 10px;
+        height: 55px;
+    }
+
     img{
         transition: 0.3s ease-in-out;
     }
     i{
         color: black;
+        font-size: 34px;
     }
     &:hover{
         background-color: $primary-color;
@@ -96,6 +146,10 @@
     .faq-container{
         padding: 0;
         margin-top: 20px;
+
+        @include sm{
+            margin-top: 15px;
+        }
 
         .accordion-item{
             .accordion-header{
@@ -133,6 +187,14 @@
     border-radius: 10px;
     margin-top: 100px;
 
+    @include xl{
+        margin-top: 75px;
+    }
+    @include sm{
+        margin-top: 55px;
+        padding: 15px 25px 25px;
+    }
+
     .gmap_canvas{
         margin-top: 7px;
     }
@@ -145,6 +207,14 @@
     padding: 25px 40px 35px;
     border-radius: 10px;
     margin-top: 100px;
+
+    @include lg{
+        margin-top: 75px;
+    }
+    @include sm{
+        margin-top: 55px;
+        padding: 15px 25px 25px;
+    }
 
     .contact-title{
         margin-bottom: 15px;
@@ -171,6 +241,11 @@
         font-size: 74px;
         line-height: 1;
         color: $text-black;
+
+        @include md{
+            font-size: 64px;
+        }
+        
     }
     .rating-stars{
         margin-top: 12px;
@@ -213,6 +288,13 @@
     border-bottom: 1px solid $border-clr;
     width: 840px;
 
+    @include xxl{
+        width: 800px;
+    }
+    @include xl{
+        width: 100%;
+    }
+
     .rating-stars{
         margin-bottom: 20px;
     }
@@ -220,12 +302,40 @@
         width: 100%;
         border-bottom: none;
         padding: 35px 0;
+
+        @include sm{
+            padding: 20px 0;
+        }
+    }
+
+    .desc-text{
+        p{
+            @include sm{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .author-details{
+        button {
+            @include xxs{
+             display: flex;
+             align-items: center;
+             gap: 3px;
+            }
+        }
     }
 }
 
 .reply-comment-2{
     margin-top: 45px;
     margin-left: 70px;
+    @include xl{
+        margin-left: 0;
+    }
+    @include sm{
+        margin-top: 25px;
+    }
 }
 
 // Leave a Comment 
@@ -235,6 +345,27 @@
         padding: 25px 40px 35px;
         border-radius: 10px;
         margin-top: 100px;
+
+        @include lg{
+            margin-top: 75px;
+        }
+        @include sm{
+            margin-top: 55px;
+            padding: 15px 25px 25px;
+        }
+
+        .checkbox{
+            .checkbox-item{
+                input{
+                    @include lg{
+                        align-self: flex-start;
+                        margin-top: 5px !important;
+                    }
+                }
+            }
+        }
+
+
     }
 }
 
@@ -242,6 +373,9 @@
     margin-bottom: 20px;
 }
 .stars-container{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
     span{
         color: #61616133;
 
@@ -253,5 +387,95 @@
                 color: #F59E0B;
             }
         }
+    }
+}
+
+// side bar Tour Booking 
+
+.sidebar-card-content{
+
+    .book-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border-clr;
+        margin-top: 20px;
+
+        @include xxl{
+            gap: 20px;
+        }
+    
+        label{
+            color: $text-black;
+            display: inline-block;
+            margin-bottom: 0;
+            cursor: auto;
+        }
+        input{
+            border: 1px solid $border-clr;
+           
+            height: 40px;
+            border-radius: 6px ;
+            padding: 0 8px;
+            width: 180px;
+
+            
+        }
+
+        span{
+            color: $text-color;
+        }
+    }
+
+    .extra-services{
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border-clr;
+
+        p{
+            color: $text-black;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .extra-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    
+        label{
+            margin-bottom: 0;
+        }
+        span{
+            color: $text-black;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    span{
+        font-weight: 500;
+        color: $text-black;
+        font-size: 16px;
+    }
+    .total-price{
+        font-weight: 600;
+    }
+}
+
+.book-now-btn{
+    button{
+        width: 100%;
+        margin-top: 30px;
     }
 }

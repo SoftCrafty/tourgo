@@ -202,7 +202,7 @@
         
         <div class="row">
           <div class="col-xxl-9 col-lg-8">
-            <div class="blog-details-wrapper">
+            <div class="blog-details-wrapper project-details-wrapper">
               <div class="blog-details-content">
                 <div class="blog-details-img">
                   <img src="./images/package-tour/package-details.png" alt="package-details">
@@ -249,7 +249,7 @@
                     Use Free Wi-Fi
                   </button>
                   <button class="feature-item">
-                    <i class="fa-regular fa-shield-check"></i>
+                    <i class="fa-thin fa-shield-check"></i>
                     Special Security
                   </button>
                   <button class="feature-item">
@@ -348,7 +348,7 @@
              </div>
              <div class="customer-review">
                 <h3 class="contact-title">Customer Reviews</h3>
-                <div class="row align-items-center">
+                <div class="row g-4 align-items-center">
                   <div class="col-md-4">
                     <div class="review-box">
                       <h2 class="rating-point">4.9</h2>
@@ -510,129 +510,43 @@
           <div class="col-xxl-3 col-lg-4">
             <div class="sidebar-card-container">
               <div class="sidebar-card">
-                <div class="sidebar-card-title">Search</div>
+                <div class="sidebar-card-title">Tour Booking</div>
                 <div class="sidebar-card-content">
-                  <div class="search-form">
-                    <form action="#">
-                      <input type="text" placeholder="Search here...">
-                      <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                  <div class="book-item">
+                    <label > Form Date: </label>
+                    <input type="date" placeholder="mm/dd/yy">
                   </div>
-                </div>
-              </div>
-              <div class="sidebar-card">
-                <div class="sidebar-card-title">Recent Posts</div>
-                <div class="sidebar-card-content">
-                  <div class="recent-post-item">
-                    <div class="recent-post-image">
-                      <a href="blog-details.html">
-                        <img src="./images/blog/blog-post1.png" alt="recent post">
-                      </a>
+                  <div class="book-item">
+                    <label > Time: </label>
+                    <input type="time">
+                  </div>
+                  <div class="book-item">
+                    <label > Ticket: </label>
+                    <span>Please Date First</span>
+                  </div>
+                  <div class="extra-services">
+                    <p>Add Extra</p>
+                    <div class="extra-item">
+                      <label class="checkbox-item">
+                        <input type="checkbox" value="agree">
+                        Add Service per booking
+                      </label>
+                      <span>$45</span>
                     </div>
-                    <div class="recent-post-title">
-                      <div class="blog-date-time">
-                        <p>
-                          <i class="fa-regular fa-calendar-minus me-1"></i>
-                          <span>June 18, 2025</span>
-                        </p>
-                      </div>
-                      <h4>
-                        <a href="blog-details.html">Serene Escapes Relax
-                        Breathtaking.
-                       </a>
-                      </h4>           
+                    <div class="extra-item">
+                      <label class="checkbox-item">
+                        <input type="checkbox" value="agree">
+                        Add Service per Person
+                      </label>
+                      <span>$28</span>
                     </div>
                   </div>
-                  <div class="recent-post-item">
-                    <div class="recent-post-image">
-                      <a href="blog-details.html">
-                        <img src="./images/blog/blog-post2.png" alt="recent post">
-                      </a>
-                    </div>
-                    <div class="recent-post-title">
-                      <div class="blog-date-time">
-                        <p>
-                          <i class="fa-regular fa-calendar-minus me-1"></i>
-                          <span>March 15, 2025</span>
-                        </p>
-                      </div>
-                      <h4>
-                        <a href="blog-details.html">Tales Inspiring Journey
-                          From Our Experts.
-                       </a>
-                      </h4>           
-                    </div>
+                  <div class="total">
+                    <span>Total</span>
+                    <span class="total-price">$73</span>
                   </div>
-                  <div class="recent-post-item">
-                    <div class="recent-post-image">
-                      <a href="blog-details.html">
-                        <img src="./images/blog/blog-post3.png" alt="recent post">
-                      </a>
-                    </div>
-                    <div class="recent-post-title">
-                      <div class="blog-date-time">
-                        <p>
-                          <i class="fa-regular fa-calendar-minus me-1"></i>
-                          <span>April 16, 2025</span>
-                        </p>
-                      </div>
-                      <h4>
-                        <a href="blog-details.html">Travel Light & Right The
-                          Packing List.
-                       </a>
-                      </h4>           
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sidebar-card">
-                <div class="sidebar-card-title">Categories</div>
-                <div class="sidebar-card-content">
-                  <div class="category-item">
-                    <a href="blog.html">
-                      <span class="category-name">Adventure Tours</span>
-                      <span>(6)</span>
-                    </a>
-                  </div>
-                  <div class="category-item">
-                    <a href="blog.html">
-                      <span class="category-name">Beach Tours</span>
-                      <span>(8)</span>
-                    </a>
-                  </div>
-                  <div class="category-item">
-                    <a href="blog.html">
-                      <span class="category-name">Travel Insurance</span>
-                      <span>(3)</span>
-                    </a>
-                  </div>
-                  <div class="category-item">
-                    <a href="blog.html">
-                      <span class="category-name">News & Tips</span>
-                      <span>(5)</span>
-                    </a>
-                  </div>
-                  <div class="category-item">
-                    <a href="blog.html">
-                      <span class="category-name">Mountain Tours</span>
-                      <span>(7)</span>
-                    </a>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="sidebar-card">
-                <div class="sidebar-card-title">Popular Tags</div>
-                <div class="sidebar-card-content ">
-                  <div class="tag-container">
-                    <a href="blog.html" class="blog-tag-item">Travel</a>
-                    <a href="blog.html" class="blog-tag-item ">Sky drive</a>
-                    <a href="blog.html" class="blog-tag-item">Tour</a>
-                    <a href="blog.html" class="blog-tag-item">Hotel</a>
-                    <a href="blog.html" class="blog-tag-item">Tourist</a>
-                    <a href="blog.html" class="blog-tag-item">Global Trotter</a>
-                    <a href="blog.html" class="blog-tag-item">Rent</a>
-                    <a href="blog.html" class="blog-tag-item">Adventure</a>
+                  <div class="book-now-btn">
+                    <button class="common-btn active">Book Now <i class="fa fa-arrow-right"></i></button>
                   </div>
                 </div>
               </div>
