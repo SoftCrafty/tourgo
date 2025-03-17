@@ -33,6 +33,14 @@
             margin-top: 68px ;
         }
     }
+
+    &.abt-inner-space{
+        margin-top: 110px ;
+    
+        @include md{
+            margin-top: 68px ;
+        }
+    }
 }
 
 .team-member{

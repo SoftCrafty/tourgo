@@ -10276,6 +10276,14 @@ body {
     margin-top: 68px;
   }
 }
+.team-members.abt-inner-space {
+  margin-top: 110px;
+}
+@media only screen and (max-width: 991px) {
+  .team-members.abt-inner-space {
+    margin-top: 68px;
+  }
+}
 
 .team-member {
   border: 1px solid rgba(28, 28, 28, 0.12);
@@ -10662,7 +10670,7 @@ body {
 @media only screen and (max-width: 991px) {
   .about-service {
     padding: 57px 0 60px;
-    margin-top: 55px;
+    margin-top: 50px;
   }
 }
 
@@ -10869,7 +10877,7 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .abt-vission {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
@@ -10880,7 +10888,7 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .abt-choose-us {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
@@ -11785,6 +11793,14 @@ body {
 @media only screen and (max-width: 576px) {
   .contact-section {
     margin-top: -40px;
+  }
+}
+.contact-section.abt-inner-space {
+  margin-top: 105px;
+}
+@media only screen and (max-width: 991px) {
+  .contact-section.abt-inner-space {
+    margin-top: 58px;
   }
 }
 

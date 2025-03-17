@@ -9,6 +9,14 @@
     @include xs{
         margin-top: -40px;
     }
+
+    &.abt-inner-space{
+        margin-top: 105px ;
+    
+        @include md{
+            margin-top: 58px ;
+        }
+    }
 }
 
 .contact-title{
