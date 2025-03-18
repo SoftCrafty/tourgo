@@ -130,7 +130,7 @@
     height: 100%;
 
     @include xl{
-        gap: 30px;
+        gap: 25px;
     }
 
     @include lg{
@@ -146,12 +146,6 @@
     }
     
     img{
-       width: 37%;
-       height: 100%;
-
-       @include xl{
-        width: 39%;
-       }
 
        @include lg{
         width: 46%;
@@ -174,10 +168,15 @@
 }
 
 .h2-blog-content{
+    
     padding: 30px 20px 30px 0;
 
+    @include xl{
+        padding: 20px 15px 20px 0;
+    }
+
     @include lg{
-        padding: 20px 15px 25px 0;
+        padding: 15px 15px 15px 0;
     }
 
     @include md{
@@ -186,17 +185,32 @@
     }
 
     .title-name{
-        margin-top: 20px;
+        margin-top: 28px;
         margin-bottom: 15px;
 
-        @include lg{
-            margin-top: 15px;
+        @include xl{
+            margin-top: 18px;
             margin-bottom: 10px;
+
+        }
+
+        @include lg{
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        @include md{
+            margin-top: 15px;
         }
 
         a{
-            font-size: 30px;
+            font-size: 40px;
 
+            @include xxl{
+                font-size: 36px;
+            }
+            @include xl{
+                font-size: 28px;
+            }
             @include lg{
                 font-size: 24px;
             }
@@ -208,6 +222,23 @@
     }
     .desc-text{
         margin-top: 10px;
+
+        @include lg{
+            margin-top: 2px;
+
+        }
+        @include md{
+            margin-top: 10px;
+        }
+
+        p{
+            @include lg{
+                line-height: 24px;
+            }
+            @include md{
+                line-height: 26px;
+            }
+        }
     }
 }
 

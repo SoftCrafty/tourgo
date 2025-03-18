@@ -45,12 +45,16 @@
     h3 a{
         font-family: $font-teko;
         font-weight: 500;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 40px;
         color: $title-color;
 
         &:hover{
             color: $primary-color;
+        }
+
+        @include xxl{
+            font-size: 26px;
         }
         @include xl{
             display: flex;
@@ -75,7 +79,18 @@
     }
 
     span{
-       margin: 0 5px;
+       margin: 0 10px;
+       height: 30px;
+       width: 30px;
+       border-radius: 50%;
+       background-color: #EAEFF4;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+
+       @include xxl{
+        margin: 0 5px;
+       }
     }
 }
 

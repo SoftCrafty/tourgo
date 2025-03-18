@@ -6880,23 +6880,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 190px 0;
   background-blend-mode: overlay;
-}
-@media only screen and (max-width: 1199px) {
-  .banner.style-1 {
-    padding: 150px 0;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .banner.style-1 {
-    padding: 100px 0;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .banner.style-1 {
-    padding: 80px 0;
-  }
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .banner .subtitle p {
   font-family: "Niconne", cursive;
@@ -6992,23 +6980,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 110px 0 170px;
   background-blend-mode: overlay;
-}
-@media only screen and (max-width: 1199px) {
-  .banner.style-2 {
-    padding-bottom: 120px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .banner.style-2 {
-    padding: 100px 0;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .banner.style-2 {
-    padding: 80px 0;
-  }
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .banner.style-2 .banner-btn-group {
   border-radius: 10px;
@@ -7225,6 +7201,9 @@ body {
   }
 }
 .cta.sign-in {
+  margin-top: 0;
+}
+.cta.contact-page {
   margin-top: 0;
 }
 
@@ -7922,12 +7901,17 @@ body {
 .place h3 a {
   font-family: "Teko", sans-serif;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 40px;
   color: #1A2D6D;
 }
 .place h3 a:hover {
   color: #1D92CD;
+}
+@media only screen and (max-width: 1599px) {
+  .place h3 a {
+    font-size: 26px;
+  }
 }
 @media only screen and (max-width: 1399px) {
   .place h3 a {
@@ -7958,7 +7942,19 @@ body {
   }
 }
 .place span {
-  margin: 0 5px;
+  margin: 0 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #EAEFF4;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1599px) {
+  .place span {
+    margin: 0 5px;
+  }
 }
 
 .from {
@@ -8985,6 +8981,11 @@ body {
     padding: 30px 25px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .choose-us-item {
+    padding: 25px 16px;
+  }
+}
 .choose-us-item:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -9296,7 +9297,7 @@ body {
   left: 35px;
   bottom: 40px;
 }
-.location-name h3 {
+.location-name h3 a {
   font-family: "Teko", sans-serif;
   font-weight: 500;
   font-size: 40px;
@@ -9304,18 +9305,18 @@ body {
   color: #ffffff;
 }
 @media only screen and (max-width: 991px) {
-  .location-name h3 {
+  .location-name h3 a {
     font-size: 34px;
     line-height: 1;
   }
 }
 @media only screen and (max-width: 767px) {
-  .location-name h3 {
+  .location-name h3 a {
     font-size: 32px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .location-name h3 {
+  .location-name h3 a {
     font-size: 30px;
   }
 }
@@ -9574,7 +9575,7 @@ body {
 }
 @media only screen and (max-width: 1399px) {
   .blog-item-2 {
-    gap: 30px;
+    gap: 25px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -9589,15 +9590,6 @@ body {
 }
 .blog-item-2:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.blog-item-2 img {
-  width: 37%;
-  height: 100%;
-}
-@media only screen and (max-width: 1399px) {
-  .blog-item-2 img {
-    width: 39%;
-  }
 }
 @media only screen and (max-width: 1199px) {
   .blog-item-2 img {
@@ -9623,9 +9615,14 @@ body {
 .h2-blog-content {
   padding: 30px 20px 30px 0;
 }
+@media only screen and (max-width: 1399px) {
+  .h2-blog-content {
+    padding: 20px 15px 20px 0;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .h2-blog-content {
-    padding: 20px 15px 25px 0;
+    padding: 15px 15px 15px 0;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -9635,17 +9632,38 @@ body {
   }
 }
 .h2-blog-content .title-name {
-  margin-top: 20px;
+  margin-top: 28px;
   margin-bottom: 15px;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1399px) {
   .h2-blog-content .title-name {
-    margin-top: 15px;
+    margin-top: 18px;
     margin-bottom: 10px;
   }
 }
+@media only screen and (max-width: 1199px) {
+  .h2-blog-content .title-name {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .h2-blog-content .title-name {
+    margin-top: 15px;
+  }
+}
 .h2-blog-content .title-name a {
-  font-size: 30px;
+  font-size: 40px;
+}
+@media only screen and (max-width: 1599px) {
+  .h2-blog-content .title-name a {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .h2-blog-content .title-name a {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .h2-blog-content .title-name a {
@@ -9659,6 +9677,26 @@ body {
 }
 .h2-blog-content .desc-text {
   margin-top: 10px;
+}
+@media only screen and (max-width: 1199px) {
+  .h2-blog-content .desc-text {
+    margin-top: 2px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .h2-blog-content .desc-text {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .h2-blog-content .desc-text p {
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .h2-blog-content .desc-text p {
+    line-height: 26px;
+  }
 }
 
 .h2-blog-slider .pagination-container button:hover {
@@ -10788,7 +10826,7 @@ body {
 
 @keyframes abt-plane {
   0% {
-    right: -40px;
+    right: 1px;
     bottom: 0px;
   }
   20% {
@@ -13545,6 +13583,11 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .sign-in-form-container .info-title {
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .sign-in-form-container .checkbox .checkbox-item {
     color: #ffffff;
   }
 }

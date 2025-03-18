@@ -95,6 +95,12 @@
             color: $white;
         }
     }
+
+    .checkbox .checkbox-item {
+        @include md{
+            color: $white;
+        }
+    }
    
 }
 

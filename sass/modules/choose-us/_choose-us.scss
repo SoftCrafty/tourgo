@@ -17,6 +17,9 @@
     @include xl{
         padding: 30px 25px;
     }
+    @include sm{
+        padding: 25px 16px;
+    }
 
     &:hover{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

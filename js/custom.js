@@ -232,7 +232,7 @@
       // home 2 blog slider
       const h2BlogSlider = new Swiper('.h2-blog-slider', {
         loop: true, 
-        autoplay: true,
+        //autoplay: true,
         spaceBetween: 24,
         slidesPerView: 2, 
         pagination: {

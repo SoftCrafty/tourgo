@@ -51,6 +51,7 @@
     bottom: 40px;
     
     h3{
+        a{
         font-family: $font-teko;
         font-weight: 500;
         font-size: 40px;
@@ -69,6 +70,7 @@
         }
         @include xs{
             font-size: 30px;
+        }
         }
     }
 
