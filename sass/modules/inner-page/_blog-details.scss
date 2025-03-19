@@ -23,9 +23,17 @@
     border-radius: 10px;
     overflow: hidden;
 
+
     img{
         width: 100%;
         border-radius: 10px;
+        transition: all 5s linear;
+    }
+
+    &:hover{
+        img{
+            transform: scale(1.15);
+        }
     }
 }
 

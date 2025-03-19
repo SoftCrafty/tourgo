@@ -577,83 +577,7 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
 
 
 
-    // home 2 blog slider
-    const h2blog = new Swiper('.home-2-blog-slider', {
-      loop: true, 
-      autoplay: true,
-      freeMode: true,
-      spaceBetween: 24,
-      slidesPerView: 3, 
-      breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-        },
-        480: {
-            centeredSlides: true,
-            spaceBetween: 15,
-            slidesPerView: 1.5,
-        },
-        768: {
-            spaceBetween: 15,
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1400: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-        }
-      },
-    });
 
-    // h2-service slider
-    const h2service = new Swiper('.h2-swiper-sevice-wrapper', {
-      loop: true,
-      freeMode: true,
-      spaceBetween: 24,
-      slidesPerView: 3, 
-      breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-        },
-        480: {
-            centeredSlides: true,
-            spaceBetween: 15,
-            slidesPerView: 1.5,
-        },
-        768: {
-            spaceBetween: 15,
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1400: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-        }
-      },
-    });
-
-    //h2 testimonial slider
-    const h2testimonial = new Swiper('.h2-testimonial-swiper', {
-      loop: true,
-      freeMode: true,
-      autoplay: true,
-      spaceBetween: 40
-    });
-    //blog-details-testimonial-slider
-    const blogDetailsTestimonialSlider = new Swiper('.blog-details-testimonial-slider', {
-      loop: true,
-      freeMode: true,
-      autoplay: true,
-      spaceBetween: 40
-    });
 
 
   /* Counter Js ============================*/
@@ -691,6 +615,39 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
             $('select').niceSelect();
 
 
+            // scroll Revel
+            const sr = ScrollReveal({
+              origin: 'top',
+              duration : 2000,
+              distance: '80px',
+              delay: 0,
+              opacity: 0
+              
+          })
+          sr.reveal('.tour-item, .blog-item, .package-item, .destination-item, .popular-destination-item, .instagram-img, .abt-service-item ',{
+            interval: 150,
+            delay: 0,
+            duration: 3000
+          })
+          sr.reveal('.about-item-2, .abt-choose-us-item',{
+            origin: 'bottom',
+            interval: 300,
+            duration: 3000
+            
+          })
+          sr.reveal('.view-all,' ,{origin:'bottom', delay: 200})
+
+
+          sr.reveal('.big-item, .abt-choose-us-img',{
+            origin: 'left',
+            
+          })
+          sr.reveal('.small-item',{
+            origin: 'right',
+
+          })
+         
+         
             
     
   });
