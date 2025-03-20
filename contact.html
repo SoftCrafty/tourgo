@@ -108,10 +108,7 @@
                     </div>
   
                     <div class="sidebar-content show-md">
-                      <div class="sidebar-welcome">
-                        <h2>Hello There!</h2>
-                        <p class="desc-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
+                      
                       <div class="sidebar-info desc-text">
                         <h3>Information</h3>
                         <p >
@@ -146,24 +143,20 @@
                   </nav>
   
                 </div>
-                <div class="menu-right menu">
+                <div class="menu-right">
   
-                  <nav class="main-menu">
-                    <ul>
-                      <li class="dropdown"><a> <i class="fa fa-globe me-2"></i>English</a>
-                        <ul>
-                          <li><a href="#">Bangla</a></li>
-                          <li><a href="#">Japanies</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown currency"><a>USD</a>
-                        <ul>
-                          <li><a href="#">Dollar</a></li>
-                          <li><a href="#">Euro </a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
+                  <div class="select-container">
+                    <span class="globe"><i class="fa fa-globe"></i></span>
+                    <select>
+                      <option value="english" selected>English</option>
+                      <option value="bangla">Bangla</option>
+                    </select>
+                    <span class="border-rt"></span>
+                    <select class="usd">
+                      <option value="usd" selected>USD</option>
+                      <option value="euro">Euro</option>
+                    </select>
+                  </div>
                  
                   <div class="btn-groups">
                     <a href="sign-in.html" class="common-btn active">Sign In / Register</a>
@@ -180,7 +173,6 @@
       </div>
     </header>
     <!-- Header End !-->
-
   <!-- Breadcrump Start Style-1 -->
     <section class="breadcrump">
       <div class="container">

@@ -69,7 +69,7 @@
                   </div>
 
                   <ul>
-                    <li class="dropdown ">
+                    <li class="dropdown">
                       <a>Home</a>
                       <ul>
                         <li><a href="index.html">Home Page 1</a></li>
@@ -109,10 +109,7 @@
                   </div>
 
                   <div class="sidebar-content show-md">
-                    <div class="sidebar-welcome">
-                      <h2>Hello There!</h2>
-                      <p class="desc-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    
                     <div class="sidebar-info desc-text">
                       <h3>Information</h3>
                       <p >
@@ -147,24 +144,20 @@
                 </nav>
 
               </div>
-              <div class="menu-right menu">
+              <div class="menu-right">
 
-                <nav class="main-menu">
-                  <ul>
-                    <li class="dropdown"><a> <i class="fa fa-globe me-2"></i>English</a>
-                      <ul>
-                        <li><a href="#">Bangla</a></li>
-                        <li><a href="#">Japanies</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown currency"><a>USD</a>
-                      <ul>
-                        <li><a href="#">Dollar</a></li>
-                        <li><a href="#">Euro </a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
+                <div class="select-container">
+                  <span class="globe"><i class="fa fa-globe"></i></span>
+                  <select>
+                    <option value="english" selected>English</option>
+                    <option value="bangla">Bangla</option>
+                  </select>
+                  <span class="border-rt"></span>
+                  <select class="usd">
+                    <option value="usd" selected>USD</option>
+                    <option value="euro">Euro</option>
+                  </select>
+                </div>
                
                 <div class="btn-groups">
                   <a href="sign-in.html" class="common-btn active">Sign In / Register</a>
@@ -196,7 +189,7 @@
               <a href="blog-details.html" class="path-name"> Blog Details
               </a>                
             </div>
-            <h2 class="current-page">Blog Details</h2>
+            <h2 class="current-page text-anime">Blog Details</h2>
           </div>
         </div>
       </div>
@@ -649,11 +642,16 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/venobox.min.js"></script>
-  <script src="js/nouislider.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/waypoints.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/gsap-ScrollTrigger.min.js"></script>
+  <script src="js/split-type-0.3.3.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/gsap-animation.js"></script>
 </body>
 
 </html>

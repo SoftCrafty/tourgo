@@ -638,13 +638,13 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
             delay: 0,
             duration: 2500
           })
-          sr.reveal('.about-item-2, .abt-choose-us-item',{
+          sr.reveal('.about-item-2, .abt-choose-us-item, .about-item',{
             origin: 'bottom',
             interval: 300,
             duration: 2500
             
           })
-          sr.reveal('.view-all,' ,{origin:'bottom', delay: 200})
+          sr.reveal('.view-all, .learn-more-btn' ,{origin:'bottom', delay: 200})
 
 
           sr.reveal('.big-item, .abt-choose-us-img',{

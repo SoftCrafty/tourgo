@@ -10,10 +10,33 @@
   
 
 /*--- preloader ---*/
+#loading {
+    background: #fff;
 
-.preloader-bg{
-    background-color: $section-bg;
-}
+    // background-color: $section-bg;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    margin-top: 0px;
+    top: 0px;
+  }
+
+  
+  #loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  #loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+  
 
 .preloader-bar{
     width: 440px;
@@ -21,6 +44,20 @@
     background-color: $white;
     height: 6px;
     overflow: hidden;
+
+    @include md{
+        width: 350px;
+    }
+    @include sm{
+       width: 300px;
+    }
+    @include xs{
+        width: 250px;
+        margin: auto;
+    }
+    @include xxs{
+        width: 200px;
+    }
 
     .preloader-inner{
         background-color: $primary-color;
@@ -38,83 +75,6 @@
     }
 }
 
-
-
-#loading {
-    background: $section-bg;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 999999;
-    margin-top: 0px;
-    top: 0px;
-  }
-  
-  #loading-center {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  #loading-center-absolute {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 25%;
-    transform: translate(-50%, -50%);
-  }
-  
-  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    #loading-center-absolute {
-      width: 40%;
-    }
-  }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    #loading-center-absolute {
-      width: 40%;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    #loading-center-absolute {
-      width: 45%;
-    }
-  }
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
-    #loading-center-absolute {
-      width: 50%;
-    }
-  }
-  @media (max-width: 575px) {
-    #loading-center-absolute {
-      width: 90%;
-    }
-  }
-  #loading {
-    background-color: #fff;
-    // background-color: $section-bg;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 999999;
-    margin-top: 0px;
-    top: 0px;
-  }
-  
-  #loading-center {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  #loading-center-absolute {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
   
   .preloader-logo {
    
@@ -122,6 +82,12 @@
     text-align: center;
     margin: auto;
     margin-bottom: 50px;
+    @include lg{
+        margin-bottom: 30px;
+    }
+    @include xs{
+        margin-bottom: 20px;
+    }
   }
   
   .preloader-content {
@@ -135,6 +101,29 @@
     line-height: 26px;
     color: $text-black;
     margin-top: 110px;
+
+    @include xl{
+        font-size: 120px;
+        margin-top: 80px;
+    }
+    @include lg{
+        font-size: 90px;
+        margin-top: 50px;
+    }
+    @include md{
+        font-size: 70px;
+        margin-top: 40px;
+    }
+    @include sm{
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    @include xs{
+        font-size: 44px;
+        margin-top: 20px;
+    }
+
+
   }
 
  
@@ -146,4 +135,14 @@
     letter-spacing: 5px;
     color: $text-black;
     margin-top: 75px;
+
+    @include lg{
+        margin-top: 50px;
+    }
+    @include md{
+        margin-top: 35px;
+    }
+    @include xs{
+        margin-top: 20px;
+    }
   }

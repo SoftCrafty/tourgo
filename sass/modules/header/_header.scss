@@ -195,8 +195,17 @@
                               line-height: 2.7;
                               transition: 0.3s all linear;
                               margin-right: 0;
-                              padding-left: 0;
-                              padding-right: 0;
+                              padding: 0;
+                              border-radius: 0;
+                              transition: 0;
+                              
+                              &:hover{
+                                background-color: $primary-color;
+
+                                a{
+                                  color: $white !important;
+                                }
+                              }
 
                               @include md{
                                 line-height: 1.7;
@@ -227,8 +236,8 @@
                                  
                                 }
                                @include sm{
-                                font-size: 14px;
-                                padding: 5px 10px ;
+                                font-size: 15px;
+                                padding: 12px 10px ;
                                }
                                @include xxs{
                                 font-size: 15px;
@@ -352,14 +361,91 @@
 }
 
   
+.select-container{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  @include xs{
+    display: none;
+  }
+
+  .globe{
+    margin-right: -10px;
+  }
+
+  .nice-select{
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+    
+    span{
+      color: $text-color;
+    }
+    ul{
+      min-width: 160px;
+    }
+
+    &:last-child {
+      @include lg{
+        display: none ;
+      }
+    }
+  }
+  .border-rt{
+    width: 5px;
+    height: 25px;
+    background-color: $border-clr;
+    display: inline-block;
+
+    @include lg{
+      display: none;
+    }
+  }
+
+  &.style-2{
+
+    span{
+      color: $white;
+    }
+    .border-rt{
+      background-color: $text-color-4;
+
+      @include lg{
+        display: inline-block;
+      }
+    }
+
+    .nice-select{
+      height: 30px;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        @include lg{
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+
 .menu-right{
   display: flex;
   align-items: center;
   gap: 12px;
 
+
   .btn-groups{
     display: flex;
     gap: 14px;
+    margin-left: 5px;
+
+    @include lg{
+      margin-left: 0;
+    }
 
     .common-btn{
       @include lg{
@@ -394,44 +480,6 @@
     }
   }
 
-  &.menu{
-    .main-menu{
-
-      @include md{
-        display: none;
-
-        &.show{
-          display: none;
-        }
-      }
-      ul{
-        li{
-          a{
-            color: $text-color;
-
-            &::before{
-              content: "\f0d7" ;
-              right: 0 ;
-            }
-          }
-
-          &.dropdown{
-            ul>li{
-              a{
-                color: $black-900 ;
-              }
-            }
-          }
-
-          &.currency{
-            @include lg{
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
 }
   
 
@@ -601,37 +649,3 @@
   }
 }
 
-.header-top-menu{
-  &.menu{
-    .main-menu{
-
-      @include md{
-        display: none;
-
-        &.show{
-          display: none;
-        }
-      }
-      ul{
-        li{
-          a{
-            color: $white !important;
-
-            &::before{
-              content: "\f107" !important;
-              right: 0 !important;
-            }
-          }
-
-          &.dropdown{
-            ul>li{
-              a{
-                color: $black-900 !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}

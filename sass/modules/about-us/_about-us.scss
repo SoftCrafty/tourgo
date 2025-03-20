@@ -23,12 +23,35 @@
         gap: 12px;
     }
 }
+.single-img{
+    overflow: hidden;
+        border-radius: 10px;
+
+        img{
+            transition: all 8s;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+}
 .double-img{
     display: flex;
     flex-direction: column;
     gap: 30px;
     @include lg{
         gap: 12px;
+    }
+
+    span{
+        overflow: hidden;
+        border-radius: 10px;
+
+        img{
+            transition: all 8s;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
     }
 }
 
