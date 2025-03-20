@@ -616,23 +616,23 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
 
 
             // scroll Revel
-            const sr = ScrollReveal({
-              origin: 'top',
-              duration : 2000,
-              distance: '80px',
-              delay: 0,
-              opacity: 0
+          const sr = ScrollReveal({
+            origin: 'top',
+            duration : 2000,
+            distance: '60px',
+            delay: 0,
+            opacity: 0
               
           })
           sr.reveal('.tour-item, .blog-item, .package-item, .destination-item, .popular-destination-item, .instagram-img, .abt-service-item ',{
-            interval: 150,
+            interval: 100,
             delay: 0,
-            duration: 3000
+            duration: 2500
           })
           sr.reveal('.about-item-2, .abt-choose-us-item',{
             origin: 'bottom',
             interval: 300,
-            duration: 3000
+            duration: 2500
             
           })
           sr.reveal('.view-all,' ,{origin:'bottom', delay: 200})
@@ -640,12 +640,24 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
 
           sr.reveal('.big-item, .abt-choose-us-img',{
             origin: 'left',
-            
           })
           sr.reveal('.small-item',{
             origin: 'right',
 
           })
+
+          // Adjust animations for small screens
+          
+          if (window.innerWidth <= 992) {
+            sr.reveal('.big-item, .abt-choose-us-img', {
+                origin: 'top', 
+                distance: "50px", 
+            });
+            sr.reveal('.small-item', {
+                origin: 'bottom',
+                distance: "50px", 
+            });
+          }
          
          
             

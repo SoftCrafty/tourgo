@@ -99,18 +99,72 @@ document.addEventListener("DOMContentLoaded", function () {
     // })
 
     //h1 video section
-    gsap.from("#h1-vdo-content",{
-        x: -120,
-        opacity: 0,
-        duration: 1.5,
-        scrollTrigger: "#h1-vdo-section"
-    })
-    gsap.from("#h1-vdo-img",{
-        x: 120,
-        opacity: 0,
-        duration: 1.5,
-        scrollTrigger: "#h1-vdo-section"
-    })
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 769px)", () => {
+        gsap.from("#h1-vdo-content", {
+            x: -120,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: "#h1-vdo-section",
+                start: "top 80%",
+                end: "bottom top",
+                scrub: false
+            }
+        });
+    
+        gsap.from("#h1-vdo-img", {
+            x: 120,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: "#h1-vdo-section",
+                start: "top 80%",
+                end: "bottom top",
+                scrub: false
+            }
+        });
+    });
+    
+    mm.add("(max-width: 768px)", () => {
+        gsap.from("#h1-vdo-content", {
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: "#h1-vdo-section",
+                start: "top 80%",
+                end: "bottom top",
+                scrub: false
+            }
+        });
+    
+        gsap.from("#h1-vdo-img", {
+            y: 50,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: "#h1-vdo-section",
+                start: "top 80%",
+                end: "bottom top",
+                scrub: false
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
     gsap.from(".cta-3-sm-img",{
         scale: 0,
         duration: 2,

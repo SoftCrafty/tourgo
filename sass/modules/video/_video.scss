@@ -3,6 +3,8 @@
     background-color: $section-bg;
     margin-top: 120px;
     position: relative;
+    max-width: 100vw;
+    overflow: hidden;
 
     @include md{
         margin-top: 60px;
