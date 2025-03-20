@@ -3,7 +3,16 @@
 
   $(document).ready(function () {
 
-   
+    // pre loader js
+
+    $("body").addClass("loading"); 
+
+    setTimeout(function () {
+        $("#loading").remove(); 
+        $("body").removeClass("loading"); 
+    }, 5000); 
+
+
 
     //Tourgo =================================================
 
@@ -625,7 +634,7 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
               
           })
           sr.reveal('.tour-item, .blog-item, .package-item, .destination-item, .popular-destination-item, .instagram-img, .abt-service-item ',{
-            interval: 100,
+            interval: 120,
             delay: 0,
             duration: 2500
           })
@@ -661,6 +670,14 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
          
          
             
+
+
+
+
+
+
+    
+	
     
   });
 

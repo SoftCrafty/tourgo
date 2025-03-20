@@ -1,0 +1,149 @@
+
+
+// google font
+
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+  $font-expletus: "Expletus Sans", sans-serif;
+
+
+  
+
+/*--- preloader ---*/
+
+.preloader-bg{
+    background-color: $section-bg;
+}
+
+.preloader-bar{
+    width: 440px;
+    border-radius: 10px;
+    background-color: $white;
+    height: 6px;
+    overflow: hidden;
+
+    .preloader-inner{
+        background-color: $primary-color;
+        height: 100%;
+        animation: pre 5s linear;
+    }
+
+}
+@keyframes pre {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+#loading {
+    background: $section-bg;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    margin-top: 0px;
+    top: 0px;
+  }
+  
+  #loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  #loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    #loading-center-absolute {
+      width: 40%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #loading-center-absolute {
+      width: 40%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #loading-center-absolute {
+      width: 45%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    #loading-center-absolute {
+      width: 50%;
+    }
+  }
+  @media (max-width: 575px) {
+    #loading-center-absolute {
+      width: 90%;
+    }
+  }
+  #loading {
+    background-color: #fff;
+    // background-color: $section-bg;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    margin-top: 0px;
+    top: 0px;
+  }
+  
+  #loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  #loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .preloader-logo {
+   
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  .preloader-content {
+    text-align: center;
+  }
+
+  .preloader-title{
+    font-family: $font-expletus;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 26px;
+    color: $text-black;
+    margin-top: 110px;
+  }
+
+ 
+  
+  .preloader-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 5px;
+    color: $text-black;
+    margin-top: 75px;
+  }

@@ -74,6 +74,13 @@
             color: $text-black;
             margin-right: 2px;
         }
+        a{
+            color: $text-color;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
     }
 }
 

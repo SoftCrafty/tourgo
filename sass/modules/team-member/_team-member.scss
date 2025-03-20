@@ -1,6 +1,6 @@
 
 .team-members{
-    margin-top: 140px;
+    margin-top: 135px;
     padding-bottom: 5px;
 
     @include md{
@@ -47,6 +47,7 @@
     border: 1px solid $border-clr;
     border-radius: 10px;
     padding: 14px;
+    transition: all 0.3s ease-in-out;
 
     .team-img{
         overflow: hidden;
@@ -83,10 +84,10 @@
     &:hover{
         .team-member-social{
             flex-direction: row-reverse;
-           
+            
             a{
-               color: $white;
-               
+                color: $white;
+                
                 background: linear-gradient(95.25deg, #5541D6 0%, #DC2462 50%, #FEC053 100%);
 
                 &:first-child,
@@ -97,6 +98,7 @@
             }
         }
     }
+   
 }
 .team-content{
     padding: 10px;
@@ -123,7 +125,7 @@
     transition: all 3s;
 
     a{
-        transition: all 0.3s;
+        transition: all 0.3s ease-in-out;
 
         &:first-child{
             height: 40px;

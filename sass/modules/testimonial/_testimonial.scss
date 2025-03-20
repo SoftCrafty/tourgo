@@ -122,12 +122,12 @@
     position: absolute;
     right: 0;
     top: 0;
-    left: 30%;
+    left: 34%;
     height: 100%;
     padding-right: 12px;
 
     @include xxl{
-        left: 35%;
+        left: 36%;
     }
 
     @include xl{
@@ -153,6 +153,7 @@
     border-radius: 10px;
     background-color: $white;
     display: flex;
+    margin-right: 3px;
 
     @include sm{
         flex-direction: column-reverse;
