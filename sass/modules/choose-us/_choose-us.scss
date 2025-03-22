@@ -24,16 +24,19 @@
     &:hover{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         .choose-us-img{
-            left: 32%;
+            left: 40%;
 
+            @include xxl{
+                left: 35%;
+            }
             @include lg{
                 left: 40%;
             }
             @include md{
-                left: 36%;
+                left: 40%;
             }
             @include sm{
-                left: 32%;
+                left: 35%;
             }
             @include xs{
                 left: 40%;

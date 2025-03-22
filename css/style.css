@@ -8122,6 +8122,31 @@ body {
     margin: 0 5px;
   }
 }
+@media only screen and (max-width: 1399px) {
+  .place span {
+    rotate: 90deg;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .place span {
+    rotate: 0deg;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .place span {
+    rotate: 90deg;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .place span {
+    rotate: 0deg;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .place span {
+    rotate: 90deg;
+  }
+}
 
 .from {
   margin-top: 5px;
@@ -9043,7 +9068,7 @@ body {
   background-color: #ffffff;
   color: #1C1C1C;
 }
-.slider-controller button.active, .slider-controller button:hover {
+.slider-controller button:focus, .slider-controller button:hover {
   background-color: #1D92CD;
   color: white;
   box-shadow: 0px 8px 20px 0px rgba(29, 146, 205, 0.5019607843);
@@ -9188,7 +9213,12 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .choose-us-item:hover .choose-us-img {
-  left: 32%;
+  left: 40%;
+}
+@media only screen and (max-width: 1599px) {
+  .choose-us-item:hover .choose-us-img {
+    left: 35%;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .choose-us-item:hover .choose-us-img {
@@ -9197,12 +9227,12 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .choose-us-item:hover .choose-us-img {
-    left: 36%;
+    left: 40%;
   }
 }
 @media only screen and (max-width: 767px) {
   .choose-us-item:hover .choose-us-img {
-    left: 32%;
+    left: 35%;
   }
 }
 @media only screen and (max-width: 576px) {

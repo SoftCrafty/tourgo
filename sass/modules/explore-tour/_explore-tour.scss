@@ -91,6 +91,21 @@
        @include xxl{
         margin: 0 5px;
        }
+       @include xl{
+        rotate: 90deg;
+       }
+       @include lg{
+        rotate: 0deg;
+       }
+       @include md{
+        rotate: 90deg;
+       }
+       @include sm{
+        rotate: 0deg;
+       }
+       @include xxs{
+        rotate: 90deg;
+       }
     }
 }
 
