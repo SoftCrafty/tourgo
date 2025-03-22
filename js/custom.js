@@ -647,12 +647,16 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
           sr.reveal('.view-all, .learn-more-btn' ,{origin:'bottom', delay: 200})
 
 
-          sr.reveal('.big-item, .abt-choose-us-img',{
+          sr.reveal('.abt-choose-us-img',{
             origin: 'left',
+          })
+          sr.reveal('.big-item', {
+            origin: 'left',
+            distance: '20px'
           })
           sr.reveal('.small-item',{
             origin: 'right',
-
+            distance: '20px'
           })
 
           // Adjust animations for small screens
