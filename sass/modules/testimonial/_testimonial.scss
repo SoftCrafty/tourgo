@@ -252,7 +252,7 @@
         background-color: $white;
         color: $text-black;
 
-        &:focus,
+        &.active,
         &:hover{
             background-color: $primary-color;
             color: white;

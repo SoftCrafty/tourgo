@@ -72,6 +72,10 @@
         font-size: 16px; 
     }
 
+    &.active{
+        background-color: $title-color;
+        color: $white;
+    }
     
     &:focus{
         background-color: $title-color;

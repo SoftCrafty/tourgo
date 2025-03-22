@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/animate.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/venobox.min.css" />
+  <link rel="stylesheet" href="css/flatpickr.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -34,6 +35,27 @@
 
 <body>
   
+
+  <!-- pre loader area start -->
+  <div id="loading" class="loading">
+    <div id="loading-center">
+       <div id="loading-center-absolute">
+         
+          <div class="preloader-content">
+             <div class="preloader-logo">
+                <img src="./images/logo/preloader-logo.png" alt="preloader">
+             </div>
+             <div class="preloader-bar">
+              <div class="preloader-inner"></div>
+             </div>
+             <h2 class="preloader-title">Tourgo</h2>
+             <p class="preloader-subtitle">Loading</p>
+          </div>
+       </div>
+    </div>
+  </div>
+ <!-- pre loader area end -->
+
   <!-- Header Start style 2!-->
   <header class="header-area style-1">
   
@@ -80,7 +102,7 @@
               <div class="logo-wrapper">
                 <div class="logo">
                   <a href="index.html" class="standard-logo">
-                    <img src="images/logo/Logo.png" alt="logo" />
+                    <img src="images/logo/logo.png" alt="logo" />
                   </a>
                   <a href="index.html" class="sticky-logo">
                     <img src="images/logo/logo.png" alt="logo" />
@@ -94,7 +116,7 @@
 
                   <div class="sidebar-header show-md">
                     <a href="index.html" class="sidebar-logo">
-                      <img src="images/logo/Logo.png" alt="logo" />
+                      <img src="images/logo/logo.png" alt="logo" />
                     </a>
                     <div class="close-btn">
                       <i class="fa-solid fa-xmark"></i>
@@ -211,7 +233,7 @@
         </div>
         <div class="banner-btn-group-wrapper">
           <div class="banner-btn-group">
-            <button class="common-btn">
+            <button class="common-btn active">
              <i class="fa fa-plane"></i> Flight
             </button>
             <button class="common-btn">
@@ -247,7 +269,7 @@
              </select>
             </div>
             <div class="date">
-             <input type="text" id="date" name="date" placeholder="mm/dd/yyyy">
+             <input type="text" id="selectDate" name="date" placeholder="mm/dd/yyyy">
             </div>
             <div class="search-btn">
              <button class="common-btn">
@@ -948,7 +970,7 @@
                 Download For<br> Exclusive Savings.
               </h2>
               <div class="dowload-store-2">
-                <button class="cta-btn active"><i class="fa-brands fa-apple"></i> Apple Store</button>
+                <button class="cta-btn "><i class="fa-brands fa-apple"></i> Apple Store</button>
                 <button class="cta-btn"><i class="fa-brands fa-google-play"></i> Play Store</button>
               </div>
             </div>
@@ -1213,7 +1235,7 @@
                 Our Clients.</h2>
             </div>
             <div class="slider-controller">
-              <button class="left__slide"><i class="fa fa-arrow-left"></i></button>
+              <button class="left__slide "><i class="fa fa-arrow-left"></i></button>
               <button class="active right__slide"><i class="fa fa-arrow-right"></i></button>
             </div>
           </div>
@@ -1667,8 +1689,22 @@
   <script src="js/gsap-ScrollTrigger.min.js"></script>
   <script src="js/split-type-0.3.3.min.js"></script>
   <script src="js/scrollreveal.min.js"></script>
+  <script src="js/flatpickr.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/gsap-animation.js"></script>
+
+   <!-- Initialize Flatpickr -->
+   <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    
+            flatpickr("#selectDate", {
+                altInput: true,
+                altFormat: "F j, Y",
+                dateFormat: "m-d-Y",
+            });
+        });
+  </script>
+
 </body>
 
 </html>

@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/animate.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/venobox.min.css" />
+  <link rel="stylesheet" href="css/flatpickr.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -68,7 +69,7 @@
               <div class="logo-wrapper">
                 <div class="logo">
                   <a href="index.html" class="standard-logo">
-                    <img src="images/logo/Logo.png" alt="logo" />
+                    <img src="images/logo/logo.png" alt="logo" />
                   </a>
                   <a href="index.html" class="sticky-logo">
                     <img src="images/logo/logo.png" alt="logo" />
@@ -82,7 +83,7 @@
 
                   <div class="sidebar-header show-md">
                     <a href="index.html" class="sidebar-logo">
-                      <img src="images/logo/Logo.png" alt="logo" />
+                      <img src="images/logo/logo.png" alt="logo" />
                     </a>
                     <div class="close-btn">
                       <i class="fa-solid fa-xmark"></i>
@@ -209,7 +210,7 @@
         </div>
         <div class="banner-btn-group-wrapper">
           <div class="banner-btn-group">
-             <button class="common-btn">
+             <button class="common-btn active">
               <i class="fa fa-plane"></i> Flight
              </button>
              <button class="common-btn">
@@ -221,9 +222,7 @@
              <button class="common-btn">
               <i class="fa-solid fa-ticket"></i> Holiday
              </button>
-             <!-- <button class="common-btn">
-              <i class="fa-solid fa-suitcase-rolling"></i> Bundle & Save
-             </button> -->
+             
           </div>
         </div>
         <div class="banner-search-container-wrapper">
@@ -245,7 +244,7 @@
              </select>
             </div>
             <div class="date">
-             <input type="text" id="date" name="date" placeholder="mm/dd/yyyy">
+             <input type="text" id="selectDate" name="date" placeholder="mm/dd/yyyy">
             </div>
             <div class="search-btn">
              <button class="common-btn">
@@ -1335,7 +1334,7 @@
                 <button class="cta-btn active">Subscribe</button>
               </form>
               <div class="dowload-store">
-                <button class="cta-btn active"><i class="fa-brands fa-apple"></i> Apple Store</button>
+                <button class="cta-btn "><i class="fa-brands fa-apple"></i> Apple Store</button>
                 <button class="cta-btn"><i class="fa-brands fa-google-play"></i> Play Store</button>
               </div>
             </div>
@@ -1479,8 +1478,19 @@
   <script src="js/gsap-ScrollTrigger.min.js"></script>
   <script src="js/split-type-0.3.3.min.js"></script>
   <script src="js/scrollreveal.min.js"></script>
+  <script src="js/flatpickr.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/gsap-animation.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+   
+           flatpickr("#selectDate", {
+               altInput: true,
+               altFormat: "F j, Y",
+               dateFormat: "m-d-Y",
+           });
+       });
+ </script>
 </body>
 
 </html>

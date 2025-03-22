@@ -4627,7 +4627,7 @@ body {
 .preloader-bar .preloader-inner {
   background-color: #1D92CD;
   height: 100%;
-  animation: pre 5s linear;
+  animation: pre 2.5s linear;
 }
 
 @keyframes pre {
@@ -7322,6 +7322,9 @@ body {
 .banner-search-container .date {
   margin-left: 15px;
 }
+.banner-search-container .date input {
+  border: none;
+}
 .banner-search-container .date input::-moz-placeholder {
   color: #565256;
   font-weight: 500;
@@ -7329,6 +7332,9 @@ body {
 .banner-search-container .date input::placeholder {
   color: #565256;
   font-weight: 500;
+}
+.banner-search-container .date input:focus {
+  box-shadow: none;
 }
 .banner-search-container .search-btn .common-btn {
   font-weight: 600;
@@ -7437,6 +7443,10 @@ body {
 .cta-btn i {
   margin-right: 7px;
   font-size: 16px;
+}
+.cta-btn.active {
+  background-color: #1A2D6D;
+  color: #ffffff;
 }
 .cta-btn:focus {
   background-color: #1A2D6D;
@@ -9068,7 +9078,7 @@ body {
   background-color: #ffffff;
   color: #1C1C1C;
 }
-.slider-controller button:focus, .slider-controller button:hover {
+.slider-controller button.active, .slider-controller button:hover {
   background-color: #1D92CD;
   color: white;
   box-shadow: 0px 8px 20px 0px rgba(29, 146, 205, 0.5019607843);
@@ -10672,7 +10682,7 @@ body {
 }
 
 .breadcrump {
-  background: url("../../../images/breadcrum/breadcrump.png"), linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
+  background: url("../images/breadcrum/breadcrump.png"), linear-gradient(91.18deg, rgba(28, 28, 28, 0.8) 0.88%, rgba(28, 28, 28, 0.2) 72.75%);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -10820,6 +10830,7 @@ body {
 .about-img {
   -webkit-mask-image: url("../images/shapes/abt-shape1.png");
           mask-image: url("../images/shapes/abt-shape1.png");
+  mask-image: url("../images/shapes/abt-shape1.png");
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-position: center center;
@@ -11116,10 +11127,11 @@ body {
 .abt-service-item:after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
+  left: -20px;
+  bottom: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   transition: all 0.5s;
   z-index: -1;
   background-color: #1D92CD;
@@ -11174,6 +11186,9 @@ body {
 .abt-service-item:hover::after {
   width: 100%;
   height: 100%;
+  border-radius: 0;
+  left: 0;
+  bottom: 0;
 }
 .abt-service-item:hover .abt-service-icon i {
   color: #ffffff;

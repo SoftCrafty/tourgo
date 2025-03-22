@@ -10,7 +10,7 @@
     setTimeout(function () {
         $("#loading").remove(); 
         $("body").removeClass("loading"); 
-    }, 5000); 
+    }, 2000); 
 
 
 
@@ -153,6 +153,13 @@
         },
       });
 
+
+      // slider controller active class
+      $(".slider-controller button").click(function () {
+        $(".slider-controller button").removeClass("active"); 
+        $(this).addClass("active"); 
+    });
+
       // home 2 testimonial slider
       const h2testimonialSlider = new Swiper('.testimonial-2__slider', {
         loop: true, 
@@ -272,10 +279,10 @@
         },
       });
 
-// noUi slider plugin for price and day filter
+    // noUi slider plugin for price and day filter
 
-let keypressSliders = document.querySelectorAll(".slider-priceFilter");
-let daySliders = document.querySelectorAll(".slider-dayFilter");
+    let keypressSliders = document.querySelectorAll(".slider-priceFilter");
+    let daySliders = document.querySelectorAll(".slider-dayFilter");
 
       //price filter
     keypressSliders.forEach(function (keypressSlider, index) {
@@ -455,141 +462,10 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
 
 
 
-
-
-
-
-
-
-
-
-
-
     
-    // slick slider testimonial =============
-    $(document).ready(function () {
-
-      
-
-      $('.testimonial-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        asNavFor: '.testimonial-authors-slider'
-      });
 
 
-      $('.testimonial-authors-slider').slick({
-        centerMode: true,
-        centerPadding: '4px',
-        slidesToShow: 3,
-        focusOnSelect: true, 
-        slidesToScroll: 1,
-        autoplay: true,
-        arrows: false,
-        asNavFor: '.testimonial-slider',
-        infinite: true,
-      });
-    });
- 
- 
-    const homeSlider = new Swiper('.home-1-blog-slider', {
-      loop: true, 
-      autoplay: true,
-      freeMode: true,
-      spaceBetween: 24,
-      slidesPerView: 3, 
-      breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-        },
-        480: {
-            centeredSlides: true,
-            spaceBetween: 15,
-            slidesPerView: 1.5,
-        },
-        768: {
-            spaceBetween: 15,
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1400: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-        }
-      },
-    });
-    
-    const slideCarousel = new Swiper('.slide-carousel-wrapper', {
-      loop: true, 
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-      freeMode: true,
-      spaceBetween: 15,
-      speed: 2000,
-      slidesPerView: 5, 
-      breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 5,
-          
-        },
-        480: {
-            
-            spaceBetween: 10,
-            slidesPerView: 1.5
-        },
-        576: {
-            
-            spaceBetween: 10,
-            slidesPerView: 2
-        },
-        768: {
-            spaceBetween: 15,
-            slidesPerView: 3,
-        },
-        992: {
-            slidesPerView: 4 ,
-            spaceBetween: 15,
-        },
-        1400: {
-            slidesPerView: 6,
-            spaceBetween: 24,
-        }
-      },
-    });
-    // Variable to track manual stopping
-      let isPaused = false;
-
-      // Pause on hover
-      $(".slide-carousel-wrapper").hover(
-        function () {
-            slideCarousel.autoplay.stop();
-            isPaused = true;
-        },
-        function () {
-            isPaused = false;
-            // Restart autoplay with a small delay to prevent issues
-            setTimeout(() => {
-                if (!isPaused) slideCarousel.autoplay.start();
-            }, 500); // Small delay ensures smooth restart
-        }
-      );
-
-
-
-
-
-
-  /* Counter Js ============================*/
+    /* Counter Js ============================*/
           $(".counter").counterUp({
             delay: 10,
             time: 1500,
@@ -673,14 +549,7 @@ let daySliders = document.querySelectorAll(".slider-dayFilter");
           }
          
          
-            
-
-
-
-
-
-
-    
+          
 	
     
   });

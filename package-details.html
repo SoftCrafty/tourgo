@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/venobox.min.css" />
   <link rel="stylesheet" href="css/icomoon/style.css" />
   <link rel="stylesheet" href="css/nouislider.min.css" />
+  <link rel="stylesheet" href="css/flatpickr.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -35,6 +36,26 @@
 </head>
 
 <body>
+
+      <!-- pre loader area start -->
+      <div id="loading" class="loading">
+        <div id="loading-center">
+           <div id="loading-center-absolute">
+             
+              <div class="preloader-content">
+                 <div class="preloader-logo">
+                    <img src="./images/logo/preloader-logo.png" alt="preloader">
+                 </div>
+                 <div class="preloader-bar">
+                  <div class="preloader-inner"></div>
+                 </div>
+                 <h2 class="preloader-title">Tourgo</h2>
+                 <p class="preloader-subtitle">Loading</p>
+              </div>
+           </div>
+        </div>
+      </div>
+     <!-- pre loader area end -->
   
    <!-- Header Start !-->
    <header class="header-area style-1">
@@ -47,7 +68,7 @@
               <div class="logo-wrapper">
                 <div class="logo">
                   <a href="index.html" class="standard-logo">
-                    <img src="images/logo/Logo.png" alt="logo" />
+                    <img src="images/logo/logo.png" alt="logo" />
                   </a>
                   <a href="index.html" class="sticky-logo">
                     <img src="images/logo/logo.png" alt="logo" />
@@ -61,7 +82,7 @@
 
                   <div class="sidebar-header show-md">
                     <a href="index.html" class="sidebar-logo">
-                      <img src="images/logo/Logo.png" alt="logo" />
+                      <img src="images/logo/logo.png" alt="logo" />
                     </a>
                     <div class="close-btn">
                       <i class="fa-solid fa-xmark"></i>
@@ -518,7 +539,7 @@
                   </div>
                   <div class="book-item">
                     <label > Time: </label>
-                    <input type="time">
+                    <input type="text" id="timeInput" placeholder="select time">
                   </div>
                   <div class="book-item">
                     <label > Ticket: </label>
@@ -682,8 +703,19 @@
 <script src="js/gsap-ScrollTrigger.min.js"></script>
 <script src="js/split-type-0.3.3.min.js"></script>
 <script src="js/scrollreveal.min.js"></script>
+<script src="js/flatpickr.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/gsap-animation.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+            flatpickr("#timeInput", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "H:i",  // 24-hour format (change to "h:i K" for 12-hour)
+                time_24hr: true
+            });
+        });
+</script>
 </body>
 
 </html>
