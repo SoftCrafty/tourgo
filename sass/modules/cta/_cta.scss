@@ -72,15 +72,19 @@
         font-size: 16px; 
     }
 
-    &.active{
+    // &.active{
+    //     background-color: $title-color;
+    //     color: $white;
+
+    //     &:hover{
+    //         background-color: $white;
+    //         color: $title-color;
+    //         border-color: $title-color;
+    //     }
+    // }
+    &:focus{
         background-color: $title-color;
         color: $white;
-
-        &:hover{
-            background-color: $white;
-            color: $title-color;
-            border-color: $title-color;
-        }
     }
 
     &:hover{

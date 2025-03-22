@@ -7438,14 +7438,9 @@ body {
   margin-right: 7px;
   font-size: 16px;
 }
-.cta-btn.active {
+.cta-btn:focus {
   background-color: #1A2D6D;
   color: #ffffff;
-}
-.cta-btn.active:hover {
-  background-color: #ffffff;
-  color: #1A2D6D;
-  border-color: #1A2D6D;
 }
 .cta-btn:hover {
   background-color: #1A2D6D;
