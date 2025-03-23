@@ -10,8 +10,8 @@ function textAnimate(sliderElement) {
         gsap.from(animate.chars, {
             opacity: 0,
             x: 100,
-            duration: 3.2,
-            stagger: { amount: 2 },
+            duration: 3,
+            stagger: { amount: 2.5 },
             scrollTrigger: {
                 trigger: textToAnimate,
                 start: "top 95%",
