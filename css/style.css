@@ -7165,6 +7165,16 @@ body {
   gap: 2px;
 }
 @media only screen and (max-width: 767px) {
+  .banner.style-2 .banner-btn-group {
+    gap: 6px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner.style-2 .banner-btn-group button {
+    padding: 10px 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
   .banner.style-2 .banner-btn-group button {
     padding: 10px 22px;
   }
@@ -7184,17 +7194,17 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .banner.style-2 .banner-search-container {
-    padding: 5px 77px;
+    padding: 5px 70px;
   }
 }
 @media only screen and (max-width: 767px) {
   .banner.style-2 .banner-search-container {
-    padding: 5px 8px;
+    padding: 5px 7px;
   }
 }
 @media only screen and (max-width: 576px) {
   .banner.style-2 .banner-search-container {
-    padding: 5px 26px 15px;
+    padding: 5px 40px 15px;
   }
 }
 .banner.style-2 .subtitle p {
@@ -7260,11 +7270,17 @@ body {
     gap: 6px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .banner-btn-group {
+    padding: 8px 22px;
+    gap: 10px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .banner-btn-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 8px 7px;
+    padding: 8px 21px;
   }
 }
 .banner-btn-group button {
@@ -7275,6 +7291,11 @@ body {
 @media only screen and (max-width: 991px) {
   .banner-btn-group button {
     padding: 10px 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-btn-group button {
+    padding: 10px 22px;
   }
 }
 .banner-btn-group button i {
@@ -7314,6 +7335,13 @@ body {
   border-right: 1px solid rgba(28, 28, 28, 0.12);
   padding-right: 5px;
 }
+@media only screen and (max-width: 991px) {
+  .banner-search-container .location,
+  .banner-search-container .adventure {
+    border-right: none;
+    padding-right: 0;
+  }
+}
 .banner-search-container .nice-select {
   border: none;
   margin-bottom: 0;
@@ -7328,7 +7356,7 @@ body {
   }
 }
 .banner-search-container .date {
-  margin-left: 7px;
+  margin-left: 15px;
 }
 .banner-search-container .date input {
   border: none;
@@ -7360,15 +7388,20 @@ body {
   .banner-search-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5px 15px;
+    padding: 5px 9px;
     gap: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-search-container {
+    padding: 5px 13px;
   }
 }
 @media only screen and (max-width: 576px) {
   .banner-search-container {
     grid-template-columns: 1fr;
     margin: -6px auto;
-    padding: 5px 35px 20px;
+    padding: 5px 31px 20px;
   }
 }
 

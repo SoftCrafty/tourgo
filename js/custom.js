@@ -4,7 +4,6 @@
   $(document).ready(function () {
 
     // pre loader js
-
     $("body").addClass("loading"); 
 
     setTimeout(function () {
@@ -12,21 +11,14 @@
         $("body").removeClass("loading"); 
     }, 2000); 
 
-
-
-    //Tourgo =================================================
-
     // Responsive sidebar menu and sticky menu show hide
-    
-      // Function to manage sticky class based on scroll position
       function handleSticky() {
         if ($(window).scrollTop() > 100 && !$(".main-menu").hasClass("show")) {
           $("body").addClass("sticky");
         } else {
           $("body").removeClass("sticky");
         }
-      }
-    
+      }    
       // Initial check when page loads
       handleSticky();
     
@@ -36,7 +28,7 @@
       });
     
       // Show sidebar menu on menu button click
-      $(".menu-btn").click(function () {
+      $(".menu-btn").on('click', function () {
         $(".main-menu").addClass("show");
         $(".sidebar").addClass("show");
     
@@ -46,24 +38,20 @@
           $("body").addClass("sticky");
       } else {
           $("body").removeClass("sticky"); // Remove sticky when scrollTop is 0
-      }
-      
+      }      
        
       });
     
       // Hide sidebar menu on close button click
-      $(".close-btn").click(function () {
+      $(".close-btn").on('click', function () {
         $(".main-menu").removeClass("show");
-        $(".sidebar").removeClass("show");
-    
+        $(".sidebar").removeClass("show");    
         // Re-add 'sticky' class only if scrolled past 100px
         handleSticky();
       });
-    
-      // TOUR GO =
 
       // h1 banner btn-group active class
-      $('.banner-btn-group button').click(function(){
+      $('.banner-btn-group button').on('click', function(){
         $('.banner-btn-group button').removeClass('active');
         $(this).addClass('active');
       })
@@ -76,8 +64,7 @@
           disableOnInteraction: false,
         },
         spaceBetween: 24,
-        slidesPerView: 4, 
-        
+        slidesPerView: 4,        
         speed: 1500,
         pagination: {
           el: ".swiper-indicator",
@@ -153,13 +140,11 @@
         },
       });
 
-
       // slider controller active class
-      $(".slider-controller button").click(function () {
+      $(".slider-controller button").on('click', function () {
         $(".slider-controller button").removeClass("active"); 
         $(this).addClass("active"); 
     });
-
       // home 2 testimonial slider
       const h2testimonialSlider = new Swiper('.testimonial-2__slider', {
         loop: true, 
@@ -202,7 +187,6 @@
       const teamSlider = new Swiper('.team-member-slider', {
         loop: true, 
         autoplay: true,
-       // freeMode: true,
         spaceBetween: 15,
         slidesPerView: 4, 
         pagination: {
@@ -217,8 +201,7 @@
         navigation: {
           nextEl: ".right__slide-team",
           prevEl: ".left__slide-team",
-        },
-       
+        },       
         breakpoints: {
           0: {
               slidesPerView: 1,
@@ -248,7 +231,7 @@
       // home 2 blog slider
       const h2BlogSlider = new Swiper('.h2-blog-slider', {
         loop: true, 
-        //autoplay: true,
+        autoplay: true,
         spaceBetween: 24,
         slidesPerView: 2, 
         pagination: {
@@ -439,7 +422,7 @@
     });
 
     // toggle password for sign in and sign up page
-    $(".toggle-password").click(function () {
+    $(".toggle-password").on('click', function () {
       let passwordField = $("#password"); 
       let icon = $(this).find("i");
     
@@ -453,17 +436,9 @@
     });
     
    // rating star in a project details leave a Feedback section
-
-   $(".stars-container span i").click(function(){
+   $(".stars-container span i").on('click', function(){
     $(this).toggleClass("active")
    });
-
-
-
-
-
-    
-
 
     /* Counter Js ============================*/
           $(".counter").counterUp({
@@ -472,7 +447,6 @@
           });
 
     // veno box video player
-
     new VenoBox({
       selector: '.my-video-links',
     });
@@ -486,28 +460,16 @@
       spinner: 'rotating-plane'
    });
 
-    /*
-    //         Jquery Wow Js
-    //         ============================*/
+        // nice select 
+        $('select').niceSelect();
 
-              // WOW Animation
-            
-              new WOW().init();
-
-              //         ============================*/
-            // nice select 
-    
-            $('select').niceSelect();
-
-
-            // scroll Revel
+        // scroll Revel
           const sr = ScrollReveal({
             origin: 'top',
             duration : 2000,
             distance: '60px',
             delay: 0,
-            opacity: 0
-              
+            opacity: 0              
           })
           sr.reveal('.tour-item, .blog-item, .package-item, .destination-item, .popular-destination-item, .instagram-img, .abt-service-item ',{
             interval: 120,
@@ -522,7 +484,6 @@
           })
           sr.reveal('.view-all, .learn-more-btn' ,{origin:'bottom', delay: 200})
 
-
           sr.reveal('.abt-choose-us-img',{
             origin: 'left',
           })
@@ -535,8 +496,7 @@
             distance: '20px'
           })
 
-          // Adjust animations for small screens
-          
+          // Adjust animations for small screens          
           if (window.innerWidth <= 992) {
             sr.reveal('.big-item, .abt-choose-us-img', {
                 origin: 'top', 
@@ -547,13 +507,7 @@
                 distance: "50px", 
             });
           }
-         
-         
-          
-	
-    
+
   });
-
-
 
 })(jQuery);
