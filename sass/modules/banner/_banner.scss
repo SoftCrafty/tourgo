@@ -213,6 +213,7 @@
 
       i{
         margin-right: 5px;
+        margin-left: 0;
       }
 
       &.active{
@@ -244,10 +245,14 @@
       }
     }
 
+    .location,
+    .adventure{
+      border-right: 1px solid $border-clr;
+      padding-right: 5px;
+    }
     .nice-select{
       border: none;
       margin-bottom: 0;
-      border-right: 1px solid $border-clr;
       height: 45px;
       line-height: 45px; 
       color: #565256;   
@@ -261,7 +266,7 @@
     }
 
     .date{
-      margin-left: 15px;
+      margin-left: 7px;
 
       input{
         &::placeholder{
