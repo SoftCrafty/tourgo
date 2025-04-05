@@ -479,7 +479,7 @@
           dynamic: false,
           dropdown: true,
           scrollbar: true
-      });
+        });
 
         // scroll Revel
           const sr = ScrollReveal({

@@ -23,31 +23,6 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-// function miniCss() {
-//   // 1. where is css file
-//   return gulp.src('css/style.css')
-//   // 2. pass that file through uglifycss
-//     .pipe(uglifycss())
-//   // 3. Where I save my minify css
-//     .pipe(gulp.dest('dist/'))
-//
-//     // stream changes to all browser
-//     .pipe(browserSync.stream());
-// }
-
-// function miniJs() {
-//   // 1. where is js file
-//   return gulp.src('js/main.js')
-//   // 2. pass that file through uglify
-//     .pipe(uglify())
-//   // 3. Where I save my minify js
-//     .pipe(gulp.dest('/'))
-//
-//     // stream changes to all browser
-//     .pipe(browserSync.stream());
-// }
-
-
 // add watch function for all functions
 function watch() {
   browserSync.init({
