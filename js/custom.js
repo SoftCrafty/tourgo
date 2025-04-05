@@ -441,10 +441,12 @@
    });
 
     /* Counter Js ============================*/
-          $(".counter").counterUp({
-            delay: 10,
-            time: 1500,
-          });
+      if($(".counter").length > 0){
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1500,
+        });
+      }
 
     // veno box video player
     new VenoBox({
